@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QLRenLuyenKyLuat.GUI_CB;
 using QLRenLuyenKyLuat.GUI_LT;
 using QLRenLuyenKyLuat.GUI_HV;
+using QLRenLuyenKyLuat.ADMIN;
 
 namespace QLRenLuyenKyLuat
 {
@@ -43,6 +44,13 @@ namespace QLRenLuyenKyLuat
         {
             frmHocVien frmHocVien = new frmHocVien();
             frmHocVien.Show();
+            this.Hide();
+        }
+
+        private void GuiAdmin_Click(object sender, EventArgs e)
+        {
+            frmAdmin frmAdmin = new frmAdmin();
+            frmAdmin.Show();
             this.Hide();
         }
     }

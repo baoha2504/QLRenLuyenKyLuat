@@ -31,6 +31,7 @@
             this.GuiCB = new Guna.UI2.WinForms.Guna2Button();
             this.GuiLT = new Guna.UI2.WinForms.Guna2Button();
             this.GuiHV = new Guna.UI2.WinForms.Guna2Button();
+            this.GuiAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // GuiCB
@@ -81,11 +82,28 @@
             this.GuiHV.Text = "Vào GUI Học viên";
             this.GuiHV.Click += new System.EventHandler(this.GuiHV_Click);
             // 
+            // GuiAdmin
+            // 
+            this.GuiAdmin.CheckedState.Parent = this.GuiAdmin;
+            this.GuiAdmin.CustomImages.Parent = this.GuiAdmin;
+            this.GuiAdmin.FillColor = System.Drawing.Color.Blue;
+            this.GuiAdmin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.GuiAdmin.ForeColor = System.Drawing.Color.White;
+            this.GuiAdmin.HoverState.Parent = this.GuiAdmin;
+            this.GuiAdmin.Location = new System.Drawing.Point(411, 269);
+            this.GuiAdmin.Name = "GuiAdmin";
+            this.GuiAdmin.ShadowDecoration.Parent = this.GuiAdmin;
+            this.GuiAdmin.Size = new System.Drawing.Size(185, 51);
+            this.GuiAdmin.TabIndex = 3;
+            this.GuiAdmin.Text = "Vào GUI Admin";
+            this.GuiAdmin.Click += new System.EventHandler(this.GuiAdmin_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 614);
+            this.Controls.Add(this.GuiAdmin);
             this.Controls.Add(this.GuiHV);
             this.Controls.Add(this.GuiLT);
             this.Controls.Add(this.GuiCB);
@@ -102,6 +120,7 @@
         private Guna.UI2.WinForms.Guna2Button GuiCB;
         private Guna.UI2.WinForms.Guna2Button GuiLT;
         private Guna.UI2.WinForms.Guna2Button GuiHV;
+        private Guna.UI2.WinForms.Guna2Button GuiAdmin;
     }
 }
 
