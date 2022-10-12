@@ -17,5 +17,9 @@ namespace QLRenLuyenKyLuat.GUI_CB
         {
             InitializeComponent();
         }
+
+        private void frmCanBo_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

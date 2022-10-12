@@ -55,9 +55,23 @@
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemFontEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemFontEdit();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem3 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem8 = new DevExpress.XtraBars.BarStaticItem();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -97,9 +111,9 @@
             this.ribbonPage17 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage19 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage20 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -133,9 +147,19 @@
             this.barButtonItem23,
             this.barButtonItem24,
             this.barButtonItem25,
-            this.barButtonItem26});
+            this.barButtonItem26,
+            this.barEditItem1,
+            this.barStaticItem1,
+            this.barStaticItem2,
+            this.barStaticItem3,
+            this.barStaticItem4,
+            this.barStaticItem5,
+            this.barStaticItem6,
+            this.barStaticItem7,
+            this.barStaticItem8,
+            this.barEditItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 28;
+            this.ribbon.MaxItemId = 38;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -149,6 +173,9 @@
             this.ribbonPage12,
             this.ribbonPage14,
             this.ribbonPage16});
+            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemFontEdit1,
+            this.repositoryItemHypertextLabel1});
             this.ribbon.Size = new System.Drawing.Size(1419, 193);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
@@ -338,6 +365,188 @@
             this.barButtonItem25.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.LargeImage")));
             this.barButtonItem25.Name = "barButtonItem25";
             // 
+            // barButtonItem26
+            // 
+            this.barButtonItem26.Caption = "Thông báo";
+            this.barButtonItem26.Id = 27;
+            this.barButtonItem26.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.Image")));
+            this.barButtonItem26.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.LargeImage")));
+            this.barButtonItem26.Name = "barButtonItem26";
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemFontEdit1;
+            this.barEditItem1.Id = 28;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemFontEdit1
+            // 
+            this.repositoryItemFontEdit1.AutoHeight = false;
+            this.repositoryItemFontEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemFontEdit1.Name = "repositoryItemFontEdit1";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barStaticItem1.Caption = "barStaticItem1";
+            this.barStaticItem1.Id = 29;
+            this.barStaticItem1.Name = "barStaticItem1";
+            // 
+            // barStaticItem2
+            // 
+            this.barStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barStaticItem2.Caption = "barStaticItem2";
+            this.barStaticItem2.Id = 30;
+            this.barStaticItem2.Name = "barStaticItem2";
+            // 
+            // barStaticItem3
+            // 
+            this.barStaticItem3.Caption = "Họ tên:";
+            this.barStaticItem3.Id = 31;
+            this.barStaticItem3.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barStaticItem3.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem3.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem3.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem3.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem3.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem3.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem3.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem3.Name = "barStaticItem3";
+            // 
+            // barStaticItem4
+            // 
+            this.barStaticItem4.Caption = "fullname";
+            this.barStaticItem4.Id = 32;
+            this.barStaticItem4.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barStaticItem4.ItemAppearance.Disabled.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.barStaticItem4.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem4.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemAppearance.Hovered.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.barStaticItem4.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem4.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem4.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem4.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem4.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem4.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem4.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem4.Name = "barStaticItem4";
+            // 
+            // barStaticItem5
+            // 
+            this.barStaticItem5.Caption = "Chức vụ";
+            this.barStaticItem5.Id = 33;
+            this.barStaticItem5.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem5.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem5.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem5.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem5.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem5.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem5.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem5.Name = "barStaticItem5";
+            // 
+            // barStaticItem6
+            // 
+            this.barStaticItem6.Caption = "position";
+            this.barStaticItem6.Id = 34;
+            this.barStaticItem6.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem6.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem6.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem6.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem6.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem6.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem6.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem6.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem6.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem6.Name = "barStaticItem6";
+            // 
+            // barStaticItem7
+            // 
+            this.barStaticItem7.Caption = "Phiên làm việc";
+            this.barStaticItem7.Id = 35;
+            this.barStaticItem7.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem7.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem7.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem7.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem7.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem7.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem7.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem7.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem7.Name = "barStaticItem7";
+            // 
+            // barStaticItem8
+            // 
+            this.barStaticItem8.Caption = "date";
+            this.barStaticItem8.Id = 36;
+            this.barStaticItem8.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem8.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem8.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem8.ItemAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem8.ItemInMenuAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemInMenuAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem8.ItemInMenuAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemInMenuAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem8.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem8.ItemInMenuAppearance.Pressed.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.barStaticItem8.ItemInMenuAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem8.Name = "barStaticItem8";
+            // 
+            // barEditItem2
+            // 
+            this.barEditItem2.Caption = "barEditItem2";
+            this.barEditItem2.Edit = this.repositoryItemHypertextLabel1;
+            this.barEditItem2.Id = 37;
+            this.barEditItem2.Name = "barEditItem2";
+            // 
+            // repositoryItemHypertextLabel1
+            // 
+            this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -355,6 +564,11 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem26);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
             // 
             // ribbonPage2
             // 
@@ -532,6 +746,12 @@
             // 
             // ribbonStatusBar
             // 
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem3);
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem4);
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem5);
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem6);
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem7);
+            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem8);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 739);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
@@ -587,19 +807,6 @@
             this.ribbonPage20.Name = "ribbonPage20";
             this.ribbonPage20.Text = "ribbonPage20";
             // 
-            // ribbonPageGroup22
-            // 
-            this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem26);
-            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
-            // 
-            // barButtonItem26
-            // 
-            this.barButtonItem26.Caption = "Thông báo";
-            this.barButtonItem26.Id = 27;
-            this.barButtonItem26.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.Image")));
-            this.barButtonItem26.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.LargeImage")));
-            this.barButtonItem26.Name = "barButtonItem26";
-            // 
             // frmCanBo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -612,7 +819,10 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Chương trình quản lý rèn luyện cấp Đại đội";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmCanBo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -690,5 +900,17 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
         private DevExpress.XtraBars.BarButtonItem barButtonItem26;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemFontEdit repositoryItemFontEdit1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem3;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem4;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem5;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem6;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem7;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem8;
+        private DevExpress.XtraBars.BarEditItem barEditItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
     }
 }
