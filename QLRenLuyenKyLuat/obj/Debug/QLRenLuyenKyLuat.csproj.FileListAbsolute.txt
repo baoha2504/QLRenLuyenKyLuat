@@ -177,7 +177,6 @@ D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\ja\DevExpress.Sparkline.v21.2.Cor
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\ru\DevExpress.Sparkline.v21.2.Core.resources.dll
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.AssemblyReference.cache
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.SuggestedBindingRedirects.cache
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.ADMIN.frmAdmin.resources
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.frmLogin.resources
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_CB.frmCanBo.resources
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.frmHocVien.resources
