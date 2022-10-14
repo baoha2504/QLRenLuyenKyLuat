@@ -92,6 +92,8 @@
             // 
             // accordionControl1
             // 
+            this.accordionControl1.Appearance.Item.Hovered.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Item.Hovered.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement2,
