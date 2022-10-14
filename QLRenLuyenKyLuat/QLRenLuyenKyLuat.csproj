@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Data_Provider.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
