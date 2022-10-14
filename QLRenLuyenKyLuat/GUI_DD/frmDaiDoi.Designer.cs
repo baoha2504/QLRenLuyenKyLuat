@@ -414,6 +414,7 @@
             this.accordionControlElement31,
             this.accordionControlElement32,
             this.accordionControlElement33});
+            this.accordionControlElement8.Expanded = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Text = "Tài khoản";
             // 
