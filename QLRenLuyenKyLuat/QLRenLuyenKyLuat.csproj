@@ -103,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +122,27 @@
     <Folder Include="GUI_DD\Image\" />
     <Folder Include="GUI_HV\Image\" />
     <Folder Include="GUI_LOP\Image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfooter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trackingchanges_allmarkup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date&amp;time.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longdate.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

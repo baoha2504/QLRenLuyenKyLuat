@@ -16,10 +16,5 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             InitializeComponent();
         }
-
-        private void accordionControlElement4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
