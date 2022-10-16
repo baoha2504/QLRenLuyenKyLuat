@@ -16,5 +16,38 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             InitializeComponent();
         }
+
+        usr_ThemHocVien usr_ThemHocVien;
+        usr_SuaHocVien usr_SuaHocVien;
+        private void btnThemHocVien_Click(object sender, EventArgs e)
+        {
+            if(usr_ThemHocVien == null)
+            {
+                usr_ThemHocVien usr_ThemHocVien = new usr_ThemHocVien();
+                usr_ThemHocVien.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_ThemHocVien);
+                usr_ThemHocVien.BringToFront();
+            } else
+            {
+                usr_ThemHocVien.BringToFront();
+            }
+            lblTieuDe.Caption = "Thêm học viên";
+        }
+
+        private void accordionControlElement15_Click(object sender, EventArgs e)
+        {
+            if (usr_SuaHocVien == null)
+            {
+                usr_SuaHocVien usr_SuaHocVien = new usr_SuaHocVien();
+                usr_SuaHocVien.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_SuaHocVien);
+                usr_SuaHocVien.BringToFront();
+            }
+            else
+            {
+                usr_SuaHocVien.BringToFront();
+            }
+            lblTieuDe.Caption = "Sửa học viên";
+        }
     }
 }

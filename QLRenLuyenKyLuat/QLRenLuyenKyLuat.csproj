@@ -70,6 +70,18 @@
     <Compile Include="GUI_DD\frmDaiDoi.Designer.cs">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_SuaHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaHocVien.Designer.cs">
+      <DependentUpon>usr_SuaHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemHocVien.Designer.cs">
+      <DependentUpon>usr_ThemHocVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_HV\frmHocVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\frmDaiDoi.resx">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_SuaHocVien.resx">
+      <DependentUpon>usr_SuaHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThemHocVien.resx">
+      <DependentUpon>usr_ThemHocVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>

@@ -121,3 +121,5 @@ D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CoreCompi
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CopyComplete
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.exe
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.pdb
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_ThemHocVien.resources
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_SuaHocVien.resources
