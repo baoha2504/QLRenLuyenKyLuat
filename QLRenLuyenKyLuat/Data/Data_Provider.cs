@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-namespace QLnhahang_anhttt.Data
+namespace QLRenLuyenKyLuat.Data
 {
     class Data_Provider
     {
