@@ -38,6 +38,17 @@ namespace QLRenLuyenKyLuat.GUI_DD
         usr_QCTheLuc usr_QCTheLuc;
         usr_ThayDoiQCKL usr_ThayDoiQCKL;
         usr_ThayDoiQCTL usr_ThayDoiQCTL;
+        usr_HDSD_KL usr_HDSD_KL;
+        usr_HDSD_TL usr_HDSD_TL;
+        usr_ThayDoiMatKhau usr_ThayDoiMatKhau;
+        usr_TrangChu usr_TrangChu;
+        usr_ThongBao usr_ThongBao;
+
+        private void frmDaiDoi_Load(object sender, EventArgs e)
+        {
+            TrangChu_Click(sender, e);
+        }
+
         private void btnThemHocVien_Click(object sender, EventArgs e)
         {
             if(usr_ThemHocVien == null)
@@ -316,22 +327,159 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void QCKL_Click(object sender, EventArgs e)
         {
-
+            if (usr_QCKyLuat == null)
+            {
+                usr_QCKyLuat usr_QCKyLuat = new usr_QCKyLuat();
+                usr_QCKyLuat.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_QCKyLuat);
+                usr_QCKyLuat.BringToFront();
+            }
+            else
+            {
+                usr_QCKyLuat.BringToFront();
+            }
+            lblTieuDe.Caption = "Quy chuẩn kỷ luật";
         }
 
         private void QCTL_Click(object sender, EventArgs e)
         {
-
+            if (usr_QCTheLuc == null)
+            {
+                usr_QCTheLuc usr_QCTheLuc = new usr_QCTheLuc();
+                usr_QCTheLuc.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_QCTheLuc);
+                usr_QCTheLuc.BringToFront();
+            }
+            else
+            {
+                usr_QCTheLuc.BringToFront();
+            }
+            lblTieuDe.Caption = "Quy chuẩn thể lực";
         }
 
         private void ThayDoiQCKL_Click(object sender, EventArgs e)
         {
-
+            if (usr_ThayDoiQCKL == null)
+            {
+                usr_ThayDoiQCKL usr_ThayDoiQCKL = new usr_ThayDoiQCKL();
+                usr_ThayDoiQCKL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_ThayDoiQCKL);
+                usr_ThayDoiQCKL.BringToFront();
+            }
+            else
+            {
+                usr_ThayDoiQCKL.BringToFront();
+            }
+            lblTieuDe.Caption = "Thay đổi quy chuẩn kỷ luật";
         }
 
         private void ThayDoiQCTL_Click(object sender, EventArgs e)
         {
+            if (usr_ThayDoiQCTL == null)
+            {
+                usr_ThayDoiQCTL usr_ThayDoiQCTL = new usr_ThayDoiQCTL();
+                usr_ThayDoiQCTL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_ThayDoiQCTL);
+                usr_ThayDoiQCTL.BringToFront();
+            }
+            else
+            {
+                usr_ThayDoiQCTL.BringToFront();
+            }
+            lblTieuDe.Caption = "Thay đổi quy chuẩn thể lực";
+        }
+
+        private void HDSD_KL_Click(object sender, EventArgs e)
+        {
+            if (usr_ThayDoiQCTL == null)
+            {
+                usr_HDSD_KL usr_HDSD_KL = new usr_HDSD_KL();
+                usr_HDSD_KL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_KL);
+                usr_HDSD_KL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_KL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý kỷ luật";
+        }
+
+        private void HDSD_TL_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_TL == null)
+            {
+                usr_HDSD_TL usr_HDSD_TL = new usr_HDSD_TL();
+                usr_HDSD_TL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_TL);
+                usr_HDSD_TL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_TL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý thể lực";
+        }
+
+        private void SuaThongTinTaiKhoan_Click(object sender, EventArgs e)
+        {
 
         }
+
+        private void ThayDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (usr_ThayDoiMatKhau == null)
+            {
+                usr_ThayDoiMatKhau usr_ThayDoiMatKhau = new usr_ThayDoiMatKhau();
+                usr_ThayDoiMatKhau.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_ThayDoiMatKhau);
+                usr_ThayDoiMatKhau.BringToFront();
+            }
+            else
+            {
+                usr_ThayDoiMatKhau.BringToFront();
+            }
+            lblTieuDe.Caption = "Thay đổi mật khẩu";
+        }
+
+        private void DangXuat_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Hide();
+        }
+
+        private void TrangChu_Click(object sender, EventArgs e)
+        {
+            if (usr_TrangChu == null)
+            {
+                usr_TrangChu usr_TrangChu = new usr_TrangChu();
+                usr_TrangChu.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_TrangChu);
+                usr_TrangChu.BringToFront();
+            }
+            else
+            {
+                usr_TrangChu.BringToFront();
+            }
+            lblTieuDe.Caption = "Trang chủ";
+        }
+
+        private void ThongBao_Click(object sender, EventArgs e)
+        {
+            if (usr_ThongBao == null)
+            {
+                usr_ThongBao usr_ThongBao = new usr_ThongBao();
+                usr_ThongBao.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_ThongBao);
+                usr_ThongBao.BringToFront();
+            }
+            else
+            {
+                usr_ThongBao.BringToFront();
+            }
+            lblTieuDe.Caption = "Thông báo";
+        }
+
     }
 }

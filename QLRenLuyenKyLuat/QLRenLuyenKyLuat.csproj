@@ -82,6 +82,18 @@
     <Compile Include="GUI_DD\usr_DanhGiaKL_L.Designer.cs">
       <DependentUpon>usr_DanhGiaKL_L.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_KL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_KL.Designer.cs">
+      <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_TL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_TL.Designer.cs">
+      <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DD\usr_KQKL_HK.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +178,12 @@
     <Compile Include="GUI_DD\usr_SuaLop.Designer.cs">
       <DependentUpon>usr_SuaLop.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiMatKhau.Designer.cs">
+      <DependentUpon>usr_ThayDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DD\usr_ThayDoiQCKL.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -196,6 +214,18 @@
     <Compile Include="GUI_DD\usr_DanhGiaKL_CN.Designer.cs">
       <DependentUpon>usr_DanhGiaKL_CN.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_ThongBao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThongBao.Designer.cs">
+      <DependentUpon>usr_ThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_TrangChu.Designer.cs">
+      <DependentUpon>usr_TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_HV\frmHocVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_DanhGiaKL_L.resx">
       <DependentUpon>usr_DanhGiaKL_L.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_KL.resx">
+      <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_TL.resx">
+      <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_KQKL_HK.resx">
       <DependentUpon>usr_KQKL_HK.cs</DependentUpon>
@@ -267,6 +303,9 @@
     <EmbeddedResource Include="GUI_DD\usr_SuaLop.resx">
       <DependentUpon>usr_SuaLop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiMatKhau.resx">
+      <DependentUpon>usr_ThayDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_ThayDoiQCKL.resx">
       <DependentUpon>usr_ThayDoiQCKL.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +317,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_ThemLop.resx">
       <DependentUpon>usr_ThemLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThongBao.resx">
+      <DependentUpon>usr_ThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_TrangChu.resx">
+      <DependentUpon>usr_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
@@ -333,6 +378,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\longdate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logohv.jpg" />
+    <Content Include="Resources\z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

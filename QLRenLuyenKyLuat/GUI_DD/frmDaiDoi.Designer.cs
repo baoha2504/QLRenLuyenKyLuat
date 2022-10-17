@@ -81,8 +81,8 @@
             this.LayMatKhauHV = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.LayMatKhauLop = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.TrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ThongBao = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -212,6 +212,7 @@
             this.SuaThongTinTaiKhoan.Name = "SuaThongTinTaiKhoan";
             this.SuaThongTinTaiKhoan.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.SuaThongTinTaiKhoan.Text = "Sửa thông tin tài khoản";
+            this.SuaThongTinTaiKhoan.Click += new System.EventHandler(this.SuaThongTinTaiKhoan_Click);
             // 
             // ThayDoiMatKhau
             // 
@@ -219,6 +220,7 @@
             this.ThayDoiMatKhau.Name = "ThayDoiMatKhau";
             this.ThayDoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ThayDoiMatKhau.Text = "Thay đổi mật khẩu";
+            this.ThayDoiMatKhau.Click += new System.EventHandler(this.ThayDoiMatKhau_Click);
             // 
             // DangXuat
             // 
@@ -226,13 +228,13 @@
             this.DangXuat.Name = "DangXuat";
             this.DangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.DangXuat.Text = "Đăng xuất";
+            this.DangXuat.Click += new System.EventHandler(this.DangXuat_Click);
             // 
             // accordionControlElement7
             // 
             this.accordionControlElement7.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.HDSD_KL,
             this.HDSD_TL});
-            this.accordionControlElement7.Expanded = true;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "Hướng dẫn sử dụng";
             // 
@@ -242,6 +244,7 @@
             this.HDSD_KL.Name = "HDSD_KL";
             this.HDSD_KL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.HDSD_KL.Text = "Chức năng quản lý kỷ luật";
+            this.HDSD_KL.Click += new System.EventHandler(this.HDSD_KL_Click);
             // 
             // HDSD_TL
             // 
@@ -249,6 +252,7 @@
             this.HDSD_TL.Name = "HDSD_TL";
             this.HDSD_TL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.HDSD_TL.Text = "Chức năng quản lý thể lực";
+            this.HDSD_TL.Click += new System.EventHandler(this.HDSD_TL_Click);
             // 
             // accordionControlElement6
             // 
@@ -257,7 +261,6 @@
             this.QCTL,
             this.ThayDoiQCKL,
             this.ThayDoiQCTL});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Quy chuẩn";
             // 
@@ -523,25 +526,27 @@
             // accordionControlElement2
             // 
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement9,
-            this.accordionControlElement10});
+            this.TrangChu,
+            this.ThongBao});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Trang chủ";
             // 
-            // accordionControlElement9
+            // TrangChu
             // 
-            this.accordionControlElement9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement9.ImageOptions.SvgImage")));
-            this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement9.Text = "Trang chủ";
+            this.TrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement9.ImageOptions.SvgImage")));
+            this.TrangChu.Name = "TrangChu";
+            this.TrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.TrangChu.Text = "Trang chủ";
+            this.TrangChu.Click += new System.EventHandler(this.TrangChu_Click);
             // 
-            // accordionControlElement10
+            // ThongBao
             // 
-            this.accordionControlElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement10.ImageOptions.Image")));
-            this.accordionControlElement10.Name = "accordionControlElement10";
-            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement10.Text = "Thông báo";
+            this.ThongBao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement10.ImageOptions.Image")));
+            this.ThongBao.Name = "ThongBao";
+            this.ThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ThongBao.Text = "Thông báo";
+            this.ThongBao.Click += new System.EventHandler(this.ThongBao_Click);
             // 
             // accordionControl1
             // 
@@ -577,6 +582,7 @@
             this.NavigationControl = this.accordionControl1;
             this.Text = "Chương trình quản lý rèn luyện cấp Đại đội";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmDaiDoi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
@@ -597,8 +603,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement KQRLThang;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement TrangChu;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ThongBao;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnThemHocVien;
