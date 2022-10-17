@@ -138,3 +138,7 @@ D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_KQTL_
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_KQTL_Quy.resources
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_NhapKQTL.resources
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_SuaKQTL.resources
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_QCKyLuat.resources
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_QCTheLuc.resources
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_ThayDoiQCKL.resources
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_DD.usr_ThayDoiQCTL.resources

@@ -34,6 +34,10 @@ namespace QLRenLuyenKyLuat.GUI_DD
         usr_SuaKQTL usr_SuaKQTL;
         usr_KQTL_Quy usr_KQTL_Quy;
         usr_KQKL_Nam usr_KQTL_Nam;
+        usr_QCKyLuat usr_QCKyLuat;
+        usr_QCTheLuc usr_QCTheLuc;
+        usr_ThayDoiQCKL usr_ThayDoiQCKL;
+        usr_ThayDoiQCTL usr_ThayDoiQCTL;
         private void btnThemHocVien_Click(object sender, EventArgs e)
         {
             if(usr_ThemHocVien == null)
@@ -195,18 +199,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void KQRLThang_Click(object sender, EventArgs e)
         {
-            if (usr_KQKL_Thang == null)
-            {
-                usr_KQKL_Thang usr_KQKL_Thang = new usr_KQKL_Thang();
-                usr_KQKL_Thang.Dock = DockStyle.Fill;
-                mainContainer.Controls.Add(usr_KQKL_Thang);
-                usr_KQKL_Thang.BringToFront();
-            }
-            else
-            {
-                usr_KQKL_Thang.BringToFront();
-            }
-            lblTieuDe.Caption = "Kết quả rèn luyện tháng";
+            
         }
 
         private void KQRLHK_Click(object sender, EventArgs e)
@@ -303,6 +296,42 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 usr_KQTL_Nam.BringToFront();
             }
             lblTieuDe.Caption = "Kết quả thể lực năm";
+        }
+
+        private void KQKLThang_Click(object sender, EventArgs e)
+        {
+            if (usr_KQKL_Thang == null)
+            {
+                usr_KQKL_Thang usr_KQKL_Thang = new usr_KQKL_Thang();
+                usr_KQKL_Thang.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_KQKL_Thang);
+                usr_KQKL_Thang.BringToFront();
+            }
+            else
+            {
+                usr_KQKL_Thang.BringToFront();
+            }
+            lblTieuDe.Caption = "Kết quả rèn luyện tháng";
+        }
+
+        private void QCKL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QCTL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThayDoiQCKL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThayDoiQCTL_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

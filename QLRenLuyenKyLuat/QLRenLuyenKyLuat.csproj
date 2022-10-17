@@ -130,6 +130,18 @@
     <Compile Include="GUI_DD\usr_NhapKQTL.Designer.cs">
       <DependentUpon>usr_NhapKQTL.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_QCKyLuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCKyLuat.Designer.cs">
+      <DependentUpon>usr_QCKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCTheLuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCTheLuc.Designer.cs">
+      <DependentUpon>usr_QCTheLuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DD\usr_SuaDanhGia.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +165,18 @@
     </Compile>
     <Compile Include="GUI_DD\usr_SuaLop.Designer.cs">
       <DependentUpon>usr_SuaLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCKL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCKL.Designer.cs">
+      <DependentUpon>usr_ThayDoiQCKL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCTL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCTL.Designer.cs">
+      <DependentUpon>usr_ThayDoiQCTL.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_DD\usr_ThemHocVien.cs">
       <SubType>UserControl</SubType>
@@ -225,6 +249,12 @@
     <EmbeddedResource Include="GUI_DD\usr_NhapKQTL.resx">
       <DependentUpon>usr_NhapKQTL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_QCKyLuat.resx">
+      <DependentUpon>usr_QCKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_QCTheLuc.resx">
+      <DependentUpon>usr_QCTheLuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_SuaDanhGia.resx">
       <DependentUpon>usr_SuaDanhGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +266,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_SuaLop.resx">
       <DependentUpon>usr_SuaLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiQCKL.resx">
+      <DependentUpon>usr_ThayDoiQCKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiQCTL.resx">
+      <DependentUpon>usr_ThayDoiQCTL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_ThemHocVien.resx">
       <DependentUpon>usr_ThemHocVien.cs</DependentUpon>
