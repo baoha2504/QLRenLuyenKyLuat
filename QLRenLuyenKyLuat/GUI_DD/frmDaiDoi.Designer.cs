@@ -41,7 +41,6 @@
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.KQRLThang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.SuaThongTinTaiKhoan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ThayDoiMatKhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.DangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -199,20 +198,11 @@
             // accordionControlElement8
             // 
             this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.SuaThongTinTaiKhoan,
             this.ThayDoiMatKhau,
             this.DangXuat});
             this.accordionControlElement8.Expanded = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Text = "Tài khoản";
-            // 
-            // SuaThongTinTaiKhoan
-            // 
-            this.SuaThongTinTaiKhoan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SuaThongTinTaiKhoan.ImageOptions.SvgImage")));
-            this.SuaThongTinTaiKhoan.Name = "SuaThongTinTaiKhoan";
-            this.SuaThongTinTaiKhoan.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.SuaThongTinTaiKhoan.Text = "Sửa thông tin tài khoản";
-            this.SuaThongTinTaiKhoan.Click += new System.EventHandler(this.SuaThongTinTaiKhoan_Click);
             // 
             // ThayDoiMatKhau
             // 
@@ -528,13 +518,12 @@
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.TrangChu,
             this.ThongBao});
-            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Trang chủ";
             // 
             // TrangChu
             // 
-            this.TrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement9.ImageOptions.SvgImage")));
+            this.TrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("TrangChu.ImageOptions.SvgImage")));
             this.TrangChu.Name = "TrangChu";
             this.TrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.TrangChu.Text = "Trang chủ";
@@ -542,7 +531,7 @@
             // 
             // ThongBao
             // 
-            this.ThongBao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement10.ImageOptions.Image")));
+            this.ThongBao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ThongBao.ImageOptions.Image")));
             this.ThongBao.Name = "ThongBao";
             this.ThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ThongBao.Text = "Thông báo";
@@ -642,7 +631,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement HDSD_KL;
         private DevExpress.XtraBars.Navigation.AccordionControlElement HDSD_TL;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement SuaThongTinTaiKhoan;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ThayDoiMatKhau;
         private DevExpress.XtraBars.Navigation.AccordionControlElement DangXuat;
     }
