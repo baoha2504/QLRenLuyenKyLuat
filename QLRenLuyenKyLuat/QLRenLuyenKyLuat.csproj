@@ -70,6 +70,162 @@
     <Compile Include="GUI_DD\frmDaiDoi.Designer.cs">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_DD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_DD.Designer.cs">
+      <DependentUpon>usr_DanhGiaKL_DD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_L.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_L.Designer.cs">
+      <DependentUpon>usr_DanhGiaKL_L.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_KL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_KL.Designer.cs">
+      <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_TL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_TL.Designer.cs">
+      <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_HK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_HK.Designer.cs">
+      <DependentUpon>usr_KQKL_HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_Nam.Designer.cs">
+      <DependentUpon>usr_KQKL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_Thang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQKL_Thang.Designer.cs">
+      <DependentUpon>usr_KQKL_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQTL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQTL_Nam.Designer.cs">
+      <DependentUpon>usr_KQTL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_KQTL_Quy.Designer.cs">
+      <DependentUpon>usr_KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_MatKhauHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_MatKhauHocVien.Designer.cs">
+      <DependentUpon>usr_MatKhauHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_MatKhauLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_MatKhauLop.Designer.cs">
+      <DependentUpon>usr_MatKhauLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_NhapKQTL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_NhapKQTL.Designer.cs">
+      <DependentUpon>usr_NhapKQTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCKyLuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCKyLuat.Designer.cs">
+      <DependentUpon>usr_QCKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCTheLuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_QCTheLuc.Designer.cs">
+      <DependentUpon>usr_QCTheLuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaDanhGia.Designer.cs">
+      <DependentUpon>usr_SuaDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaHocVien.Designer.cs">
+      <DependentUpon>usr_SuaHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaKQTL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaKQTL.Designer.cs">
+      <DependentUpon>usr_SuaKQTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_SuaLop.Designer.cs">
+      <DependentUpon>usr_SuaLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiMatKhau.Designer.cs">
+      <DependentUpon>usr_ThayDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCKL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCKL.Designer.cs">
+      <DependentUpon>usr_ThayDoiQCKL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCTL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThayDoiQCTL.Designer.cs">
+      <DependentUpon>usr_ThayDoiQCTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemHocVien.Designer.cs">
+      <DependentUpon>usr_ThemHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThemLop.Designer.cs">
+      <DependentUpon>usr_ThemLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_CN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_DanhGiaKL_CN.Designer.cs">
+      <DependentUpon>usr_DanhGiaKL_CN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThongBao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_ThongBao.Designer.cs">
+      <DependentUpon>usr_ThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_TrangChu.Designer.cs">
+      <DependentUpon>usr_TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_HV\frmHocVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +245,84 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\frmDaiDoi.resx">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_DanhGiaKL_CN.resx">
+      <DependentUpon>usr_DanhGiaKL_CN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_DanhGiaKL_DD.resx">
+      <DependentUpon>usr_DanhGiaKL_DD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_DanhGiaKL_L.resx">
+      <DependentUpon>usr_DanhGiaKL_L.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_KL.resx">
+      <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_TL.resx">
+      <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_KQKL_HK.resx">
+      <DependentUpon>usr_KQKL_HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_KQKL_Nam.resx">
+      <DependentUpon>usr_KQKL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_KQKL_Thang.resx">
+      <DependentUpon>usr_KQKL_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_KQTL_Nam.resx">
+      <DependentUpon>usr_KQTL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_KQTL_Quy.resx">
+      <DependentUpon>usr_KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_MatKhauHocVien.resx">
+      <DependentUpon>usr_MatKhauHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_MatKhauLop.resx">
+      <DependentUpon>usr_MatKhauLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_NhapKQTL.resx">
+      <DependentUpon>usr_NhapKQTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_QCKyLuat.resx">
+      <DependentUpon>usr_QCKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_QCTheLuc.resx">
+      <DependentUpon>usr_QCTheLuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_SuaDanhGia.resx">
+      <DependentUpon>usr_SuaDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_SuaHocVien.resx">
+      <DependentUpon>usr_SuaHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_SuaKQTL.resx">
+      <DependentUpon>usr_SuaKQTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_SuaLop.resx">
+      <DependentUpon>usr_SuaLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiMatKhau.resx">
+      <DependentUpon>usr_ThayDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiQCKL.resx">
+      <DependentUpon>usr_ThayDoiQCKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThayDoiQCTL.resx">
+      <DependentUpon>usr_ThayDoiQCTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThemHocVien.resx">
+      <DependentUpon>usr_ThemHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThemLop.resx">
+      <DependentUpon>usr_ThemLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_ThongBao.resx">
+      <DependentUpon>usr_ThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_TrangChu.resx">
+      <DependentUpon>usr_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
@@ -144,6 +378,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\longdate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logohv.jpg" />
+    <Content Include="Resources\z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

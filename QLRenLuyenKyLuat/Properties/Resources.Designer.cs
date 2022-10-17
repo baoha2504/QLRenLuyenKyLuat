@@ -91,6 +91,16 @@ namespace QLRenLuyenKyLuat.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logohv {
+            get {
+                object obj = ResourceManager.GetObject("logohv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage longdate {
@@ -126,6 +136,16 @@ namespace QLRenLuyenKyLuat.Properties {
         internal static System.Drawing.Bitmap usergroup_32x32 {
             get {
                 object obj = ResourceManager.GetObject("usergroup_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786 {
+            get {
+                object obj = ResourceManager.GetObject("z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
