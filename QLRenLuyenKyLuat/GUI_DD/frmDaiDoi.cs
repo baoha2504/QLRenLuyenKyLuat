@@ -421,11 +421,6 @@ namespace QLRenLuyenKyLuat.GUI_DD
             lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý thể lực";
         }
 
-        private void SuaThongTinTaiKhoan_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ThayDoiMatKhau_Click(object sender, EventArgs e)
         {
             if (usr_ThayDoiMatKhau == null)
