@@ -168,6 +168,7 @@
             this.txtMaDD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaDD.DisabledState.Parent = this.txtMaDD;
             this.txtMaDD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaDD.Enabled = false;
             this.txtMaDD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaDD.FocusedState.Parent = this.txtMaDD;
             this.txtMaDD.ForeColor = System.Drawing.Color.Black;
