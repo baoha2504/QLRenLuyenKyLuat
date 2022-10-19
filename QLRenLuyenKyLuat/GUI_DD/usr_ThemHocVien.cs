@@ -46,6 +46,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
                     txtMaHV.Text = DR[0].ToString();
                 }
                 DR.Close();
+                conn.Close();
             }
         }
 

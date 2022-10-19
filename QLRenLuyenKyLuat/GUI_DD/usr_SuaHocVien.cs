@@ -34,14 +34,6 @@ namespace QLRenLuyenKyLuat.GUI_DD
             sqlCon.Close();
         }
 
-        private void CapNhat(string query)
-        {
-            sqlCon.Open();
-            SqlCommand cmd = new SqlCommand(query, sqlCon);
-            cmd.ExecuteNonQuery();
-            sqlCon.Close();
-        }
-
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string query = "Select MaHocVien, TenHocVien, GioiTinh, MaLop, CapBac, Chucvu from HocVien where";
@@ -52,13 +44,13 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
             if (cbbMuc.Text == "Mã học viên")
             {
-                connect(query + " mahocvien = N'" + txtNoiDung.Text + "'");
+                connect(query + " mahocvien LIKE N'%" + txtNoiDung.Text + "%'");
             } else if (cbbMuc.Text == "Tên học viên")
             {
-                connect(query + " tenhocvien = N'" + txtNoiDung.Text + "'");
+                connect(query + " tenhocvien LIKE N'%" + txtNoiDung.Text + "%'");
             } else if(cbbMuc.Text == "Lớp")
             {
-                connect(query + " malop = N'" + txtNoiDung.Text + "'");
+                connect(query + " malop LIKE N'%" + txtNoiDung.Text + "%'");
             }
         }
 
@@ -69,10 +61,11 @@ namespace QLRenLuyenKyLuat.GUI_DD
             try
             {
                 string query = "UPDATE HocVien" +
-                    " Set TenHocVien = N'" + txtTenHV.Text + "', GioiTinh = N'" + txtTenHV.Text + "',MaLop = N'" + txtMaLop.Text + "',CapBac = N'" + txtCapBac.Text + "',ChucVu = N'" + txtChucVu.Text + "' "
+                    " Set TenHocVien = N'" + txtTenHV.Text + "', GioiTinh = N'" + txtGT.Text + "',MaLop = N'" + txtMaLop.Text + "',CapBac = N'" + txtCapBac.Text + "',ChucVu = N'" + txtChucVu.Text + "' "
                    + " where MaHocVien = N'" + txtMaHV.Text + "'";
                 connect(query);
                 MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                usr_SuaHocVien_Load(sender, e);
             }
             catch
             {
