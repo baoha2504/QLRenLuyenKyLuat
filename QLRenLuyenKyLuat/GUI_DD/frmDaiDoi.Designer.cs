@@ -357,7 +357,6 @@
             this.accordionControlElement34.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DanhGiaHV,
             this.SuaDanhGiaHV});
-            this.accordionControlElement34.Expanded = true;
             this.accordionControlElement34.Name = "accordionControlElement34";
             this.accordionControlElement34.Text = "Đánh giá";
             // 

@@ -65,8 +65,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 i++;
             }
 
-            txtNguoiThayDoi.Text = s5;
-            txtThoiGianThayDoi.Text = s6;
+            txtThoiGianThayDoi.Text = s5;
+            txtNguoiThayDoi.Text = s6;
 
             txtTC1.Text = s1[0];
             txtMuc1_1.Text = s2[0];

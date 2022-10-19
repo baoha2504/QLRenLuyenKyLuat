@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnXem = new Guna.UI2.WinForms.Guna2Button();
+            this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc3_3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc3_2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc3_1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc2_3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc2_2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc2_1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc1_3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc1_2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMuc1_1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtThoiGianThayDoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNguoiThayDoi = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,18 +55,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTC1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMuc1_1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc1_2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc1_3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc2_3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc2_2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc2_1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc3_3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc3_2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMuc3_1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnXem = new Guna.UI2.WinForms.Guna2Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +92,266 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1389, 761);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(90, 237);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 19);
+            this.label10.TabIndex = 102;
+            this.label10.Text = "Thời Gian";
+            // 
+            // btnXem
+            // 
+            this.btnXem.CheckedState.Parent = this.btnXem;
+            this.btnXem.CustomImages.Parent = this.btnXem;
+            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.HoverState.Parent = this.btnXem;
+            this.btnXem.Location = new System.Drawing.Point(81, 317);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.ShadowDecoration.Parent = this.btnXem;
+            this.btnXem.Size = new System.Drawing.Size(109, 36);
+            this.btnXem.TabIndex = 101;
+            this.btnXem.Text = "Xem";
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            // 
+            // cbbMuc
+            // 
+            this.cbbMuc.BackColor = System.Drawing.Color.Transparent;
+            this.cbbMuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbMuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMuc.FocusedColor = System.Drawing.Color.Empty;
+            this.cbbMuc.FocusedState.Parent = this.cbbMuc;
+            this.cbbMuc.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbMuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbMuc.FormattingEnabled = true;
+            this.cbbMuc.HoverState.Parent = this.cbbMuc;
+            this.cbbMuc.ItemHeight = 30;
+            this.cbbMuc.ItemsAppearance.Parent = this.cbbMuc;
+            this.cbbMuc.Location = new System.Drawing.Point(34, 267);
+            this.cbbMuc.Name = "cbbMuc";
+            this.cbbMuc.ShadowDecoration.Parent = this.cbbMuc;
+            this.cbbMuc.Size = new System.Drawing.Size(205, 36);
+            this.cbbMuc.TabIndex = 100;
+            // 
+            // txtMuc3_3
+            // 
+            this.txtMuc3_3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc3_3.DefaultText = "";
+            this.txtMuc3_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc3_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc3_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_3.DisabledState.Parent = this.txtMuc3_3;
+            this.txtMuc3_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_3.FocusedState.Parent = this.txtMuc3_3;
+            this.txtMuc3_3.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc3_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_3.HoverState.Parent = this.txtMuc3_3;
+            this.txtMuc3_3.Location = new System.Drawing.Point(1250, 445);
+            this.txtMuc3_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc3_3.Name = "txtMuc3_3";
+            this.txtMuc3_3.PasswordChar = '\0';
+            this.txtMuc3_3.PlaceholderText = "";
+            this.txtMuc3_3.SelectedText = "";
+            this.txtMuc3_3.ShadowDecoration.Parent = this.txtMuc3_3;
+            this.txtMuc3_3.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc3_3.TabIndex = 99;
+            // 
+            // txtMuc3_2
+            // 
+            this.txtMuc3_2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc3_2.DefaultText = "";
+            this.txtMuc3_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc3_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc3_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_2.DisabledState.Parent = this.txtMuc3_2;
+            this.txtMuc3_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_2.FocusedState.Parent = this.txtMuc3_2;
+            this.txtMuc3_2.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc3_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_2.HoverState.Parent = this.txtMuc3_2;
+            this.txtMuc3_2.Location = new System.Drawing.Point(1115, 445);
+            this.txtMuc3_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc3_2.Name = "txtMuc3_2";
+            this.txtMuc3_2.PasswordChar = '\0';
+            this.txtMuc3_2.PlaceholderText = "";
+            this.txtMuc3_2.SelectedText = "";
+            this.txtMuc3_2.ShadowDecoration.Parent = this.txtMuc3_2;
+            this.txtMuc3_2.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc3_2.TabIndex = 98;
+            // 
+            // txtMuc3_1
+            // 
+            this.txtMuc3_1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc3_1.DefaultText = "";
+            this.txtMuc3_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc3_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc3_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_1.DisabledState.Parent = this.txtMuc3_1;
+            this.txtMuc3_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc3_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_1.FocusedState.Parent = this.txtMuc3_1;
+            this.txtMuc3_1.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc3_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc3_1.HoverState.Parent = this.txtMuc3_1;
+            this.txtMuc3_1.Location = new System.Drawing.Point(974, 445);
+            this.txtMuc3_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc3_1.Name = "txtMuc3_1";
+            this.txtMuc3_1.PasswordChar = '\0';
+            this.txtMuc3_1.PlaceholderText = "";
+            this.txtMuc3_1.SelectedText = "";
+            this.txtMuc3_1.ShadowDecoration.Parent = this.txtMuc3_1;
+            this.txtMuc3_1.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc3_1.TabIndex = 97;
+            // 
+            // txtMuc2_3
+            // 
+            this.txtMuc2_3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc2_3.DefaultText = "";
+            this.txtMuc2_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc2_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc2_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_3.DisabledState.Parent = this.txtMuc2_3;
+            this.txtMuc2_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_3.FocusedState.Parent = this.txtMuc2_3;
+            this.txtMuc2_3.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc2_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_3.HoverState.Parent = this.txtMuc2_3;
+            this.txtMuc2_3.Location = new System.Drawing.Point(1250, 334);
+            this.txtMuc2_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc2_3.Name = "txtMuc2_3";
+            this.txtMuc2_3.PasswordChar = '\0';
+            this.txtMuc2_3.PlaceholderText = "";
+            this.txtMuc2_3.SelectedText = "";
+            this.txtMuc2_3.ShadowDecoration.Parent = this.txtMuc2_3;
+            this.txtMuc2_3.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc2_3.TabIndex = 96;
+            // 
+            // txtMuc2_2
+            // 
+            this.txtMuc2_2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc2_2.DefaultText = "";
+            this.txtMuc2_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc2_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc2_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_2.DisabledState.Parent = this.txtMuc2_2;
+            this.txtMuc2_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_2.FocusedState.Parent = this.txtMuc2_2;
+            this.txtMuc2_2.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc2_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_2.HoverState.Parent = this.txtMuc2_2;
+            this.txtMuc2_2.Location = new System.Drawing.Point(1115, 334);
+            this.txtMuc2_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc2_2.Name = "txtMuc2_2";
+            this.txtMuc2_2.PasswordChar = '\0';
+            this.txtMuc2_2.PlaceholderText = "";
+            this.txtMuc2_2.SelectedText = "";
+            this.txtMuc2_2.ShadowDecoration.Parent = this.txtMuc2_2;
+            this.txtMuc2_2.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc2_2.TabIndex = 95;
+            // 
+            // txtMuc2_1
+            // 
+            this.txtMuc2_1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc2_1.DefaultText = "";
+            this.txtMuc2_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc2_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc2_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_1.DisabledState.Parent = this.txtMuc2_1;
+            this.txtMuc2_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc2_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_1.FocusedState.Parent = this.txtMuc2_1;
+            this.txtMuc2_1.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc2_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc2_1.HoverState.Parent = this.txtMuc2_1;
+            this.txtMuc2_1.Location = new System.Drawing.Point(974, 334);
+            this.txtMuc2_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc2_1.Name = "txtMuc2_1";
+            this.txtMuc2_1.PasswordChar = '\0';
+            this.txtMuc2_1.PlaceholderText = "";
+            this.txtMuc2_1.SelectedText = "";
+            this.txtMuc2_1.ShadowDecoration.Parent = this.txtMuc2_1;
+            this.txtMuc2_1.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc2_1.TabIndex = 94;
+            // 
+            // txtMuc1_3
+            // 
+            this.txtMuc1_3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc1_3.DefaultText = "";
+            this.txtMuc1_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc1_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc1_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_3.DisabledState.Parent = this.txtMuc1_3;
+            this.txtMuc1_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_3.FocusedState.Parent = this.txtMuc1_3;
+            this.txtMuc1_3.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc1_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_3.HoverState.Parent = this.txtMuc1_3;
+            this.txtMuc1_3.Location = new System.Drawing.Point(1250, 237);
+            this.txtMuc1_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc1_3.Name = "txtMuc1_3";
+            this.txtMuc1_3.PasswordChar = '\0';
+            this.txtMuc1_3.PlaceholderText = "";
+            this.txtMuc1_3.SelectedText = "";
+            this.txtMuc1_3.ShadowDecoration.Parent = this.txtMuc1_3;
+            this.txtMuc1_3.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc1_3.TabIndex = 93;
+            // 
+            // txtMuc1_2
+            // 
+            this.txtMuc1_2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc1_2.DefaultText = "";
+            this.txtMuc1_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc1_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc1_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_2.DisabledState.Parent = this.txtMuc1_2;
+            this.txtMuc1_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_2.FocusedState.Parent = this.txtMuc1_2;
+            this.txtMuc1_2.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc1_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_2.HoverState.Parent = this.txtMuc1_2;
+            this.txtMuc1_2.Location = new System.Drawing.Point(1115, 237);
+            this.txtMuc1_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc1_2.Name = "txtMuc1_2";
+            this.txtMuc1_2.PasswordChar = '\0';
+            this.txtMuc1_2.PlaceholderText = "";
+            this.txtMuc1_2.SelectedText = "";
+            this.txtMuc1_2.ShadowDecoration.Parent = this.txtMuc1_2;
+            this.txtMuc1_2.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc1_2.TabIndex = 92;
+            // 
+            // txtMuc1_1
+            // 
+            this.txtMuc1_1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMuc1_1.DefaultText = "";
+            this.txtMuc1_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMuc1_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMuc1_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_1.DisabledState.Parent = this.txtMuc1_1;
+            this.txtMuc1_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMuc1_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_1.FocusedState.Parent = this.txtMuc1_1;
+            this.txtMuc1_1.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc1_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMuc1_1.HoverState.Parent = this.txtMuc1_1;
+            this.txtMuc1_1.Location = new System.Drawing.Point(974, 237);
+            this.txtMuc1_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMuc1_1.Name = "txtMuc1_1";
+            this.txtMuc1_1.PasswordChar = '\0';
+            this.txtMuc1_1.PlaceholderText = "";
+            this.txtMuc1_1.SelectedText = "";
+            this.txtMuc1_1.ShadowDecoration.Parent = this.txtMuc1_1;
+            this.txtMuc1_1.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc1_1.TabIndex = 91;
             // 
             // txtThoiGianThayDoi
             // 
@@ -302,266 +562,6 @@
             this.label2.Size = new System.Drawing.Size(88, 19);
             this.label2.TabIndex = 68;
             this.label2.Text = "Tiêu chí 1:";
-            // 
-            // txtMuc1_1
-            // 
-            this.txtMuc1_1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc1_1.DefaultText = "";
-            this.txtMuc1_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc1_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc1_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_1.DisabledState.Parent = this.txtMuc1_1;
-            this.txtMuc1_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_1.FocusedState.Parent = this.txtMuc1_1;
-            this.txtMuc1_1.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc1_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_1.HoverState.Parent = this.txtMuc1_1;
-            this.txtMuc1_1.Location = new System.Drawing.Point(974, 237);
-            this.txtMuc1_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc1_1.Name = "txtMuc1_1";
-            this.txtMuc1_1.PasswordChar = '\0';
-            this.txtMuc1_1.PlaceholderText = "";
-            this.txtMuc1_1.SelectedText = "";
-            this.txtMuc1_1.ShadowDecoration.Parent = this.txtMuc1_1;
-            this.txtMuc1_1.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc1_1.TabIndex = 91;
-            // 
-            // txtMuc1_2
-            // 
-            this.txtMuc1_2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc1_2.DefaultText = "";
-            this.txtMuc1_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc1_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc1_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_2.DisabledState.Parent = this.txtMuc1_2;
-            this.txtMuc1_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_2.FocusedState.Parent = this.txtMuc1_2;
-            this.txtMuc1_2.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc1_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_2.HoverState.Parent = this.txtMuc1_2;
-            this.txtMuc1_2.Location = new System.Drawing.Point(1115, 237);
-            this.txtMuc1_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc1_2.Name = "txtMuc1_2";
-            this.txtMuc1_2.PasswordChar = '\0';
-            this.txtMuc1_2.PlaceholderText = "";
-            this.txtMuc1_2.SelectedText = "";
-            this.txtMuc1_2.ShadowDecoration.Parent = this.txtMuc1_2;
-            this.txtMuc1_2.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc1_2.TabIndex = 92;
-            // 
-            // txtMuc1_3
-            // 
-            this.txtMuc1_3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc1_3.DefaultText = "";
-            this.txtMuc1_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc1_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc1_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_3.DisabledState.Parent = this.txtMuc1_3;
-            this.txtMuc1_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc1_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_3.FocusedState.Parent = this.txtMuc1_3;
-            this.txtMuc1_3.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc1_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc1_3.HoverState.Parent = this.txtMuc1_3;
-            this.txtMuc1_3.Location = new System.Drawing.Point(1250, 237);
-            this.txtMuc1_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc1_3.Name = "txtMuc1_3";
-            this.txtMuc1_3.PasswordChar = '\0';
-            this.txtMuc1_3.PlaceholderText = "";
-            this.txtMuc1_3.SelectedText = "";
-            this.txtMuc1_3.ShadowDecoration.Parent = this.txtMuc1_3;
-            this.txtMuc1_3.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc1_3.TabIndex = 93;
-            // 
-            // txtMuc2_3
-            // 
-            this.txtMuc2_3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc2_3.DefaultText = "";
-            this.txtMuc2_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc2_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc2_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_3.DisabledState.Parent = this.txtMuc2_3;
-            this.txtMuc2_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_3.FocusedState.Parent = this.txtMuc2_3;
-            this.txtMuc2_3.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc2_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_3.HoverState.Parent = this.txtMuc2_3;
-            this.txtMuc2_3.Location = new System.Drawing.Point(1250, 334);
-            this.txtMuc2_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc2_3.Name = "txtMuc2_3";
-            this.txtMuc2_3.PasswordChar = '\0';
-            this.txtMuc2_3.PlaceholderText = "";
-            this.txtMuc2_3.SelectedText = "";
-            this.txtMuc2_3.ShadowDecoration.Parent = this.txtMuc2_3;
-            this.txtMuc2_3.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc2_3.TabIndex = 96;
-            // 
-            // txtMuc2_2
-            // 
-            this.txtMuc2_2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc2_2.DefaultText = "";
-            this.txtMuc2_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc2_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc2_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_2.DisabledState.Parent = this.txtMuc2_2;
-            this.txtMuc2_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_2.FocusedState.Parent = this.txtMuc2_2;
-            this.txtMuc2_2.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc2_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_2.HoverState.Parent = this.txtMuc2_2;
-            this.txtMuc2_2.Location = new System.Drawing.Point(1115, 334);
-            this.txtMuc2_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc2_2.Name = "txtMuc2_2";
-            this.txtMuc2_2.PasswordChar = '\0';
-            this.txtMuc2_2.PlaceholderText = "";
-            this.txtMuc2_2.SelectedText = "";
-            this.txtMuc2_2.ShadowDecoration.Parent = this.txtMuc2_2;
-            this.txtMuc2_2.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc2_2.TabIndex = 95;
-            // 
-            // txtMuc2_1
-            // 
-            this.txtMuc2_1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc2_1.DefaultText = "";
-            this.txtMuc2_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc2_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc2_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_1.DisabledState.Parent = this.txtMuc2_1;
-            this.txtMuc2_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc2_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_1.FocusedState.Parent = this.txtMuc2_1;
-            this.txtMuc2_1.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc2_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc2_1.HoverState.Parent = this.txtMuc2_1;
-            this.txtMuc2_1.Location = new System.Drawing.Point(974, 334);
-            this.txtMuc2_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc2_1.Name = "txtMuc2_1";
-            this.txtMuc2_1.PasswordChar = '\0';
-            this.txtMuc2_1.PlaceholderText = "";
-            this.txtMuc2_1.SelectedText = "";
-            this.txtMuc2_1.ShadowDecoration.Parent = this.txtMuc2_1;
-            this.txtMuc2_1.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc2_1.TabIndex = 94;
-            // 
-            // txtMuc3_3
-            // 
-            this.txtMuc3_3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc3_3.DefaultText = "";
-            this.txtMuc3_3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc3_3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc3_3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_3.DisabledState.Parent = this.txtMuc3_3;
-            this.txtMuc3_3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_3.FocusedState.Parent = this.txtMuc3_3;
-            this.txtMuc3_3.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc3_3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_3.HoverState.Parent = this.txtMuc3_3;
-            this.txtMuc3_3.Location = new System.Drawing.Point(1250, 445);
-            this.txtMuc3_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc3_3.Name = "txtMuc3_3";
-            this.txtMuc3_3.PasswordChar = '\0';
-            this.txtMuc3_3.PlaceholderText = "";
-            this.txtMuc3_3.SelectedText = "";
-            this.txtMuc3_3.ShadowDecoration.Parent = this.txtMuc3_3;
-            this.txtMuc3_3.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc3_3.TabIndex = 99;
-            // 
-            // txtMuc3_2
-            // 
-            this.txtMuc3_2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc3_2.DefaultText = "";
-            this.txtMuc3_2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc3_2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc3_2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_2.DisabledState.Parent = this.txtMuc3_2;
-            this.txtMuc3_2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_2.FocusedState.Parent = this.txtMuc3_2;
-            this.txtMuc3_2.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc3_2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_2.HoverState.Parent = this.txtMuc3_2;
-            this.txtMuc3_2.Location = new System.Drawing.Point(1115, 445);
-            this.txtMuc3_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc3_2.Name = "txtMuc3_2";
-            this.txtMuc3_2.PasswordChar = '\0';
-            this.txtMuc3_2.PlaceholderText = "";
-            this.txtMuc3_2.SelectedText = "";
-            this.txtMuc3_2.ShadowDecoration.Parent = this.txtMuc3_2;
-            this.txtMuc3_2.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc3_2.TabIndex = 98;
-            // 
-            // txtMuc3_1
-            // 
-            this.txtMuc3_1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMuc3_1.DefaultText = "";
-            this.txtMuc3_1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMuc3_1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMuc3_1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_1.DisabledState.Parent = this.txtMuc3_1;
-            this.txtMuc3_1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMuc3_1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_1.FocusedState.Parent = this.txtMuc3_1;
-            this.txtMuc3_1.ForeColor = System.Drawing.Color.Black;
-            this.txtMuc3_1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMuc3_1.HoverState.Parent = this.txtMuc3_1;
-            this.txtMuc3_1.Location = new System.Drawing.Point(974, 445);
-            this.txtMuc3_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMuc3_1.Name = "txtMuc3_1";
-            this.txtMuc3_1.PasswordChar = '\0';
-            this.txtMuc3_1.PlaceholderText = "";
-            this.txtMuc3_1.SelectedText = "";
-            this.txtMuc3_1.ShadowDecoration.Parent = this.txtMuc3_1;
-            this.txtMuc3_1.Size = new System.Drawing.Size(111, 36);
-            this.txtMuc3_1.TabIndex = 97;
-            // 
-            // cbbMuc
-            // 
-            this.cbbMuc.BackColor = System.Drawing.Color.Transparent;
-            this.cbbMuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbMuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbMuc.FocusedColor = System.Drawing.Color.Empty;
-            this.cbbMuc.FocusedState.Parent = this.cbbMuc;
-            this.cbbMuc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbMuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbMuc.FormattingEnabled = true;
-            this.cbbMuc.HoverState.Parent = this.cbbMuc;
-            this.cbbMuc.ItemHeight = 30;
-            this.cbbMuc.ItemsAppearance.Parent = this.cbbMuc;
-            this.cbbMuc.Location = new System.Drawing.Point(34, 267);
-            this.cbbMuc.Name = "cbbMuc";
-            this.cbbMuc.ShadowDecoration.Parent = this.cbbMuc;
-            this.cbbMuc.Size = new System.Drawing.Size(205, 36);
-            this.cbbMuc.TabIndex = 100;
-            // 
-            // btnXem
-            // 
-            this.btnXem.CheckedState.Parent = this.btnXem;
-            this.btnXem.CustomImages.Parent = this.btnXem;
-            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXem.ForeColor = System.Drawing.Color.White;
-            this.btnXem.HoverState.Parent = this.btnXem;
-            this.btnXem.Location = new System.Drawing.Point(81, 317);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.ShadowDecoration.Parent = this.btnXem;
-            this.btnXem.Size = new System.Drawing.Size(109, 36);
-            this.btnXem.TabIndex = 101;
-            this.btnXem.Text = "Xem";
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(90, 237);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 19);
-            this.label10.TabIndex = 102;
-            this.label10.Text = "Tiêu chí 1:";
             // 
             // usr_QCKyLuat
             // 
