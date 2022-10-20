@@ -88,6 +88,12 @@
     <Compile Include="GUI_DD\usr_HDSD_KL.Designer.cs">
       <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_QL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_QL.Designer.cs">
+      <DependentUpon>usr_HDSD_QL.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DD\usr_HDSD_TL.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     <EmbeddedResource Include="GUI_DD\usr_HDSD_KL.resx">
       <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_QL.resx">
+      <DependentUpon>usr_HDSD_QL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_HDSD_TL.resx">
       <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
     </EmbeddedResource>
@@ -380,6 +389,9 @@
     <None Include="Resources\longdate.svg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HDSD_KyLuat.txt" />
+    <Content Include="HDSD_QuanLy.txt" />
+    <Content Include="HDSD_TheLuc.txt" />
     <Content Include="Resources\logohv.jpg" />
     <Content Include="Resources\z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786.jpg" />
   </ItemGroup>
