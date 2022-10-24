@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace QLRenLuyenKyLuat.GUI_DD
         public usr_HDSD_TL()
         {
             InitializeComponent();
+        }
+
+        private void usr_HDSD_TL_Load(object sender, EventArgs e)
+        {
+            string a = File.ReadAllText("D:\\QLRenLuyenKyLuat\\QLRenLuyenKyLuat\\HDSD_TheLuc.txt");
+            txtNoiDung.Text = a;
         }
     }
 }

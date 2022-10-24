@@ -1,0 +1,27 @@
+
+CHỨC NĂNG QUẢN LÝ KỶ LUẬT
+
+I. Giới thiệu chung
+	Đây là  1 trong 2 chức năng chính của chương trình, hỗ trợ chỉ huy đại đội duy trì, quản lý chắc và thuận tiện trong việc nắm tình hình kỷ luật của đơn vị.
+	Chức năng được sử dụng với 3 đối tượng là chỉ huy đơn vị, lớp, học viên.
+	Thay thế cho việc dùng sổ sách đề nghị, kết luận nhiều bước, hạn chế việc sai sót.
+
+II. Chức năng và cách sử dụng
+1. Chức năng rèn luyện kỷ luật
+a. Học viên
+	-Đánh giá theo từng tháng đề nghị lên lớp
+	-Có thể xem lại kết quả đánh giá của mình và sửa lại nếu lớp chưa kết luận
+	-Có thể kiểm tra lại kết quả rèn luyện của mình khi được kết luận ở cấp lớp hoạc cấp đại đội
+b. Lớp
+	-Sau khi sinh hoạt lớp đánh giá kết quả đề nghị của học viên thì lớp trưởng hoặc lớp phó có nhiệm vụ nhập kết quả kết luận sau khi sinh hoạt lớp lên hệ thống
+	-Kết quả được nộp lên Đại đội để xem xét và kết luận
+	-Lớp có thể xem được kết quả sau khi kết luận hoặc đề nghị của học viên lớp mình
+c. Đại đội
+	-Là nơi kết luận kết của đề nghị của các lớp
+	-Dựa trên đề nghị của các lớp, chỉ huy đơn vị xem xét, đánh giá trên cơ sở đề nghị rồi nhập vào hệ thống
+2. Chức năng quy chuẩn kỷ luật
+	-Toàn bộ học viên và lớp có thể xem lại quy chuẩn để đánh giá, tự nhận xét bản thân
+	-Chỉ huy Đại đội có thể sửa quy chuẩn đánh giá khi có thay đổi quy chuẩn của cấp trên
+	-Khi thay đổi quy chuẩn kỷ luật, kết quả kết luận của học viên ở thời gian trước không thay đổi
+	-Kết quả rèn luyện kỷ luật của học viên đánh giá sau thời gian thay đổi quy chuẩn sẽ đánh giá theo quy chuẩn mới
+	-Sự thay đổi quy chuẩn kỷ luật được sẽ được hệ thống lưu lại tên, thời gian thay đổi

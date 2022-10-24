@@ -40,6 +40,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         usr_ThayDoiQCTL usr_ThayDoiQCTL;
         usr_HDSD_KL usr_HDSD_KL;
         usr_HDSD_TL usr_HDSD_TL;
+        usr_HDSD_QL usr_HDSD_QL;
         usr_ThayDoiMatKhau usr_ThayDoiMatKhau;
         usr_TrangChu usr_TrangChu;
         usr_ThongBao usr_ThongBao;
@@ -476,5 +477,20 @@ namespace QLRenLuyenKyLuat.GUI_DD
             lblTieuDe.Caption = "Thông báo";
         }
 
+        private void QuanLy_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_QL == null)
+            {
+                usr_HDSD_QL usr_HDSD_QL = new usr_HDSD_QL();
+                usr_HDSD_QL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_QL);
+                usr_HDSD_QL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_QL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý đơn vị";
+        }
     }
 }

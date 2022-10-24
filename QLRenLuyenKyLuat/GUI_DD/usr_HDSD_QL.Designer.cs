@@ -1,6 +1,6 @@
 ﻿namespace QLRenLuyenKyLuat.GUI_DD
 {
-    partial class usr_HDSD_TL
+    partial class usr_HDSD_QL
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,20 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.txtNoiDung);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1245, 747);
-            this.guna2Panel1.TabIndex = 0;
             // 
             // txtNoiDung
             // 
@@ -65,27 +53,26 @@
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
             this.txtNoiDung.PlaceholderText = "";
+            this.txtNoiDung.ReadOnly = true;
             this.txtNoiDung.SelectedText = "";
             this.txtNoiDung.ShadowDecoration.Parent = this.txtNoiDung;
-            this.txtNoiDung.Size = new System.Drawing.Size(1245, 747);
-            this.txtNoiDung.TabIndex = 0;
+            this.txtNoiDung.Size = new System.Drawing.Size(1246, 729);
+            this.txtNoiDung.TabIndex = 1;
             // 
-            // usr_HDSD_TL
+            // usr_HDSD_QL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2Panel1);
-            this.Name = "usr_HDSD_TL";
-            this.Size = new System.Drawing.Size(1245, 747);
-            this.Load += new System.EventHandler(this.usr_HDSD_TL_Load);
-            this.guna2Panel1.ResumeLayout(false);
+            this.Controls.Add(this.txtNoiDung);
+            this.Name = "usr_HDSD_QL";
+            this.Size = new System.Drawing.Size(1246, 729);
+            this.Load += new System.EventHandler(this.usr_HDSD_QL_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtNoiDung;
     }
 }

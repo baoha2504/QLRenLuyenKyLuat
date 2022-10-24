@@ -46,6 +46,7 @@
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_KL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_TL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.QuanLy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QCKL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QCTL = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -91,10 +92,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(344, 39);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(5);
+            this.mainContainer.Location = new System.Drawing.Point(339, 39);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(1088, 704);
+            this.mainContainer.Size = new System.Drawing.Size(1093, 704);
             this.mainContainer.TabIndex = 0;
             // 
             // fluentDesignFormControl1
@@ -224,7 +225,8 @@
             // 
             this.accordionControlElement7.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.HDSD_KL,
-            this.HDSD_TL});
+            this.HDSD_TL,
+            this.QuanLy});
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "Hướng dẫn sử dụng";
             // 
@@ -244,6 +246,14 @@
             this.HDSD_TL.Text = "Chức năng quản lý thể lực";
             this.HDSD_TL.Click += new System.EventHandler(this.HDSD_TL_Click);
             // 
+            // QuanLy
+            // 
+            this.QuanLy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("QuanLy.ImageOptions.Image")));
+            this.QuanLy.Name = "QuanLy";
+            this.QuanLy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.QuanLy.Text = "Chức năng quản lý";
+            this.QuanLy.Click += new System.EventHandler(this.QuanLy_Click);
+            // 
             // accordionControlElement6
             // 
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -251,7 +261,6 @@
             this.QCTL,
             this.ThayDoiQCKL,
             this.ThayDoiQCTL});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Quy chuẩn";
             // 
@@ -292,6 +301,7 @@
             this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement20,
             this.accordionControlElement21});
+            this.accordionControlElement5.Expanded = true;
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "Rèn luyện thể lực";
             // 
@@ -300,6 +310,7 @@
             this.accordionControlElement20.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.NhapKQTL,
             this.SuaKQTL});
+            this.accordionControlElement20.Expanded = true;
             this.accordionControlElement20.Name = "accordionControlElement20";
             this.accordionControlElement20.Text = "Nhập kết quả kiểm tra";
             // 
@@ -324,6 +335,7 @@
             this.accordionControlElement21.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.KQTLQuy,
             this.KQTLNam});
+            this.accordionControlElement21.Expanded = true;
             this.accordionControlElement21.Name = "accordionControlElement21";
             this.accordionControlElement21.Text = "Xem kết quả kiểm tra";
             // 
@@ -349,6 +361,7 @@
             this.accordionControlElement34,
             this.accordionControlElement35,
             this.accordionControlElement36});
+            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Rèn luyện kỷ luật";
             // 
@@ -552,10 +565,10 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(344, 704);
+            this.accordionControl1.Size = new System.Drawing.Size(339, 704);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -635,5 +648,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ThayDoiMatKhau;
         private DevExpress.XtraBars.Navigation.AccordionControlElement DangXuat;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement QuanLy;
     }
 }
