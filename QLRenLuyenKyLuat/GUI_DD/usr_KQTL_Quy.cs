@@ -79,13 +79,14 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             TinhQuy(DateTime.Now);
             HienComboBox();
-            query = "select HOCVIEN.TenHocVien, HOCVIEN.GioiTinh, NhayXa , Boi, ChayDai, ChayNgan, ChongDay, Xa " +
-                "from KETQUATHELUC, HOCVIEN_PLTL, HOCVIEN " +
+            query = "select HOCVIEN.TenHocVien, HOCVIEN.GioiTinh, NhayXa , Boi, ChayDai, ChayNgan, ChongDay, Xa, TenPLTL " +
+                "from KETQUATHELUC, HOCVIEN_PLTL, HOCVIEN, PHANLOAITHELUC " +
                 "where KETQUATHELUC.MaKQTL = HOCVIEN_PLTL.MaKQTL " +
+                "and PHANLOAITHELUC.MaPLTL = KETQUATHELUC.MaPLTL " +
                 "and HOCVIEN.MaHocVien = HOCVIEN_PLTL.MaHocVien " +
-                "and YEAR(HOCVIEN_PLTL.ThoiGian) = " + nam +" " +
-                "and (Month(HOCVIEN_PLTL.ThoiGian) = " + thang +" " +
-                "or Month(HOCVIEN_PLTL.ThoiGian) = " + thangConLai1 +" " +
+                "and YEAR(HOCVIEN_PLTL.ThoiGian) = " + nam + " " +
+                "and (Month(HOCVIEN_PLTL.ThoiGian) = " + thang + " " +
+                "or Month(HOCVIEN_PLTL.ThoiGian) = " + thangConLai1 + " " +
                 "or Month(HOCVIEN_PLTL.ThoiGian) = " + thangConLai2 + ")";
             connect(query);
         }
@@ -99,9 +100,10 @@ namespace QLRenLuyenKyLuat.GUI_DD
             {
                 TinhQuy(DateTime.Now);
             }
-            query = "select HOCVIEN.TenHocVien, HOCVIEN.GioiTinh, NhayXa , Boi, ChayDai, ChayNgan, ChongDay, Xa " +
-                "from KETQUATHELUC, HOCVIEN_PLTL, HOCVIEN " +
+            query = "select HOCVIEN.TenHocVien, HOCVIEN.GioiTinh, NhayXa , Boi, ChayDai, ChayNgan, ChongDay, Xa, TenPLTL " +
+                "from KETQUATHELUC, HOCVIEN_PLTL, HOCVIEN, PHANLOAITHELUC " +
                 "where KETQUATHELUC.MaKQTL = HOCVIEN_PLTL.MaKQTL " +
+                "and PHANLOAITHELUC.MaPLTL = KETQUATHELUC.MaPLTL " +
                 "and HOCVIEN.MaHocVien = HOCVIEN_PLTL.MaHocVien " +
                 "and YEAR(HOCVIEN_PLTL.ThoiGian) = " + nam + " " +
                 "and (Month(HOCVIEN_PLTL.ThoiGian) = " + thang + " " +
@@ -137,6 +139,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
             {
                 txtKeoXa_ChongDay.Text = dtgv.SelectedRows[0].Cells[7].Value.ToString();
             }
+            
+            txtKetQua.Text = dtgv.SelectedRows[0].Cells[8].Value.ToString();
 
         }
     }

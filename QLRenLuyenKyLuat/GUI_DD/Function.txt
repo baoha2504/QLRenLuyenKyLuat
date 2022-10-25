@@ -1,0 +1,88 @@
+/****** Object:  UserDefinedFunction [dbo].[auto_maHV]    Script Date: 25/10/2022 10:05:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE function [dbo].[auto_maHV]()
+RETURNS CHAR(8)
+AS
+BEGIN
+   	DECLARE @ID CHAR(8)
+   	SELECT @ID = count(MaHocVien) from HOCVIEN
+   	IF @ID = 0
+          	SET @ID = '0'
+   	ELSE
+          	SELECT @ID = CASE
+                  	WHEN @ID >= 0 and @ID < 9 THEN 'HV00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 10 and @ID < 99 THEN 'HV0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 100  THEN 'HV' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+          	END
+   	RETURN @ID
+END
+GO
+/****** Object:  UserDefinedFunction [dbo].[auto_maQC]    Script Date: 25/10/2022 10:05:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE function [dbo].[auto_maQC]()
+RETURNS CHAR(8)
+AS
+BEGIN
+   	DECLARE @ID CHAR(8)
+   	SELECT @ID = count(MaQLQC) from QUYCHUAN
+   	IF @ID = 0
+          	SET @ID = '0'
+   	ELSE
+          	SELECT @ID = CASE
+                  	WHEN @ID >= 0 and @ID < 9 THEN 'QLQC00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 10 and @ID < 99 THEN 'QLQC0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 100  THEN 'QLQC' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+          	END
+   	RETURN @ID
+END
+GO
+/****** Object:  UserDefinedFunction [dbo].[auto_maQCKL]    Script Date: 25/10/2022 10:05:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE function [dbo].[auto_maQCKL]()
+RETURNS CHAR(8)
+AS
+BEGIN
+   	DECLARE @ID CHAR(8)
+   	SELECT DISTINCT @ID = count(DISTINCT MaQC) from QUYCHUANKYLUAT
+   	IF @ID = 0
+          	SET @ID = '0'
+   	ELSE
+          	SELECT @ID = CASE
+                  	WHEN @ID >= 0 and @ID < 9 THEN 'QCKL00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 10 and @ID < 99 THEN 'QCKL0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 100  THEN 'QCKL' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+          	END
+   	RETURN @ID
+END
+GO
+/****** Object:  UserDefinedFunction [dbo].[auto_maQCTL]    Script Date: 25/10/2022 10:05:49 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create function [dbo].[auto_maQCTL]()
+RETURNS CHAR(8)
+AS
+BEGIN
+   	DECLARE @ID CHAR(8)
+   	SELECT DISTINCT @ID = count(DISTINCT MaQC) from QUYCHUANTHELUC
+   	IF @ID = 0
+          	SET @ID = '0'
+   	ELSE
+          	SELECT @ID = CASE
+                  	WHEN @ID >= 0 and @ID < 9 THEN 'QCTL00' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 10 and @ID < 99 THEN 'QCTL0' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+                  	WHEN @ID >= 100  THEN 'QCTL' + CONVERT(CHAR, CONVERT(INT, @ID) + 1)
+          	END
+   	RETURN @ID
+END
+GO

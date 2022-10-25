@@ -1,4 +1,5 @@
-﻿using QLRenLuyenKyLuat.Data;
+﻿using DevExpress.XtraEditors.Filtering.Templates;
+using QLRenLuyenKyLuat.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-        private string thoigiancuoi = "";
+        DateTime date;
         private void HienComboBox()
         {
             string constr = Data_Provider.connectionSTR;
@@ -33,8 +34,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
                 while (DR.Read())
                 {
-                    cbbMuc.Items.Add(DR[0]);
-                    thoigiancuoi = DR[0].ToString();
+                    date = DateTime.Parse(DR[0].ToString());
+                    cbbMuc.Items.Add(date.ToString("dd-MM-yyyy"));
                 }
                 DR.Close();
             }
@@ -92,7 +93,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             string query = "select NoiDung, Muc1, Muc2, Muc3, ThoiGian, HoTen " +
                 "from QUYCHUANKYLUAT, QUYCHUAN, QUANLY " +
                 "where QUYCHUAN.MaQLQC = QUYCHUANKYLUAT.MaQLQC and QUYCHUAN.NguoiSuaDoi = QUANLY.MaQL and " +
-                "QUYCHUAN.ThoiGian = '" + thoigiancuoi + "'";
+                "QUYCHUAN.ThoiGian = '" + date.ToString("yyyy-MM-dd") + "'";
             connect(query);
         }
 
