@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Calculator.cs" />
     <Compile Include="Data\Data_Provider.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -389,6 +390,7 @@
     <None Include="Resources\longdate.svg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI_DD\Function.txt" />
     <Content Include="HDSD_KyLuat.txt" />
     <Content Include="HDSD_QuanLy.txt" />
     <Content Include="HDSD_TheLuc.txt" />

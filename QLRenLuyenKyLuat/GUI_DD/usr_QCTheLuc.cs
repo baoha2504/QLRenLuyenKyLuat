@@ -12,9 +12,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             InitializeComponent();
         }
-        private string thoigiancuoi = "";
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-
+        DateTime date;
         private void HienComboBox()
         {
             string constr = Data_Provider.connectionSTR;
@@ -27,10 +26,12 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
                 while (DR.Read())
                 {
-                    cbbMuc.Items.Add(DR[0]);
-                    thoigiancuoi = DR[0].ToString();
+                    //cbbMuc.Items.Add(DR[0]);
+                    date = DateTime.Parse(DR[0].ToString());
+                    cbbMuc.Items.Add(date.ToString("dd-MM-yyyy"));
                 }
                 DR.Close();
+                conn.Close();
             }
         }
 
@@ -43,7 +44,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 "where QUYCHUAN.MaQLQC = QUYCHUANTHELUC.MaQLQC " +
                 "and QUYCHUAN.NguoiSuaDoi = QUANLY.MaQL " +
                 "and NoiDung LIKE N'%nam%' " +
-                "and QUYCHUAN.ThoiGian = '" + thoigiancuoi + "'";
+                "and QUYCHUAN.ThoiGian = '" + date.ToString("yyyy-MM-dd") + "'";
             connect(query);
         }
 
