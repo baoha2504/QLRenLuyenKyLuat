@@ -38,7 +38,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             {
                 sqlCon.Open();
                 String query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES('" + "'[dbo].auto_MaDiemPLKL('" + txtboxMaHV.Text + "'),'" +
-                    txtboxDiemKL.Text + "','" + txtBoxDiemHT.Text + "','" + txtBoxDiemLS.Text + "','" +
+                    int.Parse(txtboxDiemKL.Text) + "','" + int.Parse(txtBoxDiemHT.Text) + "','" + int.Parse(txtBoxDiemLS.Text) + "','" +
                     txtBox_NhanXet.Text + "','" + txtBoxNgDG.Text + "','" + "'L'" + "','" + txtBoxXepLoai.Text + "')";
                 SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                 sqlDa.ExecuteNonQuery();
