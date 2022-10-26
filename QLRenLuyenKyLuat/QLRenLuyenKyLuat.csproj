@@ -39,8 +39,11 @@
     <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\Downloads\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -239,11 +242,71 @@
     <Compile Include="GUI_HV\frmHocVien.Designer.cs">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.Designer.cs">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_LOP\frmLop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_LOP\frmLop.Designer.cs">
       <DependentUpon>frmLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_KL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_KL.Designer.cs">
+      <DependentUpon>HDSD_KL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_TL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_TL.Designer.cs">
+      <DependentUpon>HDSD_TL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Month.Designer.cs">
+      <DependentUpon>KQKL_Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Term.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Term.Designer.cs">
+      <DependentUpon>KQKL_Term.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Year.Designer.cs">
+      <DependentUpon>KQKL_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Year.Designer.cs">
+      <DependentUpon>KQTL_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\LOP_ThayMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\LOP_ThayMK.Designer.cs">
+      <DependentUpon>LOP_ThayMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\NhapRLKL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\NhapRLKL.Designer.cs">
+      <DependentUpon>NhapRLKL.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -337,9 +400,40 @@
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\DSHocvien.resx">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\HDSD_KL.resx">
+      <DependentUpon>HDSD_KL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\HDSD_TL.resx">
+      <DependentUpon>HDSD_TL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Month.resx">
+      <DependentUpon>KQKL_Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Term.resx">
+      <DependentUpon>KQKL_Term.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Year.resx">
+      <DependentUpon>KQKL_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQTL_Year.resx">
+      <DependentUpon>KQTL_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\LOP_ThayMK.resx">
+      <DependentUpon>LOP_ThayMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\NhapRLKL.resx">
+      <DependentUpon>NhapRLKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -350,6 +444,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

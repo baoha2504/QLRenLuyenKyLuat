@@ -9,7 +9,9 @@ namespace QLRenLuyenKyLuat.Data
 {
     class Data_Provider
     {
-        public static string connectionSTR = @"Data Source=DESKTOP-KMHEQI5\SQLEXPRESS;Initial Catalog=QuanLyRenLuyen;Integrated Security=True";
+
+        public static string connectionSTR = @"Data Source=LAPTOP-NMRADA9I\SQLEXPRESS;Initial Catalog=QuanLyRenLuyen;Integrated Security=True";
+
 
         public static DataTable GetDataTable(string query)
         {

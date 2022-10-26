@@ -97,6 +97,7 @@
             this.mainContainer.Name = "mainContainer";
             this.mainContainer.Size = new System.Drawing.Size(1093, 704);
             this.mainContainer.TabIndex = 0;
+          
             // 
             // fluentDesignFormControl1
             // 
