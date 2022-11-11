@@ -1,20 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLRenLuyenKyLuat.GUI_DD;
 using QLRenLuyenKyLuat.GUI_LOP;
 using QLRenLuyenKyLuat.GUI_HV;
-
+using System.Data.SqlClient;
+using QLRenLuyenKyLuat.Data;
+using System.Security.Cryptography;
+    using System.Text;
+    using System.Data;
 namespace QLRenLuyenKyLuat
 {
     public partial class frmLogin : Form
-    {
+    { 
+        SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        public static string position;
+        public static string name;
+        public static string lop;
+        public static string maHV;
+        DataTable dtbl;
         public frmLogin()
         {
             InitializeComponent();
@@ -39,6 +42,36 @@ namespace QLRenLuyenKyLuat
             frmHocVien frmHocVien = new frmHocVien();
             frmHocVien.Show();
             this.Hide();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            sqlCon.Close();
+            sqlCon.Open();
+           
+            string query = "Select * from HocVien hv, Lop lop where hv.MaLop = lop.MaLop and mahocvien= N'" + txtLoginMaHV.Text.Trim() + "'";
+            SqlDataAdapter da = new SqlDataAdapter(query, sqlCon);        
+            dtbl = new DataTable(); 
+            da.Fill(dtbl);
+            if (dtbl.Rows.Count == 1)
+            {
+                maHV = txtLoginMaHV.Text.Trim();
+                foreach (DataRow dr in dtbl.Rows)
+                {
+                    name = dr["TenHocvien"].ToString();
+                    position = dr["ChucVu"].ToString();
+                    lop = dr["MaLop"].ToString();
+                }
+                sqlCon.Close();
+                frmLop frm = new frmLop();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Check your Username and Password!");
+            }
+
         }
     }
 }

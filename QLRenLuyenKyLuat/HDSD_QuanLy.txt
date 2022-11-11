@@ -1,0 +1,26 @@
+
+CHỨC NĂNG QUẢN LÝ ĐƠN VỊ
+
+I. Giới thiệu chung
+	Đây là  1 trong 3 chức năng chính của chương trình, hỗ trợ chỉ huy đại đội duy trì, quản lý chắc và thuận tiện trong việc nắm tình hình thể lực của học viên trong đơn vị.
+	Chức năng được sử dụng với 3 đối tượng là chỉ huy đơn vị, lớp, học viên.
+	Thay thế cho việc dùng sổ sách đề nghị, phức tạp trong việc quản lý thể lực, hạn chế việc sai sót.
+
+II. Chức năng và cách sử dụng
+1. Chức năng quản lý đơn vị
+a. Học viên
+	Có thể đổi mật khẩu cá nhân của mình
+	Mỗi cá nhân trong đơn vị sẽ có duy nhất 1 tài khoản đăng nhập vào hệ thống
+b. Lớp
+	Có thể đổi mật khẩu riêng của lớp mình
+	Một lớp sẽ có từ 1-2 tài khoản đăng nhập
+c. Đại đội
+	Đại đội có thể có nhiều tài khoản đang nhập
+	Mỗi cán bộ Đại đội đều có 1 tài khoản riêng
+	Mỗi tài khoản đều có thể tưh đổi mật khẩu riêng của mình
+	Đại đội có thể thêm học viên và sửa thông tin học viên
+	Đại đội có thể thêm lớp và sửa thông tin lớp
+	Đại đội có thể lấy lại mật khẩu cho lớp hoặc cho học viên nếu quên mật khẩu của mình
+2. Chức năng quản lý quy chuẩn
+	Học viên và lớp có quyền xem quy chuẩn thể lực và quy chuẩn kỷ luật
+	Đại đội có quyền thay đổi các quy chuẩn đó nếu Học viện thay đổi quy định, thời gian và người thay đổi được lưu lại trong hệ thống 

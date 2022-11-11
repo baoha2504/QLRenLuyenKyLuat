@@ -1,0 +1,23 @@
+
+CHỨC NĂNG QUẢN LÝ THỂ LỰC
+
+I. Giới thiệu chung
+	Đây là  1 trong 2 chức năng chính của chương trình, hỗ trợ chỉ huy đại đội duy trì, quản lý chắc và thuận tiện trong việc nắm tình hình thể lực của học viên trong đơn vị.
+	Chức năng được sử dụng với 3 đối tượng là chỉ huy đơn vị, lớp, học viên.
+	Thay thế cho việc dùng sổ sách đề nghị, phức tạp trong việc quản lý thể lực, hạn chế việc sai sót.
+
+II. Chức năng và cách sử dụng
+1. Chức năng quản lý thể lực
+a. Học viên
+	-Xem kết quả thể lực của mình và đề nghị sửa lại nếu sai sót
+b. Lớp
+	-Xem kết quả thể lực của mình và đề nghị sửa lại nếu sai sót
+c. Đại đội
+	-Sau khi kiểm tra thể lực quý chỉ huy sẽ nhập kết quả vào hệ thống
+	-Hệ thống sẽ dựa vào quy chuẩn để kết luận tổng kết về thể lực của học viên trong quý
+2. Chức năng quy chuẩn thể lực
+	-Toàn bộ học viên và lớp có thể xem lại quy chuẩn để đánh giá rèn luyện
+	-Chỉ huy Đại đội có thể sửa quy chuẩn đánh giá khi có thay đổi quy chuẩn của cấp trên
+	-Khi thay đổi quy chuẩn thể lực, kết quả thể lực của học viên ở thời gian trước không thay đổi
+	-Kết quả rèn luyện thể lực của học viên đánh giá sau thời gian thay đổi quy chuẩn sẽ đánh giá theo quy chuẩn mới
+	-Sự thay đổi quy chuẩn thể lực được sẽ được hệ thống lưu lại tên, thời gian thay đổi

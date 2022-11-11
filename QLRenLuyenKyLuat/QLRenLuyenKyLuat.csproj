@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAB54683-7A57-4BFA-993B-893888DC2916}</ProjectGuid>
+    <ProjectGuid>{8DAF226C-DFE8-47A3-9B80-2C3C55D66636}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>QLRenLuyenKyLuat</RootNamespace>
     <AssemblyName>QLRenLuyenKyLuat</AssemblyName>
@@ -33,14 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\Downloads\TestFramework\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -57,7 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Calculator.cs" />
     <Compile Include="Data\Data_Provider.cs" />
+    <Compile Include="Data\Hash256.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="GUI_DD\usr_HDSD_KL.Designer.cs">
       <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_QL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\usr_HDSD_QL.Designer.cs">
+      <DependentUpon>usr_HDSD_QL.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_DD\usr_HDSD_TL.cs">
       <SubType>UserControl</SubType>
@@ -232,11 +244,113 @@
     <Compile Include="GUI_HV\frmHocVien.Designer.cs">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.Designer.cs">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.Designer.cs">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.Designer.cs">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.Designer.cs">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.Designer.cs">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.Designer.cs">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_LOP\frmLop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_LOP\frmLop.Designer.cs">
       <DependentUpon>frmLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_KL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_KL.Designer.cs">
+      <DependentUpon>HDSD_KL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_TL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\HDSD_TL.Designer.cs">
+      <DependentUpon>HDSD_TL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Month.Designer.cs">
+      <DependentUpon>KQKL_Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Term.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Term.Designer.cs">
+      <DependentUpon>KQKL_Term.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQKL_Year.Designer.cs">
+      <DependentUpon>KQKL_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\KQTL_Year.Designer.cs">
+      <DependentUpon>KQTL_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\LOP_ThayMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\LOP_ThayMK.Designer.cs">
+      <DependentUpon>LOP_ThayMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\NhapRLKL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\NhapRLKL.Designer.cs">
+      <DependentUpon>NhapRLKL.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_HDSD_KL.resx">
       <DependentUpon>usr_HDSD_KL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\usr_HDSD_QL.resx">
+      <DependentUpon>usr_HDSD_QL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_HDSD_TL.resx">
       <DependentUpon>usr_HDSD_TL.cs</DependentUpon>
@@ -327,9 +444,61 @@
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_HK.resx">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Nam.resx">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Thang.resx">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Nam.resx">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TuDanhGia.resx">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\DSHocvien.resx">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\HDSD_KL.resx">
+      <DependentUpon>HDSD_KL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\HDSD_TL.resx">
+      <DependentUpon>HDSD_TL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Month.resx">
+      <DependentUpon>KQKL_Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Term.resx">
+      <DependentUpon>KQKL_Term.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQKL_Year.resx">
+      <DependentUpon>KQKL_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\KQTL_Year.resx">
+      <DependentUpon>KQTL_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\LOP_ThayMK.resx">
+      <DependentUpon>LOP_ThayMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\NhapRLKL.resx">
+      <DependentUpon>NhapRLKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -340,6 +509,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -355,7 +525,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI_DD\Image\" />
-    <Folder Include="GUI_HV\Image\" />
     <Folder Include="GUI_LOP\Image\" />
   </ItemGroup>
   <ItemGroup>
@@ -380,6 +549,10 @@
     <None Include="Resources\longdate.svg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI_DD\Function.txt" />
+    <Content Include="HDSD_KyLuat.txt" />
+    <Content Include="HDSD_QuanLy.txt" />
+    <Content Include="HDSD_TheLuc.txt" />
     <Content Include="Resources\logohv.jpg" />
     <Content Include="Resources\z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786.jpg" />
   </ItemGroup>

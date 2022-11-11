@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars;
+﻿using DevExpress.Utils.CommonDialogs.Internal;
+using DevExpress.XtraBars;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DialogResult = System.Windows.Forms.DialogResult;
 
 namespace QLRenLuyenKyLuat.GUI_DD
 {
@@ -15,6 +17,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         public frmDaiDoi()
         {
             InitializeComponent();
+            txtThoiGian.Caption = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         usr_ThemHocVien usr_ThemHocVien;
@@ -40,6 +43,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         usr_ThayDoiQCTL usr_ThayDoiQCTL;
         usr_HDSD_KL usr_HDSD_KL;
         usr_HDSD_TL usr_HDSD_TL;
+        usr_HDSD_QL usr_HDSD_QL;
         usr_ThayDoiMatKhau usr_ThayDoiMatKhau;
         usr_TrangChu usr_TrangChu;
         usr_ThongBao usr_ThongBao;
@@ -439,9 +443,24 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void DangXuat_Click(object sender, EventArgs e)
         {
-            frmLogin frmLogin = new frmLogin();
-            frmLogin.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Show();
+                this.Hide();
+            }
+            //else if (result == DialogResult.No)
+            //{
+            //    //...
+            //}
+            //else
+            //{
+            //    //...
+            //}
+            //frmLogin frmLogin = new frmLogin();
+            //frmLogin.Show();
+            //this.Hide();
         }
 
         private void TrangChu_Click(object sender, EventArgs e)
@@ -476,5 +495,20 @@ namespace QLRenLuyenKyLuat.GUI_DD
             lblTieuDe.Caption = "Thông báo";
         }
 
+        private void QuanLy_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_QL == null)
+            {
+                usr_HDSD_QL usr_HDSD_QL = new usr_HDSD_QL();
+                usr_HDSD_QL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_QL);
+                usr_HDSD_QL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_QL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý đơn vị";
+        }
     }
 }

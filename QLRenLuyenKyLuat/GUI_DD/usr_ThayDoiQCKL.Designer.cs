@@ -29,71 +29,80 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ComboBox7 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox8 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox9 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.txtMuc33 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc23 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc13 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox6 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc32 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc22 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc12 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc31 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc21 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMuc11 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTC3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTC2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTC1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox7);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox8);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox9);
+            this.guna2Panel1.Controls.Add(this.btnLuu);
+            this.guna2Panel1.Controls.Add(this.txtMuc33);
+            this.guna2Panel1.Controls.Add(this.txtMuc23);
+            this.guna2Panel1.Controls.Add(this.txtMuc13);
             this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox4);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox5);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox6);
+            this.guna2Panel1.Controls.Add(this.txtMuc32);
+            this.guna2Panel1.Controls.Add(this.txtMuc22);
+            this.guna2Panel1.Controls.Add(this.txtMuc12);
             this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox3);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox2);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2Panel1.Controls.Add(this.txtMuc31);
+            this.guna2Panel1.Controls.Add(this.txtMuc21);
+            this.guna2Panel1.Controls.Add(this.txtMuc11);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox3);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox2);
+            this.guna2Panel1.Controls.Add(this.txtTC3);
+            this.guna2Panel1.Controls.Add(this.txtTC2);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel1.Controls.Add(this.txtTC1);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1389, 761);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // guna2ComboBox7
+            // btnLuu
             // 
-            this.guna2ComboBox7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox7.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox7.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox7.FocusedState.Parent = this.guna2ComboBox7;
-            this.guna2ComboBox7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox7.FormattingEnabled = true;
-            this.guna2ComboBox7.HoverState.Parent = this.guna2ComboBox7;
-            this.guna2ComboBox7.ItemHeight = 30;
-            this.guna2ComboBox7.Items.AddRange(new object[] {
+            this.btnLuu.FillColor = System.Drawing.Color.LimeGreen;
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(1223, 583);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(111, 36);
+            this.btnLuu.TabIndex = 87;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // txtMuc33
+            // 
+            this.txtMuc33.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc33.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc33.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc33.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc33.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc33.FormattingEnabled = true;
+            this.txtMuc33.ItemHeight = 30;
+            this.txtMuc33.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -104,26 +113,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox7.ItemsAppearance.Parent = this.guna2ComboBox7;
-            this.guna2ComboBox7.Location = new System.Drawing.Point(1223, 445);
-            this.guna2ComboBox7.Name = "guna2ComboBox7";
-            this.guna2ComboBox7.ShadowDecoration.Parent = this.guna2ComboBox7;
-            this.guna2ComboBox7.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox7.TabIndex = 86;
+            this.txtMuc33.Location = new System.Drawing.Point(1223, 445);
+            this.txtMuc33.Name = "txtMuc33";
+            this.txtMuc33.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc33.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc33.TabIndex = 86;
             // 
-            // guna2ComboBox8
+            // txtMuc23
             // 
-            this.guna2ComboBox8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox8.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox8.FocusedState.Parent = this.guna2ComboBox8;
-            this.guna2ComboBox8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox8.FormattingEnabled = true;
-            this.guna2ComboBox8.HoverState.Parent = this.guna2ComboBox8;
-            this.guna2ComboBox8.ItemHeight = 30;
-            this.guna2ComboBox8.Items.AddRange(new object[] {
+            this.txtMuc23.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc23.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc23.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc23.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc23.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc23.FormattingEnabled = true;
+            this.txtMuc23.ItemHeight = 30;
+            this.txtMuc23.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -134,26 +140,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox8.ItemsAppearance.Parent = this.guna2ComboBox8;
-            this.guna2ComboBox8.Location = new System.Drawing.Point(1223, 334);
-            this.guna2ComboBox8.Name = "guna2ComboBox8";
-            this.guna2ComboBox8.ShadowDecoration.Parent = this.guna2ComboBox8;
-            this.guna2ComboBox8.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox8.TabIndex = 85;
+            this.txtMuc23.Location = new System.Drawing.Point(1223, 334);
+            this.txtMuc23.Name = "txtMuc23";
+            this.txtMuc23.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc23.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc23.TabIndex = 85;
             // 
-            // guna2ComboBox9
+            // txtMuc13
             // 
-            this.guna2ComboBox9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox9.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox9.FocusedState.Parent = this.guna2ComboBox9;
-            this.guna2ComboBox9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox9.FormattingEnabled = true;
-            this.guna2ComboBox9.HoverState.Parent = this.guna2ComboBox9;
-            this.guna2ComboBox9.ItemHeight = 30;
-            this.guna2ComboBox9.Items.AddRange(new object[] {
+            this.txtMuc13.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc13.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc13.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc13.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc13.FormattingEnabled = true;
+            this.txtMuc13.ItemHeight = 30;
+            this.txtMuc13.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -164,12 +167,11 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox9.ItemsAppearance.Parent = this.guna2ComboBox9;
-            this.guna2ComboBox9.Location = new System.Drawing.Point(1223, 237);
-            this.guna2ComboBox9.Name = "guna2ComboBox9";
-            this.guna2ComboBox9.ShadowDecoration.Parent = this.guna2ComboBox9;
-            this.guna2ComboBox9.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox9.TabIndex = 84;
+            this.txtMuc13.Location = new System.Drawing.Point(1223, 237);
+            this.txtMuc13.Name = "txtMuc13";
+            this.txtMuc13.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc13.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc13.TabIndex = 84;
             // 
             // label7
             // 
@@ -181,19 +183,17 @@
             this.label7.TabIndex = 83;
             this.label7.Text = "Mức 3";
             // 
-            // guna2ComboBox4
+            // txtMuc32
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.FormattingEnabled = true;
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Items.AddRange(new object[] {
+            this.txtMuc32.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc32.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc32.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc32.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc32.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc32.FormattingEnabled = true;
+            this.txtMuc32.ItemHeight = 30;
+            this.txtMuc32.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -204,26 +204,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(1020, 445);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox4.TabIndex = 82;
+            this.txtMuc32.Location = new System.Drawing.Point(1020, 445);
+            this.txtMuc32.Name = "txtMuc32";
+            this.txtMuc32.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc32.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc32.TabIndex = 82;
             // 
-            // guna2ComboBox5
+            // txtMuc22
             // 
-            this.guna2ComboBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox5.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox5.FocusedState.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox5.FormattingEnabled = true;
-            this.guna2ComboBox5.HoverState.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.ItemHeight = 30;
-            this.guna2ComboBox5.Items.AddRange(new object[] {
+            this.txtMuc22.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc22.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc22.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc22.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc22.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc22.FormattingEnabled = true;
+            this.txtMuc22.ItemHeight = 30;
+            this.txtMuc22.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -234,26 +231,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox5.ItemsAppearance.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Location = new System.Drawing.Point(1020, 334);
-            this.guna2ComboBox5.Name = "guna2ComboBox5";
-            this.guna2ComboBox5.ShadowDecoration.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox5.TabIndex = 81;
+            this.txtMuc22.Location = new System.Drawing.Point(1020, 334);
+            this.txtMuc22.Name = "txtMuc22";
+            this.txtMuc22.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc22.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc22.TabIndex = 81;
             // 
-            // guna2ComboBox6
+            // txtMuc12
             // 
-            this.guna2ComboBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox6.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox6.FocusedState.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox6.FormattingEnabled = true;
-            this.guna2ComboBox6.HoverState.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.ItemHeight = 30;
-            this.guna2ComboBox6.Items.AddRange(new object[] {
+            this.txtMuc12.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc12.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc12.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc12.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc12.FormattingEnabled = true;
+            this.txtMuc12.ItemHeight = 30;
+            this.txtMuc12.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -264,12 +258,11 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox6.ItemsAppearance.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Location = new System.Drawing.Point(1020, 237);
-            this.guna2ComboBox6.Name = "guna2ComboBox6";
-            this.guna2ComboBox6.ShadowDecoration.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox6.TabIndex = 80;
+            this.txtMuc12.Location = new System.Drawing.Point(1020, 237);
+            this.txtMuc12.Name = "txtMuc12";
+            this.txtMuc12.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc12.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc12.TabIndex = 80;
             // 
             // label4
             // 
@@ -281,19 +274,17 @@
             this.label4.TabIndex = 79;
             this.label4.Text = "Mức 2";
             // 
-            // guna2ComboBox3
+            // txtMuc31
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.FormattingEnabled = true;
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
+            this.txtMuc31.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc31.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc31.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc31.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc31.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc31.FormattingEnabled = true;
+            this.txtMuc31.ItemHeight = 30;
+            this.txtMuc31.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -304,26 +295,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(811, 445);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox3.TabIndex = 78;
+            this.txtMuc31.Location = new System.Drawing.Point(811, 445);
+            this.txtMuc31.Name = "txtMuc31";
+            this.txtMuc31.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc31.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc31.TabIndex = 78;
             // 
-            // guna2ComboBox2
+            // txtMuc21
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.txtMuc21.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc21.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc21.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc21.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc21.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc21.FormattingEnabled = true;
+            this.txtMuc21.ItemHeight = 30;
+            this.txtMuc21.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -334,26 +322,23 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(811, 334);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox2.TabIndex = 77;
+            this.txtMuc21.Location = new System.Drawing.Point(811, 334);
+            this.txtMuc21.Name = "txtMuc21";
+            this.txtMuc21.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc21.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc21.TabIndex = 77;
             // 
-            // guna2ComboBox1
+            // txtMuc11
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.txtMuc11.BackColor = System.Drawing.Color.Transparent;
+            this.txtMuc11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMuc11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMuc11.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMuc11.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMuc11.ForeColor = System.Drawing.Color.Black;
+            this.txtMuc11.FormattingEnabled = true;
+            this.txtMuc11.ItemHeight = 30;
+            this.txtMuc11.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -364,12 +349,11 @@
             "8",
             "9",
             "10"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(811, 237);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(111, 36);
-            this.guna2ComboBox1.TabIndex = 76;
+            this.txtMuc11.Location = new System.Drawing.Point(811, 237);
+            this.txtMuc11.Name = "txtMuc11";
+            this.txtMuc11.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc11.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtMuc11.TabIndex = 76;
             // 
             // label3
             // 
@@ -391,51 +375,49 @@
             this.label1.TabIndex = 74;
             this.label1.Text = "Tên Tiêu Chí";
             // 
-            // guna2TextBox3
+            // txtTC3
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(187, 445);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(559, 36);
-            this.guna2TextBox3.TabIndex = 73;
+            this.txtTC3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTC3.DefaultText = "";
+            this.txtTC3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTC3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTC3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTC3.ForeColor = System.Drawing.Color.Black;
+            this.txtTC3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC3.Location = new System.Drawing.Point(187, 445);
+            this.txtTC3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTC3.Name = "txtTC3";
+            this.txtTC3.PasswordChar = '\0';
+            this.txtTC3.PlaceholderText = "";
+            this.txtTC3.SelectedText = "";
+            this.txtTC3.Size = new System.Drawing.Size(559, 36);
+            this.txtTC3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTC3.TabIndex = 73;
             // 
-            // guna2TextBox2
+            // txtTC2
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(187, 334);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(559, 36);
-            this.guna2TextBox2.TabIndex = 72;
+            this.txtTC2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTC2.DefaultText = "";
+            this.txtTC2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTC2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTC2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTC2.ForeColor = System.Drawing.Color.Black;
+            this.txtTC2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC2.Location = new System.Drawing.Point(187, 334);
+            this.txtTC2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTC2.Name = "txtTC2";
+            this.txtTC2.PasswordChar = '\0';
+            this.txtTC2.PlaceholderText = "";
+            this.txtTC2.SelectedText = "";
+            this.txtTC2.Size = new System.Drawing.Size(559, 36);
+            this.txtTC2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTC2.TabIndex = 72;
             // 
             // label6
             // 
@@ -457,28 +439,27 @@
             this.label5.TabIndex = 70;
             this.label5.Text = "Tiêu chí 3:";
             // 
-            // guna2TextBox1
+            // txtTC1
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(187, 237);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(559, 36);
-            this.guna2TextBox1.TabIndex = 69;
+            this.txtTC1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTC1.DefaultText = "";
+            this.txtTC1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTC1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTC1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTC1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTC1.ForeColor = System.Drawing.Color.Black;
+            this.txtTC1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTC1.Location = new System.Drawing.Point(187, 237);
+            this.txtTC1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTC1.Name = "txtTC1";
+            this.txtTC1.PasswordChar = '\0';
+            this.txtTC1.PlaceholderText = "";
+            this.txtTC1.SelectedText = "";
+            this.txtTC1.Size = new System.Drawing.Size(559, 36);
+            this.txtTC1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTC1.TabIndex = 69;
             // 
             // label2
             // 
@@ -490,21 +471,6 @@
             this.label2.TabIndex = 68;
             this.label2.Text = "Tiêu chí 1:";
             // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.LimeGreen;
-            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(1223, 583);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(111, 36);
-            this.guna2Button2.TabIndex = 87;
-            this.guna2Button2.Text = "Lưu";
-            // 
             // usr_ThayDoiQCKL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -512,6 +478,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "usr_ThayDoiQCKL";
             this.Size = new System.Drawing.Size(1389, 761);
+            this.Load += new System.EventHandler(this.usr_ThayDoiQCKL_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -521,25 +488,25 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox7;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox8;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox9;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc33;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc23;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc13;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox6;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc32;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc22;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc12;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc31;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc21;
+        private Guna.UI2.WinForms.Guna2ComboBox txtMuc11;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtTC3;
+        private Guna.UI2.WinForms.Guna2TextBox txtTC2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtTC1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnLuu;
     }
 }
