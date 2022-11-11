@@ -32,8 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbbNam = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbbHK = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLop = new Guna.UI2.WinForms.Guna2TextBox();
@@ -56,8 +54,6 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label9);
-            this.guna2Panel1.Controls.Add(this.cbbNam);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.cbbHK);
             this.guna2Panel1.Controls.Add(this.txtLop);
@@ -80,47 +76,15 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1412, 673);
             this.guna2Panel1.TabIndex = 6;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(372, 609);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 23);
-            this.label9.TabIndex = 87;
-            this.label9.Text = "Năm:";
-            // 
-            // cbbNam
-            // 
-            this.cbbNam.BackColor = System.Drawing.Color.Transparent;
-            this.cbbNam.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbNam.FocusedColor = System.Drawing.Color.Empty;
-            this.cbbNam.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbNam.ForeColor = System.Drawing.Color.Black;
-            this.cbbNam.FormattingEnabled = true;
-            this.cbbNam.ItemHeight = 30;
-            this.cbbNam.Items.AddRange(new object[] {
-            "2019-2020",
-            "2020-2021",
-            "2021-2022",
-            "2022-2023",
-            "2023-2024"});
-            this.cbbNam.Location = new System.Drawing.Point(434, 609);
-            this.cbbNam.Name = "cbbNam";
-            this.cbbNam.Size = new System.Drawing.Size(193, 36);
-            this.cbbNam.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.cbbNam.TabIndex = 86;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(39, 609);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 23);
+            this.label8.Size = new System.Drawing.Size(96, 23);
             this.label8.TabIndex = 85;
-            this.label8.Text = "Học kỳ:";
+            this.label8.Text = "Thời gian:";
             // 
             // cbbHK
             // 
@@ -133,11 +97,19 @@
             this.cbbHK.FormattingEnabled = true;
             this.cbbHK.ItemHeight = 30;
             this.cbbHK.Items.AddRange(new object[] {
-            "01",
-            "02"});
-            this.cbbHK.Location = new System.Drawing.Point(146, 609);
+            "HK1 2019-2020",
+            "HK2 2019-2020",
+            "HK1 2020-2021",
+            "HK2 2020-2021",
+            "HK1 2021-2022",
+            "HK2 2021-2022",
+            "HK1 2022-2023",
+            "HK2 2022-2023",
+            "HK1 2023-2024",
+            "HK2 2023-2024"});
+            this.cbbHK.Location = new System.Drawing.Point(151, 609);
             this.cbbHK.Name = "cbbHK";
-            this.cbbHK.Size = new System.Drawing.Size(173, 36);
+            this.cbbHK.Size = new System.Drawing.Size(476, 36);
             this.cbbHK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbHK.TabIndex = 84;
             // 
@@ -251,6 +223,7 @@
             this.txtNhanXet.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNhanXet.Location = new System.Drawing.Point(963, 377);
             this.txtNhanXet.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNhanXet.Multiline = true;
             this.txtNhanXet.Name = "txtNhanXet";
             this.txtNhanXet.PasswordChar = '\0';
             this.txtNhanXet.PlaceholderText = "";
@@ -314,13 +287,13 @@
             this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNoiDung.ForeColor = System.Drawing.Color.Black;
             this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoiDung.Location = new System.Drawing.Point(146, 566);
+            this.txtNoiDung.Location = new System.Drawing.Point(151, 566);
             this.txtNoiDung.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
             this.txtNoiDung.PlaceholderText = "";
             this.txtNoiDung.SelectedText = "";
-            this.txtNoiDung.Size = new System.Drawing.Size(481, 36);
+            this.txtNoiDung.Size = new System.Drawing.Size(476, 36);
             this.txtNoiDung.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtNoiDung.TabIndex = 59;
             // 
@@ -337,9 +310,9 @@
             this.cbbMuc.Items.AddRange(new object[] {
             "Tên học viên",
             "Lớp"});
-            this.cbbMuc.Location = new System.Drawing.Point(146, 516);
+            this.cbbMuc.Location = new System.Drawing.Point(151, 516);
             this.cbbMuc.Name = "cbbMuc";
-            this.cbbMuc.Size = new System.Drawing.Size(481, 36);
+            this.cbbMuc.Size = new System.Drawing.Size(476, 36);
             this.cbbMuc.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbMuc.TabIndex = 58;
             // 
@@ -426,11 +399,9 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtMucPhanLoai;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txtNhanXet;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2ComboBox cbbNam;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2ComboBox cbbHK;
+        private Guna.UI2.WinForms.Guna2TextBox txtNhanXet;
+        private System.Windows.Forms.Label label1;
     }
 }

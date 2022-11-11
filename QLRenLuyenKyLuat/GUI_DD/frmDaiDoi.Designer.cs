@@ -398,6 +398,7 @@
             this.accordionControlElement34,
             this.accordionControlElement35,
             this.accordionControlElement36});
+            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Rèn luyện kỷ luật";
             // 
@@ -406,7 +407,6 @@
             this.accordionControlElement34.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DanhGiaHV,
             this.SuaDanhGiaHV});
-            this.accordionControlElement34.Expanded = true;
             this.accordionControlElement34.Name = "accordionControlElement34";
             this.accordionControlElement34.Text = "Đánh giá";
             // 
@@ -431,7 +431,6 @@
             this.accordionControlElement35.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DeNghiHocVien,
             this.DeNghiLop});
-            this.accordionControlElement35.Expanded = true;
             this.accordionControlElement35.Name = "accordionControlElement35";
             this.accordionControlElement35.Text = "Kết quả đề nghị";
             // 
@@ -499,7 +498,6 @@
             this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnThemHocVien,
             this.accordionControlElement15});
-            this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.Name = "accordionControlElement11";
             this.accordionControlElement11.Text = "Học viên";
             // 
