@@ -498,7 +498,6 @@
             this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnThemHocVien,
             this.accordionControlElement15});
-            this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.Name = "accordionControlElement11";
             this.accordionControlElement11.Text = "Học viên";
             // 
