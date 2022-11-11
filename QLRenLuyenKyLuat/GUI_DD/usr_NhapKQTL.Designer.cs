@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbbKetQua = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtGioiTinh = new System.Windows.Forms.Label();
             this.txtMaHV = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.cbbKetQua = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             this.SuspendLayout();
@@ -110,6 +110,27 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1412, 718);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // cbbKetQua
+            // 
+            this.cbbKetQua.BackColor = System.Drawing.Color.Transparent;
+            this.cbbKetQua.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbKetQua.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbKetQua.FocusedColor = System.Drawing.Color.Empty;
+            this.cbbKetQua.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbKetQua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbKetQua.FormattingEnabled = true;
+            this.cbbKetQua.ItemHeight = 30;
+            this.cbbKetQua.Items.AddRange(new object[] {
+            "Giỏi",
+            "Khá",
+            "Đạt",
+            "Không đạt"});
+            this.cbbKetQua.Location = new System.Drawing.Point(935, 508);
+            this.cbbKetQua.Name = "cbbKetQua";
+            this.cbbKetQua.Size = new System.Drawing.Size(397, 36);
+            this.cbbKetQua.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.cbbKetQua.TabIndex = 128;
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Location = new System.Drawing.Point(770, 667);
@@ -150,6 +171,7 @@
             this.cbbNguoiGiamSat.Location = new System.Drawing.Point(935, 576);
             this.cbbNguoiGiamSat.Name = "cbbNguoiGiamSat";
             this.cbbNguoiGiamSat.Size = new System.Drawing.Size(397, 36);
+            this.cbbNguoiGiamSat.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbNguoiGiamSat.TabIndex = 125;
             // 
             // label16
@@ -192,6 +214,7 @@
             this.txtHoTen.PlaceholderText = "";
             this.txtHoTen.SelectedText = "";
             this.txtHoTen.Size = new System.Drawing.Size(397, 33);
+            this.txtHoTen.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtHoTen.TabIndex = 119;
             this.txtHoTen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -215,6 +238,7 @@
             this.txtLop.PlaceholderText = "";
             this.txtLop.SelectedText = "";
             this.txtLop.Size = new System.Drawing.Size(397, 33);
+            this.txtLop.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtLop.TabIndex = 118;
             this.txtLop.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -267,6 +291,7 @@
             this.txtChayNgan.PlaceholderText = "";
             this.txtChayNgan.SelectedText = "";
             this.txtChayNgan.Size = new System.Drawing.Size(397, 33);
+            this.txtChayNgan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayNgan.TabIndex = 112;
             this.txtChayNgan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtChayNgan.TextChanged += new System.EventHandler(this.txtChayNgan_TextChanged);
@@ -290,6 +315,7 @@
             this.txtChayDai.PlaceholderText = "";
             this.txtChayDai.SelectedText = "";
             this.txtChayDai.Size = new System.Drawing.Size(397, 33);
+            this.txtChayDai.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayDai.TabIndex = 110;
             this.txtChayDai.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtChayDai.TextChanged += new System.EventHandler(this.txtChayDai_TextChanged);
@@ -323,6 +349,7 @@
             this.txtBoi.PlaceholderText = "";
             this.txtBoi.SelectedText = "";
             this.txtBoi.Size = new System.Drawing.Size(397, 33);
+            this.txtBoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBoi.TabIndex = 106;
             this.txtBoi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -345,6 +372,7 @@
             this.txtBatXa.PlaceholderText = "";
             this.txtBatXa.SelectedText = "";
             this.txtBatXa.Size = new System.Drawing.Size(397, 33);
+            this.txtBatXa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBatXa.TabIndex = 105;
             this.txtBatXa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -367,6 +395,7 @@
             this.txtKeoXa_ChongDay.PlaceholderText = "";
             this.txtKeoXa_ChongDay.SelectedText = "";
             this.txtKeoXa_ChongDay.Size = new System.Drawing.Size(397, 33);
+            this.txtKeoXa_ChongDay.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtKeoXa_ChongDay.TabIndex = 104;
             this.txtKeoXa_ChongDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -515,6 +544,7 @@
             this.txtNoiDung.PlaceholderText = "";
             this.txtNoiDung.SelectedText = "";
             this.txtNoiDung.Size = new System.Drawing.Size(413, 36);
+            this.txtNoiDung.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtNoiDung.TabIndex = 86;
             // 
             // cbbMuc
@@ -533,6 +563,7 @@
             this.cbbMuc.Location = new System.Drawing.Point(158, 629);
             this.cbbMuc.Name = "cbbMuc";
             this.cbbMuc.Size = new System.Drawing.Size(413, 36);
+            this.cbbMuc.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbMuc.TabIndex = 85;
             // 
             // dtgv
@@ -587,26 +618,6 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellContentClick);
-            // 
-            // cbbKetQua
-            // 
-            this.cbbKetQua.BackColor = System.Drawing.Color.Transparent;
-            this.cbbKetQua.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbKetQua.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbKetQua.FocusedColor = System.Drawing.Color.Empty;
-            this.cbbKetQua.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbKetQua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbKetQua.FormattingEnabled = true;
-            this.cbbKetQua.ItemHeight = 30;
-            this.cbbKetQua.Items.AddRange(new object[] {
-            "Giỏi",
-            "Khá",
-            "Đạt",
-            "Không đạt"});
-            this.cbbKetQua.Location = new System.Drawing.Point(935, 508);
-            this.cbbKetQua.Name = "cbbKetQua";
-            this.cbbKetQua.Size = new System.Drawing.Size(397, 36);
-            this.cbbKetQua.TabIndex = 128;
             // 
             // usr_NhapKQTL
             // 

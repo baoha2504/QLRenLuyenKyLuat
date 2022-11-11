@@ -77,21 +77,16 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1389, 761);
             this.guna2Panel1.TabIndex = 1;
             // 
             // btnLuu
             // 
-            this.btnLuu.CheckedState.Parent = this.btnLuu;
-            this.btnLuu.CustomImages.Parent = this.btnLuu;
             this.btnLuu.FillColor = System.Drawing.Color.LimeGreen;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.HoverState.Parent = this.btnLuu;
             this.btnLuu.Location = new System.Drawing.Point(1223, 583);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.ShadowDecoration.Parent = this.btnLuu;
             this.btnLuu.Size = new System.Drawing.Size(111, 36);
             this.btnLuu.TabIndex = 87;
             this.btnLuu.Text = "Lưu";
@@ -103,11 +98,9 @@
             this.txtMuc33.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc33.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc33.FocusedState.Parent = this.txtMuc33;
             this.txtMuc33.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc33.ForeColor = System.Drawing.Color.Black;
             this.txtMuc33.FormattingEnabled = true;
-            this.txtMuc33.HoverState.Parent = this.txtMuc33;
             this.txtMuc33.ItemHeight = 30;
             this.txtMuc33.Items.AddRange(new object[] {
             "1",
@@ -120,11 +113,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc33.ItemsAppearance.Parent = this.txtMuc33;
             this.txtMuc33.Location = new System.Drawing.Point(1223, 445);
             this.txtMuc33.Name = "txtMuc33";
-            this.txtMuc33.ShadowDecoration.Parent = this.txtMuc33;
             this.txtMuc33.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc33.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc33.TabIndex = 86;
             // 
             // txtMuc23
@@ -133,11 +125,9 @@
             this.txtMuc23.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc23.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc23.FocusedState.Parent = this.txtMuc23;
             this.txtMuc23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc23.ForeColor = System.Drawing.Color.Black;
             this.txtMuc23.FormattingEnabled = true;
-            this.txtMuc23.HoverState.Parent = this.txtMuc23;
             this.txtMuc23.ItemHeight = 30;
             this.txtMuc23.Items.AddRange(new object[] {
             "1",
@@ -150,11 +140,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc23.ItemsAppearance.Parent = this.txtMuc23;
             this.txtMuc23.Location = new System.Drawing.Point(1223, 334);
             this.txtMuc23.Name = "txtMuc23";
-            this.txtMuc23.ShadowDecoration.Parent = this.txtMuc23;
             this.txtMuc23.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc23.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc23.TabIndex = 85;
             // 
             // txtMuc13
@@ -163,11 +152,9 @@
             this.txtMuc13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc13.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc13.FocusedState.Parent = this.txtMuc13;
             this.txtMuc13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc13.ForeColor = System.Drawing.Color.Black;
             this.txtMuc13.FormattingEnabled = true;
-            this.txtMuc13.HoverState.Parent = this.txtMuc13;
             this.txtMuc13.ItemHeight = 30;
             this.txtMuc13.Items.AddRange(new object[] {
             "1",
@@ -180,11 +167,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc13.ItemsAppearance.Parent = this.txtMuc13;
             this.txtMuc13.Location = new System.Drawing.Point(1223, 237);
             this.txtMuc13.Name = "txtMuc13";
-            this.txtMuc13.ShadowDecoration.Parent = this.txtMuc13;
             this.txtMuc13.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc13.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc13.TabIndex = 84;
             // 
             // label7
@@ -203,11 +189,9 @@
             this.txtMuc32.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc32.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc32.FocusedState.Parent = this.txtMuc32;
             this.txtMuc32.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc32.ForeColor = System.Drawing.Color.Black;
             this.txtMuc32.FormattingEnabled = true;
-            this.txtMuc32.HoverState.Parent = this.txtMuc32;
             this.txtMuc32.ItemHeight = 30;
             this.txtMuc32.Items.AddRange(new object[] {
             "1",
@@ -220,11 +204,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc32.ItemsAppearance.Parent = this.txtMuc32;
             this.txtMuc32.Location = new System.Drawing.Point(1020, 445);
             this.txtMuc32.Name = "txtMuc32";
-            this.txtMuc32.ShadowDecoration.Parent = this.txtMuc32;
             this.txtMuc32.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc32.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc32.TabIndex = 82;
             // 
             // txtMuc22
@@ -233,11 +216,9 @@
             this.txtMuc22.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc22.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc22.FocusedState.Parent = this.txtMuc22;
             this.txtMuc22.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc22.ForeColor = System.Drawing.Color.Black;
             this.txtMuc22.FormattingEnabled = true;
-            this.txtMuc22.HoverState.Parent = this.txtMuc22;
             this.txtMuc22.ItemHeight = 30;
             this.txtMuc22.Items.AddRange(new object[] {
             "1",
@@ -250,11 +231,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc22.ItemsAppearance.Parent = this.txtMuc22;
             this.txtMuc22.Location = new System.Drawing.Point(1020, 334);
             this.txtMuc22.Name = "txtMuc22";
-            this.txtMuc22.ShadowDecoration.Parent = this.txtMuc22;
             this.txtMuc22.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc22.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc22.TabIndex = 81;
             // 
             // txtMuc12
@@ -263,11 +243,9 @@
             this.txtMuc12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc12.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc12.FocusedState.Parent = this.txtMuc12;
             this.txtMuc12.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc12.ForeColor = System.Drawing.Color.Black;
             this.txtMuc12.FormattingEnabled = true;
-            this.txtMuc12.HoverState.Parent = this.txtMuc12;
             this.txtMuc12.ItemHeight = 30;
             this.txtMuc12.Items.AddRange(new object[] {
             "1",
@@ -280,11 +258,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc12.ItemsAppearance.Parent = this.txtMuc12;
             this.txtMuc12.Location = new System.Drawing.Point(1020, 237);
             this.txtMuc12.Name = "txtMuc12";
-            this.txtMuc12.ShadowDecoration.Parent = this.txtMuc12;
             this.txtMuc12.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc12.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc12.TabIndex = 80;
             // 
             // label4
@@ -303,11 +280,9 @@
             this.txtMuc31.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc31.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc31.FocusedState.Parent = this.txtMuc31;
             this.txtMuc31.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc31.ForeColor = System.Drawing.Color.Black;
             this.txtMuc31.FormattingEnabled = true;
-            this.txtMuc31.HoverState.Parent = this.txtMuc31;
             this.txtMuc31.ItemHeight = 30;
             this.txtMuc31.Items.AddRange(new object[] {
             "1",
@@ -320,11 +295,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc31.ItemsAppearance.Parent = this.txtMuc31;
             this.txtMuc31.Location = new System.Drawing.Point(811, 445);
             this.txtMuc31.Name = "txtMuc31";
-            this.txtMuc31.ShadowDecoration.Parent = this.txtMuc31;
             this.txtMuc31.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc31.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc31.TabIndex = 78;
             // 
             // txtMuc21
@@ -333,11 +307,9 @@
             this.txtMuc21.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc21.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc21.FocusedState.Parent = this.txtMuc21;
             this.txtMuc21.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc21.ForeColor = System.Drawing.Color.Black;
             this.txtMuc21.FormattingEnabled = true;
-            this.txtMuc21.HoverState.Parent = this.txtMuc21;
             this.txtMuc21.ItemHeight = 30;
             this.txtMuc21.Items.AddRange(new object[] {
             "1",
@@ -350,11 +322,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc21.ItemsAppearance.Parent = this.txtMuc21;
             this.txtMuc21.Location = new System.Drawing.Point(811, 334);
             this.txtMuc21.Name = "txtMuc21";
-            this.txtMuc21.ShadowDecoration.Parent = this.txtMuc21;
             this.txtMuc21.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc21.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc21.TabIndex = 77;
             // 
             // txtMuc11
@@ -363,11 +334,9 @@
             this.txtMuc11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtMuc11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtMuc11.FocusedColor = System.Drawing.Color.Empty;
-            this.txtMuc11.FocusedState.Parent = this.txtMuc11;
             this.txtMuc11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtMuc11.ForeColor = System.Drawing.Color.Black;
             this.txtMuc11.FormattingEnabled = true;
-            this.txtMuc11.HoverState.Parent = this.txtMuc11;
             this.txtMuc11.ItemHeight = 30;
             this.txtMuc11.Items.AddRange(new object[] {
             "1",
@@ -380,11 +349,10 @@
             "8",
             "9",
             "10"});
-            this.txtMuc11.ItemsAppearance.Parent = this.txtMuc11;
             this.txtMuc11.Location = new System.Drawing.Point(811, 237);
             this.txtMuc11.Name = "txtMuc11";
-            this.txtMuc11.ShadowDecoration.Parent = this.txtMuc11;
             this.txtMuc11.Size = new System.Drawing.Size(111, 36);
+            this.txtMuc11.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtMuc11.TabIndex = 76;
             // 
             // label3
@@ -414,21 +382,19 @@
             this.txtTC3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTC3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTC3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTC3.DisabledState.Parent = this.txtTC3;
             this.txtTC3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTC3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC3.FocusedState.Parent = this.txtTC3;
+            this.txtTC3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC3.ForeColor = System.Drawing.Color.Black;
             this.txtTC3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC3.HoverState.Parent = this.txtTC3;
             this.txtTC3.Location = new System.Drawing.Point(187, 445);
-            this.txtTC3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTC3.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC3.Name = "txtTC3";
             this.txtTC3.PasswordChar = '\0';
             this.txtTC3.PlaceholderText = "";
             this.txtTC3.SelectedText = "";
-            this.txtTC3.ShadowDecoration.Parent = this.txtTC3;
             this.txtTC3.Size = new System.Drawing.Size(559, 36);
+            this.txtTC3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTC3.TabIndex = 73;
             // 
             // txtTC2
@@ -438,21 +404,19 @@
             this.txtTC2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTC2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTC2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTC2.DisabledState.Parent = this.txtTC2;
             this.txtTC2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTC2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC2.FocusedState.Parent = this.txtTC2;
+            this.txtTC2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC2.ForeColor = System.Drawing.Color.Black;
             this.txtTC2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC2.HoverState.Parent = this.txtTC2;
             this.txtTC2.Location = new System.Drawing.Point(187, 334);
-            this.txtTC2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTC2.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC2.Name = "txtTC2";
             this.txtTC2.PasswordChar = '\0';
             this.txtTC2.PlaceholderText = "";
             this.txtTC2.SelectedText = "";
-            this.txtTC2.ShadowDecoration.Parent = this.txtTC2;
             this.txtTC2.Size = new System.Drawing.Size(559, 36);
+            this.txtTC2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTC2.TabIndex = 72;
             // 
             // label6
@@ -482,21 +446,19 @@
             this.txtTC1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTC1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTC1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTC1.DisabledState.Parent = this.txtTC1;
             this.txtTC1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTC1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC1.FocusedState.Parent = this.txtTC1;
+            this.txtTC1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC1.ForeColor = System.Drawing.Color.Black;
             this.txtTC1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC1.HoverState.Parent = this.txtTC1;
             this.txtTC1.Location = new System.Drawing.Point(187, 237);
-            this.txtTC1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTC1.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC1.Name = "txtTC1";
             this.txtTC1.PasswordChar = '\0';
             this.txtTC1.PlaceholderText = "";
             this.txtTC1.SelectedText = "";
-            this.txtTC1.ShadowDecoration.Parent = this.txtTC1;
             this.txtTC1.Size = new System.Drawing.Size(559, 36);
+            this.txtTC1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTC1.TabIndex = 69;
             // 
             // label2

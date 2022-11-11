@@ -85,6 +85,11 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void dtgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtHocTap.Text = string.Empty;
+            txtKyLuat.Text = string.Empty;
+            txtLoiSong.Text = string.Empty;
+            txtMucPhanLoai.Text = string.Empty;
+            txtNhanXet.Text = string.Empty;
             string constr = Data_Provider.connectionSTR;
             string Sql = "select DISTINCT TenHocVien, MaLop, DIEM_PLKL.DiemKL, DIEM_PLKL.DiemHT, DIEM_PLKL.DiemLS, TenPhanLoai, NhanXet " +
                 "from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT " +

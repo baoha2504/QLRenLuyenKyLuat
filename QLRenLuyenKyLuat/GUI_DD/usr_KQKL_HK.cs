@@ -23,6 +23,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
         string query = "";
         string MaHV = "";
+        string t1, t2, t3, t4, t5, t6;
 
         private void CapNhat(string query)
         {
