@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Calculator.cs" />
     <Compile Include="Data\Data_Provider.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -232,6 +233,36 @@
     <Compile Include="GUI_HV\frmHocVien.Designer.cs">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.cs" />
+    <Compile Include="GUI_HV\KQKL_HK.Designer.cs">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.cs" />
+    <Compile Include="GUI_HV\KQKL_Nam.Designer.cs">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.cs" />
+    <Compile Include="GUI_HV\KQKL_Thang.Designer.cs">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.cs" />
+    <Compile Include="GUI_HV\KQTL_Nam.Designer.cs">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.cs" />
+    <Compile Include="GUI_HV\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.cs" />
+    <Compile Include="GUI_HV\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.Designer.cs">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_LOP\frmLop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +358,27 @@
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_HK.resx">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Nam.resx">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Thang.resx">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Nam.resx">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TuDanhGia.resx">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +392,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\QLRenLuyenKyLuat.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -354,6 +407,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="GUI_DD\Image\" />
     <Folder Include="GUI_HV\Image\" />
     <Folder Include="GUI_LOP\Image\" />
@@ -380,6 +434,55 @@
     <None Include="Resources\longdate.svg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\DevExpress.Data.Desktop.v21.2.dll" />
+    <Content Include="bin\Debug\DevExpress.Data.Desktop.v21.2.xml" />
+    <Content Include="bin\Debug\DevExpress.Data.v21.2.dll" />
+    <Content Include="bin\Debug\DevExpress.Data.v21.2.xml" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v21.2.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v21.2.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v21.2.Drawing.dll" />
+    <Content Include="bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml" />
+    <Content Include="bin\Debug\DevExpress.Printing.v21.2.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Printing.v21.2.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Sparkline.v21.2.Core.dll" />
+    <Content Include="bin\Debug\DevExpress.Sparkline.v21.2.Core.xml" />
+    <Content Include="bin\Debug\DevExpress.Utils.v21.2.dll" />
+    <Content Include="bin\Debug\DevExpress.Utils.v21.2.xml" />
+    <Content Include="bin\Debug\DevExpress.XtraBars.v21.2.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraBars.v21.2.xml" />
+    <Content Include="bin\Debug\DevExpress.XtraEditors.v21.2.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraEditors.v21.2.xml" />
+    <Content Include="bin\Debug\de\DevExpress.Data.v21.2.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.Sparkline.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.Utils.v21.2.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.XtraBars.v21.2.resources.dll" />
+    <Content Include="bin\Debug\de\DevExpress.XtraEditors.v21.2.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.Data.v21.2.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.Sparkline.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.Utils.v21.2.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.XtraBars.v21.2.resources.dll" />
+    <Content Include="bin\Debug\es\DevExpress.XtraEditors.v21.2.resources.dll" />
+    <Content Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.Data.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.Sparkline.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.Utils.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.XtraBars.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ja\DevExpress.XtraEditors.v21.2.resources.dll" />
+    <Content Include="bin\Debug\QLRenLuyenKyLuat.exe" />
+    <Content Include="bin\Debug\QLRenLuyenKyLuat.pdb" />
+    <Content Include="bin\Debug\ru\DevExpress.Data.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.Sparkline.v21.2.Core.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.Utils.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.XtraBars.v21.2.resources.dll" />
+    <Content Include="bin\Debug\ru\DevExpress.XtraEditors.v21.2.resources.dll" />
     <Content Include="Resources\logohv.jpg" />
     <Content Include="Resources\z3305258818538_7857a2d91a8ccfb6bd8d1d78af3c8786.jpg" />
   </ItemGroup>
