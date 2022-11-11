@@ -86,3 +86,15 @@ BEGIN
    	RETURN @ID
 END
 GO
+
+
+/****** them thuoc tinh HoatDong checkxem tai khoan con duoc su dung hay khong  Script Date: 25/10/2022 10:05:49 AM ******/
+alter table quanly
+add HoatDong int
+UPDATE QUANLY set HoatDong = 1
+
+alter table HOCVIEN
+add HoatDong int
+Go
+UPDATE HOCVIEN set HoatDong = 1
+Go

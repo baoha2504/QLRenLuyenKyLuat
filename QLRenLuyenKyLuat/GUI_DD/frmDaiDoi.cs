@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars;
+﻿using DevExpress.Utils.CommonDialogs.Internal;
+using DevExpress.XtraBars;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DialogResult = System.Windows.Forms.DialogResult;
 
 namespace QLRenLuyenKyLuat.GUI_DD
 {
@@ -15,6 +17,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         public frmDaiDoi()
         {
             InitializeComponent();
+            txtThoiGian.Caption = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         usr_ThemHocVien usr_ThemHocVien;
@@ -440,9 +443,24 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void DangXuat_Click(object sender, EventArgs e)
         {
-            frmLogin frmLogin = new frmLogin();
-            frmLogin.Show();
-            this.Hide();
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Show();
+                this.Hide();
+            }
+            //else if (result == DialogResult.No)
+            //{
+            //    //...
+            //}
+            //else
+            //{
+            //    //...
+            //}
+            //frmLogin frmLogin = new frmLogin();
+            //frmLogin.Show();
+            //this.Hide();
         }
 
         private void TrangChu_Click(object sender, EventArgs e)

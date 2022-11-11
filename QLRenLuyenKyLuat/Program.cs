@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLRenLuyenKyLuat.GUI_LOP;
+using QLRenLuyenKyLuat.GUI_DD;
 
 namespace QLRenLuyenKyLuat
 {
@@ -17,7 +18,7 @@ namespace QLRenLuyenKyLuat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmDaiDoi());
         }
     }
 }
