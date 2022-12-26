@@ -111,7 +111,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
             foreach (DataRow dr in dtbl2.Rows)
             {
-                HT[0] = int.Parse(dr["muc2"].ToString());
+                HT[0] = int.Parse(dr["muc1"].ToString());
                 HT[1] = int.Parse(dr["muc2"].ToString());
                 HT[2] = int.Parse(dr["muc3"].ToString());
             }
