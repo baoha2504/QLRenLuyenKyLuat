@@ -244,6 +244,54 @@
     <Compile Include="GUI_HV\frmHocVien.Designer.cs">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.Designer.cs">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.Designer.cs">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.Designer.cs">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.Designer.cs">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.Designer.cs">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\DSHocvien.Designer.cs">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_LOP\frmLop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +443,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_HK.resx">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Nam.resx">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Thang.resx">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Nam.resx">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TuDanhGia.resx">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\DSHocvien.resx">
+      <DependentUpon>DSHocvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
