@@ -429,3 +429,4 @@ C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLR
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CopyComplete
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.exe
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.pdb
+C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_LOP.TrangChu.resources

@@ -59,7 +59,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu";
             // 
-            // txtLoginMaHV
+            // txtLoginMaLop
             // 
             this.txtLoginMaHV.BorderThickness = 2;
             this.txtLoginMaHV.Cursor = System.Windows.Forms.Cursors.IBeam;

@@ -2,7 +2,6 @@
 {
     class Calculator
     {
-
         public static string cal_TinhTheLucNam(string KQ_Quy1, string KQ_Quy2, string KQ_Quy3, string KQ_Quy4)
         {
             int ThongKeGioi = 0;
@@ -10,7 +9,7 @@
             int ThongKeDat = 0;
             int ThongKeKhongDat = 0;
             int sum = 0;
-
+            
             if (KQ_Quy1 == "Giỏi")
             {
                 ThongKeGioi++;
@@ -200,30 +199,32 @@
             {
                 return "T";
             }
-            else if (tongdiem >= 21 && demT >= 0 && demK >= 5 && demTB <= 1 && demTBK == 0 && demY == 0) 
-            { 
-                return "K"; 
-            }
-            else if (tongdiem >= 15 && demT >= 0 && demK >= 0 && demTB >= 5 && demTBK <= 1 && demY == 0) 
+            else if (tongdiem >= 21 && demT >= 0 && demK >= 5 && demTB <= 1 && demTBK == 0 && demY == 0)
             {
-                return "TB"; 
+                return "K";
             }
-            else if (tongdiem >= 9 && demT >= 0 && demK >= 0 && demTB >= 0 && demTBK >= 5 && demY <= 1) 
-            { 
-                return "TBK"; 
+            else if (tongdiem >= 15 && demT >= 0 && demK >= 0 && demTB >= 5 && demTBK <= 1 && demY == 0)
+            {
+                return "TB";
             }
-            else if (tongdiem >= 9 && demT >= 0 && demK >= 0 && demTB >= 0 && demTBK >= 0 && demY >= 5) 
-            { 
-                return "Y"; 
+            else if (tongdiem >= 9 && demT >= 0 && demK >= 0 && demTB >= 0 && demTBK >= 5 && demY <= 1)
+            {
+                return "TBK";
             }
-            else { 
-                return "Kém"; 
+            else if (tongdiem >= 9 && demT >= 0 && demK >= 0 && demTB >= 0 && demTBK >= 0 && demY >= 5)
+            {
+                return "Y";
+            }
+            else
+            {
+                return "Kém";
             }
         }
 
         public static string cal_DiemRLNam(string kq1, string kq2)
         {
-            if(kq1 == "T") {
+            if (kq1 == "T")
+            {
                 if (kq2 == "T") { return "T"; }
                 else if (kq2 == "K") { return "K"; }
                 else if (kq2 == "TB") { return "K"; }
@@ -278,5 +279,6 @@
             }
 
         }
+        
     }
 }
