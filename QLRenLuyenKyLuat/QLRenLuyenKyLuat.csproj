@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAB54683-7A57-4BFA-993B-893888DC2916}</ProjectGuid>
+    <ProjectGuid>{8DAF226C-DFE8-47A3-9B80-2C3C55D66636}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>QLRenLuyenKyLuat</RootNamespace>
     <AssemblyName>QLRenLuyenKyLuat</AssemblyName>
@@ -244,6 +244,48 @@
     <Compile Include="GUI_HV\frmHocVien.Designer.cs">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_HK.Designer.cs">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Nam.Designer.cs">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQKL_Thang.Designer.cs">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Nam.Designer.cs">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\KQTL_Quy.Designer.cs">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\TuDanhGia.Designer.cs">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_LOP\DSHocvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -402,6 +444,27 @@
     <EmbeddedResource Include="GUI_HV\frmHocVien.resx">
       <DependentUpon>frmHocVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_HK.resx">
+      <DependentUpon>KQKL_HK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Nam.resx">
+      <DependentUpon>KQKL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQKL_Thang.resx">
+      <DependentUpon>KQKL_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Nam.resx">
+      <DependentUpon>KQTL_Nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\KQTL_Quy.resx">
+      <DependentUpon>KQTL_Quy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\TuDanhGia.resx">
+      <DependentUpon>TuDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\DSHocvien.resx">
       <DependentUpon>DSHocvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -462,7 +525,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI_DD\Image\" />
-    <Folder Include="GUI_HV\Image\" />
     <Folder Include="GUI_LOP\Image\" />
   </ItemGroup>
   <ItemGroup>

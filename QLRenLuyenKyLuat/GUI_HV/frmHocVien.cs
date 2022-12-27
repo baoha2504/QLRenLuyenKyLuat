@@ -16,5 +16,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
         {
             InitializeComponent();
         }
+
+        private void fluentDesignFormControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accordionControlElement1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
