@@ -42,9 +42,10 @@
             // 
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(243, 105);
+            this.guna2Button1.Location = new System.Drawing.Point(273, 131);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(202, 56);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Vào GUI Đại đội";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -53,9 +54,10 @@
             // 
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(546, 105);
+            this.guna2Button2.Location = new System.Drawing.Point(614, 131);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(202, 56);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Vào GUI Lớp";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -64,9 +66,10 @@
             // 
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(856, 105);
+            this.guna2Button3.Location = new System.Drawing.Point(963, 131);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button3.Size = new System.Drawing.Size(202, 56);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Vào GUI Học viên";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -75,9 +78,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(279, 237);
+            this.label1.Location = new System.Drawing.Point(314, 296);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 26);
+            this.label1.Size = new System.Drawing.Size(180, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Mã Học Viên:";
             // 
@@ -85,9 +88,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(279, 352);
+            this.label2.Location = new System.Drawing.Point(314, 440);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 26);
+            this.label2.Size = new System.Drawing.Size(149, 32);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu:";
             // 
@@ -102,12 +105,13 @@
             this.txtLoginMaHV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLoginMaHV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLoginMaHV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoginMaHV.Location = new System.Drawing.Point(477, 229);
+            this.txtLoginMaHV.Location = new System.Drawing.Point(537, 286);
+            this.txtLoginMaHV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLoginMaHV.Name = "txtLoginMaHV";
             this.txtLoginMaHV.PasswordChar = '\0';
             this.txtLoginMaHV.PlaceholderText = "";
             this.txtLoginMaHV.SelectedText = "";
-            this.txtLoginMaHV.Size = new System.Drawing.Size(261, 53);
+            this.txtLoginMaHV.Size = new System.Drawing.Size(294, 66);
             this.txtLoginMaHV.TabIndex = 5;
             // 
             // txtbLoginPass
@@ -121,12 +125,13 @@
             this.txtbLoginPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbLoginPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtbLoginPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbLoginPass.Location = new System.Drawing.Point(477, 339);
+            this.txtbLoginPass.Location = new System.Drawing.Point(537, 424);
+            this.txtbLoginPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtbLoginPass.Name = "txtbLoginPass";
             this.txtbLoginPass.PasswordChar = '\0';
             this.txtbLoginPass.PlaceholderText = "";
             this.txtbLoginPass.SelectedText = "";
-            this.txtbLoginPass.Size = new System.Drawing.Size(261, 53);
+            this.txtbLoginPass.Size = new System.Drawing.Size(294, 66);
             this.txtbLoginPass.TabIndex = 6;
             // 
             // btnLogin
@@ -138,18 +143,19 @@
             this.btnLogin.FillColor = System.Drawing.SystemColors.Highlight;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(533, 489);
+            this.btnLogin.Location = new System.Drawing.Point(605, 611);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(131, 55);
+            this.btnLogin.Size = new System.Drawing.Size(147, 69);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 662);
+            this.ClientSize = new System.Drawing.Size(1411, 828);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtbLoginPass);
             this.Controls.Add(this.txtLoginMaHV);
@@ -158,6 +164,7 @@
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);

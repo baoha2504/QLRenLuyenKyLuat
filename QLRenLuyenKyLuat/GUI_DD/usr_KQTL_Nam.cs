@@ -111,7 +111,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             MaHocVien = dtgv.SelectedRows[0].Cells[0].Value.ToString();
             HienText(MaHocVien);
-            txtCaNam.Text = a.cal_TinhTheLucNam(txtQuy1.Text, txtQuy2.Text, txtQuy3.Text, txtQuy4.Text);
+            txtCaNam.Text = Calculator.cal_TinhTheLucNam(txtQuy1.Text, txtQuy2.Text, txtQuy3.Text, txtQuy4.Text);
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

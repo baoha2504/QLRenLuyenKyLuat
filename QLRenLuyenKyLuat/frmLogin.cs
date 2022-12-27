@@ -63,7 +63,7 @@ namespace QLRenLuyenKyLuat
                     lop = dr["MaLop"].ToString();
                 }
                 sqlCon.Close();
-                frmLop frm = new frmLop();
+                frmHocVien frm = new frmHocVien();
                 frm.Show();
                 this.Hide();
             }

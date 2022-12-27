@@ -133,6 +133,7 @@ D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CopyCompl
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.exe
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.pdb
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.AssemblyReference.cache
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.SuggestedBindingRedirects.cache
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\DevExpress.BonusSkins.v21.2.dll
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\QLRenLuyenKyLuat.exe.config
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\QLRenLuyenKyLuat.exe
@@ -277,10 +278,3 @@ D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQTL
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQTL_Quy.resources
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.TrangChu.resources
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.TuDanhGia.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQKL_HK.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQKL_Nam.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQKL_Thang.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQTL_Nam.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.KQTL_Quy.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.TrangChu.resources
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.GUI_HV.TuDanhGia.resources
