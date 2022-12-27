@@ -72,7 +72,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             string[] s1 = new string[10];
             string[] s2 = new string[10];
             string[] s3 = new string[10];
-            string s4 = "QL15501";
+            string s4 = frmLogin.maNguoiDung;
             string s5 = DateTime.Now.ToString("yyyy-MM-dd");
 
             s1[0] = txt1_1.Text;

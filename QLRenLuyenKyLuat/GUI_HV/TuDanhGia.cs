@@ -25,7 +25,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         public static string maHocVien;
         private void btnTudanhgia_Click(object sender, EventArgs e)
         {
-            maHocVien = frmLogin.maHV;
+            maHocVien = frmLogin.maNguoiDung;
             try
             {
                 /* sqlCon.Open();

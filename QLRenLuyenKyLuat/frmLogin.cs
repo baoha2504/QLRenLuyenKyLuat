@@ -17,15 +17,13 @@ namespace QLRenLuyenKyLuat
         public static string name;
         public static string lop;
         public static string maHV;
-        DataTable dtblDD;
-        DataTable dtblL;
-        DataTable dtblHV;
-        string query;
+        DataTable dtbl;
         public frmLogin()
         {
             InitializeComponent();
         }
-        static string ComputeSha256Hash(string rawData)
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create())
@@ -55,62 +53,22 @@ namespace QLRenLuyenKyLuat
             if (dtblDD.Rows.Count == 1)
             {
                 maHV = txtLoginMaHV.Text.Trim();
-                foreach (DataRow dr in dtblDD.Rows)
+                foreach (DataRow dr in dtbl.Rows)
                 {
                     name = dr["HoTen"].ToString();
                     position = dr["ChucVu"].ToString();
                     //lop = dr["MaLop"].ToString();
                 }
                 sqlCon.Close();
-                frmDaiDoi frm = new frmDaiDoi();
+                frmLop frm = new frmLop();
                 frm.Show();
                 this.Hide();
             }
             else
             {
-                query = "select * from LOP where MaLop = N'"+ txtLoginMaHV.Text.Trim() + "' and MatKhau = '"+ ComputeSha256Hash(txtLoginPass.Text.Trim()) + "'";
-                SqlDataAdapter daL = new SqlDataAdapter(query, sqlCon);
-                dtblL = new DataTable();
-                daL.Fill(dtblL);
-                if (dtblL.Rows.Count == 1)
-                {
-                    maHV = txtLoginMaHV.Text.Trim();
-                    foreach (DataRow dr in dtblL.Rows)
-                    {
-                        //name = dr["MaLop"].ToString();
-                        //position = dr["ChucVu"].ToString();
-                        lop = dr["MaLop"].ToString();
-                    }
-                    sqlCon.Close();
-                    frmLop frm = new frmLop();
-                    frm.Show();
-                    this.Hide();
-                } else
-                {
-                    query = "select * from HOCVIEN where MaHocVien = N'"+ txtLoginMaHV.Text.Trim() + "' and MatKhau = '"+ ComputeSha256Hash(txtLoginPass.Text.Trim()) + "'";
-                    SqlDataAdapter daHV = new SqlDataAdapter(query, sqlCon);
-                    dtblHV = new DataTable();
-                    daHV.Fill(dtblHV);
-                    if (dtblHV.Rows.Count == 1)
-                    {
-                        maHV = txtLoginMaHV.Text.Trim();
-                        foreach (DataRow dr in dtblHV.Rows)
-                        {
-                            name = dr["TenHocvien"].ToString();
-                            position = dr["ChucVu"].ToString();
-                            lop = dr["MaLop"].ToString();
-                        }
-                        sqlCon.Close();
-                        frmHocVien frm = new frmHocVien();
-                        frm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Check your Username and Password!");
-                    }
-                }
+                MessageBox.Show("Check your Username and Password!");
             }
+
         }
     }
 }
