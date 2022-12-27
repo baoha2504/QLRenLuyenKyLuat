@@ -43,27 +43,6 @@ namespace QLRenLuyenKyLuat
             }
         }
 
-        //private void guna2Button1_Click(object sender, EventArgs e)
-        //{
-        //    frmDaiDoi frmDaiDoi = new frmDaiDoi();
-        //    frmDaiDoi.Show();
-        //    this.Hide();
-        //}
-
-        //private void guna2Button2_Click(object sender, EventArgs e)
-        //{
-        //    frmLop frmLop = new frmLop();
-        //    frmLop.Show();
-        //    this.Hide();
-        //}
-
-        //private void guna2Button3_Click(object sender, EventArgs e)
-        //{
-        //    frmHocVien frmHocVien = new frmHocVien();
-        //    frmHocVien.Show();
-        //    this.Hide();
-        //}
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             sqlCon.Close();
