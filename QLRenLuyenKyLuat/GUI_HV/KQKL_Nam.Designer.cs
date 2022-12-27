@@ -32,9 +32,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Nam_KL_Nam = new System.Windows.Forms.Label();
             this.L_KQKL_Nam = new System.Windows.Forms.Label();
             this.cbB_KL_Nam = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_NX = new Guna.UI2.WinForms.Guna2TextBox();
             this.NhanXet_KL_Nam = new System.Windows.Forms.Label();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_PL = new Guna.UI2.WinForms.Guna2TextBox();
             this.MucPhanLoai = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -69,35 +69,37 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbB_KL_Nam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbB_KL_Nam.ItemHeight = 30;
             this.cbB_KL_Nam.Items.AddRange(new object[] {
+            "2020-2021",
+            "2020-2021",
+            "2021-2022",
+            "2021-2022",
             "2022-2023",
-            "2023-2024",
-            "2024-2025",
-            "2025-2026",
-            "2026-2027"});
+            "2022-2023"});
             this.cbB_KL_Nam.Location = new System.Drawing.Point(336, 192);
             this.cbB_KL_Nam.Name = "cbB_KL_Nam";
-            this.cbB_KL_Nam.Size = new System.Drawing.Size(126, 36);
+            this.cbB_KL_Nam.Size = new System.Drawing.Size(246, 36);
             this.cbB_KL_Nam.TabIndex = 178;
+            this.cbB_KL_Nam.SelectedIndexChanged += new System.EventHandler(this.cbB_KL_Nam_SelectedIndexChanged);
             // 
-            // guna2TextBox10
+            // txt_NX
             // 
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(417, 348);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(551, 87);
-            this.guna2TextBox10.TabIndex = 175;
+            this.txt_NX.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_NX.DefaultText = "";
+            this.txt_NX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_NX.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_NX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_NX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_NX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_NX.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_NX.Location = new System.Drawing.Point(417, 348);
+            this.txt_NX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_NX.Name = "txt_NX";
+            this.txt_NX.PasswordChar = '\0';
+            this.txt_NX.PlaceholderText = "";
+            this.txt_NX.SelectedText = "";
+            this.txt_NX.Size = new System.Drawing.Size(551, 87);
+            this.txt_NX.TabIndex = 175;
             // 
             // NhanXet_KL_Nam
             // 
@@ -110,25 +112,25 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.NhanXet_KL_Nam.TabIndex = 174;
             this.NhanXet_KL_Nam.Text = "Nhận xét:";
             // 
-            // guna2TextBox11
+            // txt_PL
             // 
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(417, 268);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PasswordChar = '\0';
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(103, 42);
-            this.guna2TextBox11.TabIndex = 177;
+            this.txt_PL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_PL.DefaultText = "";
+            this.txt_PL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_PL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_PL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_PL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_PL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_PL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_PL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_PL.Location = new System.Drawing.Point(417, 268);
+            this.txt_PL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_PL.Name = "txt_PL";
+            this.txt_PL.PasswordChar = '\0';
+            this.txt_PL.PlaceholderText = "";
+            this.txt_PL.SelectedText = "";
+            this.txt_PL.Size = new System.Drawing.Size(186, 42);
+            this.txt_PL.TabIndex = 177;
             // 
             // MucPhanLoai
             // 
@@ -146,14 +148,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbB_KL_Nam);
-            this.Controls.Add(this.guna2TextBox11);
+            this.Controls.Add(this.txt_PL);
             this.Controls.Add(this.MucPhanLoai);
-            this.Controls.Add(this.guna2TextBox10);
+            this.Controls.Add(this.txt_NX);
             this.Controls.Add(this.NhanXet_KL_Nam);
             this.Controls.Add(this.Nam_KL_Nam);
             this.Controls.Add(this.L_KQKL_Nam);
             this.Name = "KQKL_Nam";
             this.Size = new System.Drawing.Size(1228, 635);
+            this.Load += new System.EventHandler(this.KQKL_Nam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,9 +166,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
         private System.Windows.Forms.Label Nam_KL_Nam;
         private System.Windows.Forms.Label L_KQKL_Nam;
         private Guna.UI2.WinForms.Guna2ComboBox cbB_KL_Nam;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
+        private Guna.UI2.WinForms.Guna2TextBox txt_NX;
         private System.Windows.Forms.Label NhanXet_KL_Nam;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2TextBox txt_PL;
         private System.Windows.Forms.Label MucPhanLoai;
     }
 }

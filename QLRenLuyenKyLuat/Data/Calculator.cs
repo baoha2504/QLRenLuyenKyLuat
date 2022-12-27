@@ -3,7 +3,7 @@
     class Calculator
     {
 
-        public string cal_TinhTheLucNam(string KQ_Quy1, string KQ_Quy2, string KQ_Quy3, string KQ_Quy4)
+        public static string cal_TinhTheLucNam(string KQ_Quy1, string KQ_Quy2, string KQ_Quy3, string KQ_Quy4)
         {
             int ThongKeGioi = 0;
             int ThongKeKha = 0;
@@ -274,7 +274,7 @@
 
             else
             {
-                return "";
+                return "Kém";
             }
 
         }

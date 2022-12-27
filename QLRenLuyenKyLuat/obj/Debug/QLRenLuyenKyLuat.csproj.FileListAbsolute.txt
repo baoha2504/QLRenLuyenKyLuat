@@ -133,6 +133,7 @@ D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CopyCompl
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.exe
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.pdb
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.AssemblyReference.cache
+D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.SuggestedBindingRedirects.cache
 D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\DevExpress.BonusSkins.v21.2.dll
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\QLRenLuyenKyLuat.exe.config
 D:\HTTT\QLRenLuyenKyLuat\QLRenLuyenKyLuat\bin\Debug\QLRenLuyenKyLuat.exe
@@ -428,4 +429,3 @@ C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLR
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.CopyComplete
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.exe
 C:\Users\hacon\Desktop\Linh Tinh\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.pdb
-D:\QLRenLuyenKyLuat\QLRenLuyenKyLuat\obj\Debug\QLRenLuyenKyLuat.csproj.SuggestedBindingRedirects.cache
