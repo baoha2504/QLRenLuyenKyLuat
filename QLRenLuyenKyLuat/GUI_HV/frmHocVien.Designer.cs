@@ -41,11 +41,11 @@
             this.ace_KQTL_Quy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_KQTL_Nam = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_HDSD = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.HDSD_KyLuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.HDSD_TheLuc = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_TK = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.DoiMatKhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.DangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.time = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
@@ -57,6 +57,7 @@
             this.lblTieuDe = new DevExpress.XtraBars.BarStaticItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.HDSD_QuanLy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -65,10 +66,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(334, 35);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(4);
+            this.mainContainer.Location = new System.Drawing.Point(418, 30);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(958, 702);
+            this.mainContainer.Size = new System.Drawing.Size(587, 591);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
@@ -89,11 +90,11 @@
             this.ace_KQTL,
             this.ace_HDSD,
             this.ace_TK});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 35);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 30);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(334, 702);
+            this.accordionControl1.Size = new System.Drawing.Size(418, 591);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -168,48 +169,47 @@
             // ace_HDSD
             // 
             this.ace_HDSD.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement13,
-            this.accordionControlElement14});
+            this.HDSD_KyLuat,
+            this.HDSD_TheLuc,
+            this.HDSD_QuanLy});
             this.ace_HDSD.Expanded = true;
             this.ace_HDSD.Name = "ace_HDSD";
             this.ace_HDSD.Text = "Hướng dẫn sử dụng";
             // 
-            // accordionControlElement13
+            // HDSD_KyLuat
             // 
-            //this.accordionControlElement13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement13.ImageOptions.Image")));
-            this.accordionControlElement13.Name = "accordionControlElement13";
-            this.accordionControlElement13.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement13.Text = "Chức năng quản lý kỷ luât";
+            this.HDSD_KyLuat.Name = "HDSD_KyLuat";
+            this.HDSD_KyLuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.HDSD_KyLuat.Text = "Chức năng quản lý kỷ luât";
+            this.HDSD_KyLuat.Click += new System.EventHandler(this.HDSD_KyLuat_Click);
             // 
-            // accordionControlElement14
+            // HDSD_TheLuc
             // 
-            //this.accordionControlElement14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement14.ImageOptions.Image")));
-            this.accordionControlElement14.Name = "accordionControlElement14";
-            this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement14.Text = "Chức năng quản lý thể lực";
+            this.HDSD_TheLuc.Name = "HDSD_TheLuc";
+            this.HDSD_TheLuc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.HDSD_TheLuc.Text = "Chức năng quản lý thể lực";
+            this.HDSD_TheLuc.Click += new System.EventHandler(this.HDSD_TheLuc_Click);
             // 
             // ace_TK
             // 
             this.ace_TK.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement15,
-            this.accordionControlElement16});
+            this.DoiMatKhau,
+            this.DangXuat});
             this.ace_TK.Expanded = true;
             this.ace_TK.Name = "ace_TK";
             this.ace_TK.Text = "Tài khoản";
             // 
-            // accordionControlElement15
+            // DoiMatKhau
             // 
-            //this.accordionControlElement15.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement15.ImageOptions.SvgImage")));
-            this.accordionControlElement15.Name = "accordionControlElement15";
-            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement15.Text = "Thay đổi mật khẩu";
+            this.DoiMatKhau.Name = "DoiMatKhau";
+            this.DoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.DoiMatKhau.Text = "Thay đổi mật khẩu";
             // 
-            // accordionControlElement16
+            // DangXuat
             // 
-            //this.accordionControlElement16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement16.ImageOptions.Image")));
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "Đăng xuất";
+            this.DangXuat.Name = "DangXuat";
+            this.DangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.DangXuat.Text = "Đăng xuất";
             // 
             // fluentDesignFormControl1
             // 
@@ -225,9 +225,8 @@
             this.lblTieuDe});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1292, 35);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1005, 30);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.time);
@@ -284,7 +283,6 @@
             // 
             // barStaticItem6
             // 
-            this.barStaticItem6.Caption = "barStaticItem6";
             this.barStaticItem6.Id = 6;
             this.barStaticItem6.Name = "barStaticItem6";
             // 
@@ -314,17 +312,23 @@
             this.accordionControlElement1.Text = "Element1";
             this.accordionControlElement1.Click += new System.EventHandler(this.accordionControlElement1_Click);
             // 
+            // HDSD_QuanLy
+            // 
+            this.HDSD_QuanLy.Name = "HDSD_QuanLy";
+            this.HDSD_QuanLy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.HDSD_QuanLy.Text = "Chức năng quản lý";
+            this.HDSD_QuanLy.Click += new System.EventHandler(this.HDSD_QuanLy_Click);
+            // 
             // frmHocVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1292, 737);
+            this.ClientSize = new System.Drawing.Size(1005, 621);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmHocVien";
             this.NavigationControl = this.accordionControl1;
             this.Text = "frmHocVien";
@@ -353,10 +357,10 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_KQKL_Ky;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_KQKL_Nam;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_KQTL_Quy;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement HDSD_KyLuat;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement HDSD_TheLuc;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement DoiMatKhau;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement DangXuat;
         private DevExpress.XtraBars.BarStaticItem time;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarStaticItem position;
@@ -366,5 +370,6 @@
         private DevExpress.XtraBars.BarStaticItem barStaticItem6;
         private DevExpress.XtraBars.BarStaticItem lblTieuDe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_KQTL_Nam;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement HDSD_QuanLy;
     }
 }

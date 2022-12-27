@@ -95,10 +95,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(442, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.mainContainer.Location = new System.Drawing.Point(552, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(38, 38, 38, 38);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(982, 702);
+            this.mainContainer.Size = new System.Drawing.Size(739, 690);
             this.mainContainer.TabIndex = 0;
             // 
             // fluentDesignFormControl1
@@ -115,9 +115,8 @@
             this.barStaticItem6});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1660, 54);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1291, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem6);
@@ -269,6 +268,7 @@
             this.HDSD_KL,
             this.HDSD_TL,
             this.QuanLy});
+            this.accordionControlElement7.Expanded = true;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "Hướng dẫn sử dụng";
             // 
@@ -616,24 +616,23 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(38, 38, 38, 38);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(442, 702);
+            this.accordionControl1.Size = new System.Drawing.Size(552, 690);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // frmDaiDoi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1660, 874);
+            this.ClientSize = new System.Drawing.Size(1291, 736);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmDaiDoi";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Chương trình quản lý rèn luyện cấp Đại đội";
