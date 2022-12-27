@@ -1,5 +1,5 @@
-﻿using System;
-using System.IO;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,13 +11,11 @@ using System.Windows.Forms;
 
 namespace QLRenLuyenKyLuat.GUI_LOP
 {
-    public partial class HDSD_KL : DevExpress.XtraEditors.XtraUserControl
+    public partial class TrangChu : DevExpress.XtraEditors.XtraUserControl
     {
-        public HDSD_KL()
+        public TrangChu()
         {
             InitializeComponent();
-            string a = File.ReadAllText("D:\\QLRenLuyenKyLuat\\QLRenLuyenKyLuat\\HDSD_KyLuat.txt");
-            txtbox_HDSDKL.Text = a;
         }
     }
 }

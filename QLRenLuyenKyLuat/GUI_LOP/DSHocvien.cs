@@ -3,31 +3,41 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using QLRenLuyenKyLuat.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using QLRenLuyenKyLuat.Data;
 
 namespace QLRenLuyenKyLuat.GUI_LOP
 {
     public partial class DSHocvien : DevExpress.XtraEditors.XtraUserControl
     {
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        public static int check;
         public DSHocvien()
         {
             InitializeComponent();
-            connect();
+            //int a = 0;
+            
         }
+        public int checkbox;
+       
+        
         private void DSHocvien_Load(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Now;
-            txtBoxCurDay.Text = "Ngày " + dt.Date.ToString("dd/MM/yyyy");
+            connect();
         }
 
         private void connect() // danh sach hoc vien
         {
             sqlCon.Close();
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop = N'"+ frmLogin.lop+"'", sqlCon);
+            
+            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop like N'%" + frmLogin.maLop.Trim() + "%'", sqlCon);
+
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             datagridDSHV.DataSource = dtb;
@@ -35,35 +45,175 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             datagridDSHV.AllowUserToAddRows = false;
             datagridDSHV.AutoResizeColumns();
             sqlCon.Close();
-        }
-        private void btnDeNghi_Click(object sender, EventArgs e)
-        {
 
         }
-        public string MaHV, hoten, NguoiDG;
-
         private void datagridDSHV_CellContentClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
         {
             sqlCon.Close();
             sqlCon.Open();
-            string query = "Select * from Hocvien where malop= N'" + frmLogin.lop + "' and chucvu= N'Lớp trưởng'";
+            string query = "Select * from Hocvien where maLop like N'%" + frmLogin.maLop.Trim() + "%' and chucvu= N'Lớp trưởng'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
             DataTable dt = new DataTable();
             sqlDa.Fill(dt);
 
-            foreach(DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)
             {
-                NguoiDG = dr["tenhocvien"].ToString();
+                txtBoxNgDG.Text = dr["MaHocVien"].ToString();
             }
-        
-            if (e.ColumnIndex == this.colEdit.Index)
+            
+            txtboxMaHV.Text = datagridDSHV.SelectedRows[0].Cells[1].Value.ToString();
+            txtBoxTen.Text = datagridDSHV.SelectedRows[0].Cells[2].Value.ToString();
+
+            // datagridDSHV.Rows[e.RowIndex].Cells[1].Value = check;
+
+        }
+        public int count;
+        DateTime date = DateTime.Now;
+        private void btnDeNghi_Click(object sender, EventArgs e)
+        {
+            int dem = 0;
+            for (int row = 0; row < datagridDSHV.Rows.Count; ++row)
             {
-                MaHV = datagridDSHV.Rows[e.RowIndex].Cells[2].Value.ToString();
-                hoten = datagridDSHV.Rows[e.RowIndex].Cells[3].Value.ToString();
-                NhapRLKL frm = new NhapRLKL(this,MaHV,hoten, NguoiDG);
-                datagridDSHV.Controls.Add(frm);
-                frm.Show()  ;
+                if (Convert.ToInt32(datagridDSHV.Rows[row].Cells[0].Value) == 1)
+                {
+                    dem++;
+                }
             }
+            sqlCon.Close();
+            sqlCon.Open();
+            string query = "select count(MaHocVien) as soluong from HOCVIEN where MaLop = N'" + frmLogin.maLop + "'";
+            SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
+            DataTable dt = new DataTable();
+            sqlDa.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                count = int.Parse(dr["soluong"].ToString());
+            }
+            if (dem == count)
+            {
+                sqlCon.Close();
+                sqlCon.Open();
+                for (int row = 0; row < datagridDSHV.Rows.Count; ++row)
+                {
+                    String q = "INSERT INTO  Hocvien_PLRL(MaHVPLRL, thoigian, MaHocvien, MaDiemPLRL) VALUES([dbo].auto_MaHVPLRL('" + (string)(datagridDSHV.Rows[row].Cells[1].Value.ToString().Trim()) + "'), " +
+                        "CAST(N'" + date.Date.ToString("yyyy/MM/dd") + "' AS DATE) , N'" + (string)(datagridDSHV.Rows[row].Cells[1].Value.ToString().Trim()) + "'," +
+                        " [dbo].auto_MaDiemPLKL(N'" + (string)(datagridDSHV.Rows[row].Cells[1].Value.ToString().Trim()) + "'))";
+                    SqlCommand sqld = new SqlCommand(q, sqlCon);
+                    sqld.ExecuteNonQuery();
+                    
+                }
+                sqlCon.Close();
+                MessageBox.Show("Đã đề nghị thành công!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DialogResult warn = MessageBox.Show("Có học viên chưa được đánh giá. Vui lòng kiểm tra lại!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
+
+        }
+        private void clear()
+        {
+            txtBoxTen.Text = "";
+            txtboxMaHV.Text = "";
+            txtboxDiemKL.Text = "";
+            txtBoxDiemHT.Text = "";
+            txtBoxDiemLS.Text = "";
+            txtBoxNgDG.Text = "";
+            txtBoxSum.Text = "";
+            txtBoxXepLoai.Text = "";
+            txtBox_NhanXet.Text = "";
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlCon.Close();
+                sqlCon.Open();
+                string query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES([dbo].auto_MaHVPLRL(N'" + txtboxMaHV.Text.Trim() + "') , " + int.Parse(txtboxDiemKL.Text) + 
+                    "," + int.Parse(txtBoxDiemHT.Text.Trim()) + "," + int.Parse(txtBoxDiemLS.Text.Trim()) + ", N'" + txtBox_NhanXet.Text.Trim() + "', N'" + txtBoxNgDG.Text.Trim() + "', N'L' , N'" + txtBoxXepLoai.Text.Trim() + "')";
+                SqlCommand sqlDa = new SqlCommand(query, sqlCon);
+                sqlDa.ExecuteNonQuery();
+                sqlCon.Close();
+                MessageBox.Show("Đã lưu thành công!","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                datagridDSHV.SelectedRows[0].Cells[0].Value = 1;
+                clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Học viên đã được đánh giá rèn luyện kỷ luật tháng!", "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public  int sum = 0;
+        public  string xeploai;
+        public  int[] HT = new int[3];
+        public  int[] KL = new int[3];
+        public  int[] LS = new int[3];
+        private void txtBoxSum_MouseClick(object sender, MouseEventArgs e)
+        {
+            sqlCon.Close();
+            sqlCon.Open();
+            int diem1 = int.Parse(txtboxDiemKL.Text);
+            int diem2 = int.Parse(txtBoxDiemLS.Text);
+            int diem3 = int.Parse(txtBoxDiemHT.Text);
+
+            while (diem1 > 10 || diem1 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtboxDiemKL.Focus();
+            }
+
+            while (diem2 > 10 || diem2 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtBoxDiemLS.Focus();
+            }
+
+            while (diem3 > 10 || diem3 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtBoxDiemHT.Focus();
+            }
+
+
+            sum = diem1 + diem2 + diem3;
+            txtBoxSum.Text = sum.ToString();
+
+            string queryHT = "select muc1, muc2, muc3 from QUYCHUANKYLUAT join (select MaQLQC, ThoiGian from QUYCHUAN where ThoiGian = (select Max(thoigian) from QUYCHUAN )) as b on QUYCHUANKYLUAT.MaQLQC = b.MaQLQC and NoiDung = N'Học tập'";
+            string queryKL = "select muc1, muc2, muc3 from QUYCHUANKYLUAT join (select MaQLQC, ThoiGian from QUYCHUAN where ThoiGian = (select Max(thoigian) from QUYCHUAN )) as b on QUYCHUANKYLUAT.MaQLQC = b.MaQLQC and NoiDung = N'Kỷ luật'";
+            string queryLS = "select muc1, muc2, muc3 from QUYCHUANKYLUAT join (select MaQLQC, ThoiGian from QUYCHUAN where ThoiGian = (select Max(thoigian) from QUYCHUAN )) as b on QUYCHUANKYLUAT.MaQLQC = b.MaQLQC and NoiDung = N'Lối sống'";
+            SqlDataAdapter sqlDaHT = new SqlDataAdapter(queryHT, sqlCon);
+            SqlDataAdapter sqlDaKL = new SqlDataAdapter(queryKL, sqlCon);
+            SqlDataAdapter sqlDaLS = new SqlDataAdapter(queryLS, sqlCon);
+            DataTable dtHT = new DataTable();
+            DataTable dtKL = new DataTable();
+            DataTable dtLS = new DataTable();
+            sqlDaHT.Fill(dtHT);
+            sqlDaKL.Fill(dtKL);
+            sqlDaLS.Fill(dtLS);
+
+            foreach (DataRow dr in dtHT.Rows)
+            {
+                HT[0] = int.Parse(dr["muc1"].ToString());
+                HT[1] = int.Parse(dr["muc2"].ToString());
+                HT[2] = int.Parse(dr["muc3"].ToString());
+            }
+            foreach (DataRow dr in dtKL.Rows)
+            {
+                KL[0] = int.Parse(dr["muc1"].ToString());
+                KL[1] = int.Parse(dr["muc2"].ToString());
+                KL[2] = int.Parse(dr["muc3"].ToString());
+            }
+            foreach (DataRow dr in dtLS.Rows)
+            {
+                LS[0] = int.Parse(dr["muc1"].ToString());
+                LS[1] = int.Parse(dr["muc2"].ToString());
+                LS[2] = int.Parse(dr["muc3"].ToString());
+            }
+            xeploai = Calculator.cal_DiemRLThang(diem1, diem2, diem3, KL, LS, HT);
+
+
+            txtBoxXepLoai.Text = xeploai;
+            txtBox_NhanXet.Focus();
         }
     }
 }

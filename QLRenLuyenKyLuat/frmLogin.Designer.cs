@@ -33,7 +33,7 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtLoginMaHV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLoginMaLop = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtbLoginPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
@@ -77,9 +77,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(279, 237);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 26);
+            this.label1.Size = new System.Drawing.Size(103, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Mã Học Viên:";
+            this.label1.Text = "Mã Lớp:";
             // 
             // label2
             // 
@@ -91,24 +91,24 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu:";
             // 
-            // txtLoginMaHV
+            // txtLoginMaLop
             // 
-            this.txtLoginMaHV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLoginMaHV.DefaultText = "";
-            this.txtLoginMaHV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLoginMaHV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLoginMaHV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoginMaHV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoginMaHV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoginMaHV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLoginMaHV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoginMaHV.Location = new System.Drawing.Point(477, 229);
-            this.txtLoginMaHV.Name = "txtLoginMaHV";
-            this.txtLoginMaHV.PasswordChar = '\0';
-            this.txtLoginMaHV.PlaceholderText = "";
-            this.txtLoginMaHV.SelectedText = "";
-            this.txtLoginMaHV.Size = new System.Drawing.Size(261, 53);
-            this.txtLoginMaHV.TabIndex = 5;
+            this.txtLoginMaLop.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLoginMaLop.DefaultText = "";
+            this.txtLoginMaLop.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLoginMaLop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLoginMaLop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoginMaLop.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoginMaLop.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoginMaLop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLoginMaLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoginMaLop.Location = new System.Drawing.Point(477, 229);
+            this.txtLoginMaLop.Name = "txtLoginMaLop";
+            this.txtLoginMaLop.PasswordChar = '\0';
+            this.txtLoginMaLop.PlaceholderText = "";
+            this.txtLoginMaLop.SelectedText = "";
+            this.txtLoginMaLop.Size = new System.Drawing.Size(261, 53);
+            this.txtLoginMaLop.TabIndex = 5;
             // 
             // txtbLoginPass
             // 
@@ -152,7 +152,7 @@
             this.ClientSize = new System.Drawing.Size(1254, 662);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtbLoginPass);
-            this.Controls.Add(this.txtLoginMaHV);
+            this.Controls.Add(this.txtLoginMaLop);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button3);
@@ -172,7 +172,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox txtLoginMaHV;
+        private Guna.UI2.WinForms.Guna2TextBox txtLoginMaLop;
         private Guna.UI2.WinForms.Guna2TextBox txtbLoginPass;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
     }

@@ -13,10 +13,10 @@ namespace QLRenLuyenKyLuat
     public partial class frmLogin : Form
     { 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-        public static string position;
+      
         public static string name;
-        public static string lop;
-        public static string maHV;
+
+        public static string maLop;
         DataTable dtbl;
         public frmLogin()
         {
@@ -49,18 +49,16 @@ namespace QLRenLuyenKyLuat
             sqlCon.Close();
             sqlCon.Open();
            
-            string query = "Select * from HocVien hv, Lop lop where hv.MaLop = lop.MaLop and mahocvien= N'" + txtLoginMaHV.Text.Trim() + "'";
+            string query = "Select * from  Lop  where  Malop like N'%"+txtLoginMaLop.Text.Trim()+"%'";
             SqlDataAdapter da = new SqlDataAdapter(query, sqlCon);        
             dtbl = new DataTable(); 
             da.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
             {
-                maHV = txtLoginMaHV.Text.Trim();
+                maLop = txtLoginMaLop.Text.Trim();
                 foreach (DataRow dr in dtbl.Rows)
                 {
-                    name = dr["TenHocvien"].ToString();
-                    position = dr["ChucVu"].ToString();
-                    lop = dr["MaLop"].ToString();
+                    name = dr["TenLop"].ToString();
                 }
                 sqlCon.Close();
                 frmLop frm = new frmLop();

@@ -93,11 +93,10 @@
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainContainer.Location = new System.Drawing.Point(339, 39);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(10);
             this.mainContainer.Name = "mainContainer";
             this.mainContainer.Size = new System.Drawing.Size(1093, 704);
             this.mainContainer.TabIndex = 0;
-          
             // 
             // fluentDesignFormControl1
             // 
@@ -530,9 +529,6 @@
             // 
             // accordionControlElement2
             // 
-            this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.TrangChu,
-            this.ThongBao});
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Trang chủ";
             // 
@@ -566,7 +562,7 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(10);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.Size = new System.Drawing.Size(339, 704);

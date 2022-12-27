@@ -1,5 +1,5 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +16,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         public HDSD_TL()
         {
             InitializeComponent();
+            string a = File.ReadAllText("D:\\QLRenLuyenKyLuat\\QLRenLuyenKyLuat\\HDSD_TheLuc.txt");
+            txtBox_HdsdKL.Text = a;
         }
     }
 }

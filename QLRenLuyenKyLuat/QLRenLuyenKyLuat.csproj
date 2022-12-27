@@ -308,6 +308,12 @@
     <Compile Include="GUI_LOP\NhapRLKL.Designer.cs">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_LOP\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -432,6 +438,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\NhapRLKL.resx">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
