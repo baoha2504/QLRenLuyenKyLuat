@@ -29,11 +29,13 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDeNghi = new System.Windows.Forms.Button();
             this.datagridDSHV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.txtBoxCurDay = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxNgDG = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,8 +57,9 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagridDSHV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeNghi
@@ -74,28 +77,28 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             // 
             // datagridDSHV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.datagridDSHV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridDSHV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.datagridDSHV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridDSHV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.datagridDSHV.ColumnHeadersHeight = 40;
             this.datagridDSHV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.datagridDSHV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCheck});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridDSHV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridDSHV.DefaultCellStyle = dataGridViewCellStyle30;
             this.datagridDSHV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.datagridDSHV.Location = new System.Drawing.Point(59, 132);
             this.datagridDSHV.Name = "datagridDSHV";
@@ -127,6 +130,13 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.datagridDSHV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
             this.datagridDSHV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datagridDSHV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridDSHV_CellContentClick);
+            // 
+            // colCheck
+            // 
+            this.colCheck.FillWeight = 32.24794F;
+            this.colCheck.HeaderText = "Check";
+            this.colCheck.MinimumWidth = 6;
+            this.colCheck.Name = "colCheck";
             // 
             // txtBoxCurDay
             // 
@@ -177,6 +187,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxNgDG.Name = "txtBoxNgDG";
             this.txtBoxNgDG.PasswordChar = '\0';
             this.txtBoxNgDG.PlaceholderText = "";
+            this.txtBoxNgDG.ReadOnly = true;
             this.txtBoxNgDG.SelectedText = "";
             this.txtBoxNgDG.Size = new System.Drawing.Size(242, 45);
             this.txtBoxNgDG.TabIndex = 55;
@@ -209,6 +220,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxXepLoai.Name = "txtBoxXepLoai";
             this.txtBoxXepLoai.PasswordChar = '\0';
             this.txtBoxXepLoai.PlaceholderText = "";
+            this.txtBoxXepLoai.ReadOnly = true;
             this.txtBoxXepLoai.SelectedText = "";
             this.txtBoxXepLoai.Size = new System.Drawing.Size(81, 45);
             this.txtBoxXepLoai.TabIndex = 53;
@@ -230,6 +242,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxSum.Name = "txtBoxSum";
             this.txtBoxSum.PasswordChar = '\0';
             this.txtBoxSum.PlaceholderText = "";
+            this.txtBoxSum.ReadOnly = true;
             this.txtBoxSum.SelectedText = "";
             this.txtBoxSum.Size = new System.Drawing.Size(81, 45);
             this.txtBoxSum.TabIndex = 52;
@@ -255,6 +268,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxDiemHT.SelectedText = "";
             this.txtBoxDiemHT.Size = new System.Drawing.Size(81, 45);
             this.txtBoxDiemHT.TabIndex = 51;
+            this.txtBoxDiemHT.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoxDiemHT_Validating);
             // 
             // txtBoxDiemLS
             // 
@@ -276,6 +290,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxDiemLS.SelectedText = "";
             this.txtBoxDiemLS.Size = new System.Drawing.Size(81, 45);
             this.txtBoxDiemLS.TabIndex = 50;
+            this.txtBoxDiemLS.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoxDiemLS_Validating);
             // 
             // txtboxDiemKL
             // 
@@ -297,6 +312,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtboxDiemKL.SelectedText = "";
             this.txtboxDiemKL.Size = new System.Drawing.Size(81, 45);
             this.txtboxDiemKL.TabIndex = 49;
+            this.txtboxDiemKL.Validating += new System.ComponentModel.CancelEventHandler(this.txtboxDiemKL_Validating);
             // 
             // txtBoxTen
             // 
@@ -315,6 +331,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxTen.Name = "txtBoxTen";
             this.txtBoxTen.PasswordChar = '\0';
             this.txtBoxTen.PlaceholderText = "";
+            this.txtBoxTen.ReadOnly = true;
             this.txtBoxTen.SelectedText = "";
             this.txtBoxTen.Size = new System.Drawing.Size(242, 45);
             this.txtBoxTen.TabIndex = 48;
@@ -337,6 +354,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtboxMaHV.Name = "txtboxMaHV";
             this.txtboxMaHV.PasswordChar = '\0';
             this.txtboxMaHV.PlaceholderText = "";
+            this.txtboxMaHV.ReadOnly = true;
             this.txtboxMaHV.SelectedText = "";
             this.txtboxMaHV.Size = new System.Drawing.Size(242, 45);
             this.txtboxMaHV.TabIndex = 47;
@@ -362,6 +380,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBox_NhanXet.SelectedText = "";
             this.txtBox_NhanXet.Size = new System.Drawing.Size(362, 159);
             this.txtBox_NhanXet.TabIndex = 46;
+            this.txtBox_NhanXet.Validating += new System.ComponentModel.CancelEventHandler(this.txtBox_NhanXet_Validating);
             // 
             // label12
             // 
@@ -464,12 +483,9 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label1.TabIndex = 37;
             this.label1.Text = "Mã học viên :";
             // 
-            // colCheck
+            // errorProvider1
             // 
-            this.colCheck.FillWeight = 32.24794F;
-            this.colCheck.HeaderText = "Check";
-            this.colCheck.MinimumWidth = 6;
-            this.colCheck.Name = "colCheck";
+            this.errorProvider1.ContainerControl = this;
             // 
             // DSHocvien
             // 
@@ -504,6 +520,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.Size = new System.Drawing.Size(1694, 979);
             this.Load += new System.EventHandler(this.DSHocvien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridDSHV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -534,5 +551,6 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

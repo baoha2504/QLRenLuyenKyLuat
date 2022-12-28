@@ -45,6 +45,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtbox_HDSDKL.ForeColor = System.Drawing.Color.Black;
             this.txtbox_HDSDKL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_HDSDKL.Location = new System.Drawing.Point(0, 3);
+            this.txtbox_HDSDKL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbox_HDSDKL.Multiline = true;
             this.txtbox_HDSDKL.Name = "txtbox_HDSDKL";
             this.txtbox_HDSDKL.PasswordChar = '\0';
             this.txtbox_HDSDKL.PlaceholderText = "";
