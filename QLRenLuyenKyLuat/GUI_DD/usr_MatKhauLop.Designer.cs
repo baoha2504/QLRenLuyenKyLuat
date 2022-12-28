@@ -54,7 +54,7 @@
             this.btnTimKiem.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(489, 583);
+            this.btnTimKiem.Location = new System.Drawing.Point(602, 713);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(110, 36);
             this.btnTimKiem.TabIndex = 43;
@@ -65,7 +65,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(29, 583);
+            this.label11.Location = new System.Drawing.Point(142, 713);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 23);
             this.label11.TabIndex = 42;
@@ -75,7 +75,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 533);
+            this.label10.Location = new System.Drawing.Point(142, 663);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 23);
             this.label10.TabIndex = 41;
@@ -94,7 +94,7 @@
             this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNoiDung.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoiDung.Location = new System.Drawing.Point(136, 583);
+            this.txtNoiDung.Location = new System.Drawing.Point(249, 713);
             this.txtNoiDung.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
@@ -121,7 +121,7 @@
             "Cấp bậc",
             "Chức vụ",
             "Lớp"});
-            this.cbbMuc.Location = new System.Drawing.Point(136, 533);
+            this.cbbMuc.Location = new System.Drawing.Point(249, 663);
             this.cbbMuc.Name = "cbbMuc";
             this.cbbMuc.Size = new System.Drawing.Size(336, 36);
             this.cbbMuc.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -150,7 +150,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgv.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv.Location = new System.Drawing.Point(33, 86);
+            this.dtgv.Location = new System.Drawing.Point(146, 216);
             this.dtgv.Name = "dtgv";
             this.dtgv.RowHeadersVisible = false;
             this.dtgv.RowHeadersWidth = 51;
@@ -185,7 +185,7 @@
             this.bthLuu.FillColor = System.Drawing.Color.DarkOrange;
             this.bthLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bthLuu.ForeColor = System.Drawing.Color.White;
-            this.bthLuu.Location = new System.Drawing.Point(1173, 583);
+            this.bthLuu.Location = new System.Drawing.Point(1286, 713);
             this.bthLuu.Name = "bthLuu";
             this.bthLuu.Size = new System.Drawing.Size(110, 36);
             this.bthLuu.TabIndex = 37;
@@ -205,11 +205,12 @@
             this.txtTenLop.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenLop.ForeColor = System.Drawing.Color.Black;
             this.txtTenLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenLop.Location = new System.Drawing.Point(823, 232);
+            this.txtTenLop.Location = new System.Drawing.Point(936, 362);
             this.txtTenLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.PasswordChar = '\0';
             this.txtTenLop.PlaceholderText = "";
+            this.txtTenLop.ReadOnly = true;
             this.txtTenLop.SelectedText = "";
             this.txtTenLop.Size = new System.Drawing.Size(458, 33);
             this.txtTenLop.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -228,11 +229,12 @@
             this.txtMaLop.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaLop.ForeColor = System.Drawing.Color.Black;
             this.txtMaLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaLop.Location = new System.Drawing.Point(823, 148);
+            this.txtMaLop.Location = new System.Drawing.Point(936, 278);
             this.txtMaLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.PasswordChar = '\0';
             this.txtMaLop.PlaceholderText = "";
+            this.txtMaLop.ReadOnly = true;
             this.txtMaLop.SelectedText = "";
             this.txtMaLop.Size = new System.Drawing.Size(458, 33);
             this.txtMaLop.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -242,7 +244,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(625, 232);
+            this.label3.Location = new System.Drawing.Point(738, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 19);
             this.label3.TabIndex = 32;
@@ -252,7 +254,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(625, 148);
+            this.label2.Location = new System.Drawing.Point(738, 278);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 31;
@@ -270,10 +272,10 @@
             this.txtMKMoi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMKMoi.ForeColor = System.Drawing.Color.Black;
             this.txtMKMoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMKMoi.Location = new System.Drawing.Point(823, 319);
+            this.txtMKMoi.Location = new System.Drawing.Point(936, 449);
             this.txtMKMoi.Margin = new System.Windows.Forms.Padding(4);
             this.txtMKMoi.Name = "txtMKMoi";
-            this.txtMKMoi.PasswordChar = '\0';
+            this.txtMKMoi.PasswordChar = '*';
             this.txtMKMoi.PlaceholderText = "";
             this.txtMKMoi.SelectedText = "";
             this.txtMKMoi.Size = new System.Drawing.Size(458, 33);
@@ -284,7 +286,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(625, 319);
+            this.label1.Location = new System.Drawing.Point(738, 449);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 19);
             this.label1.TabIndex = 44;
@@ -302,7 +304,7 @@
             this.txtNhapLaiMKMoi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNhapLaiMKMoi.ForeColor = System.Drawing.Color.Black;
             this.txtNhapLaiMKMoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNhapLaiMKMoi.Location = new System.Drawing.Point(823, 409);
+            this.txtNhapLaiMKMoi.Location = new System.Drawing.Point(936, 539);
             this.txtNhapLaiMKMoi.Margin = new System.Windows.Forms.Padding(4);
             this.txtNhapLaiMKMoi.Name = "txtNhapLaiMKMoi";
             this.txtNhapLaiMKMoi.PasswordChar = '*';
@@ -316,7 +318,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(625, 409);
+            this.label5.Location = new System.Drawing.Point(738, 539);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 19);
             this.label5.TabIndex = 46;
@@ -342,7 +344,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "usr_MatKhauLop";
-            this.Size = new System.Drawing.Size(1312, 704);
+            this.Size = new System.Drawing.Size(1451, 793);
             this.Load += new System.EventHandler(this.usr_MatKhauLop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
             this.ResumeLayout(false);

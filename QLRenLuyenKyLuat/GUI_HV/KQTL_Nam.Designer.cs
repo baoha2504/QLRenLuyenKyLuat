@@ -29,7 +29,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.quy_1 = new System.Windows.Forms.Label();
             this.L_KQTL_Nam = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,22 +38,22 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label11 = new System.Windows.Forms.Label();
             this.cbB_TL_Nam = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.quy_2 = new System.Windows.Forms.Label();
+            this.quy_3 = new System.Windows.Forms.Label();
+            this.quy_4 = new System.Windows.Forms.Label();
+            this.caNam = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // quy_1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(669, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 25);
-            this.label1.TabIndex = 127;
-            this.label1.Text = "ND";
+            this.quy_1.AutoSize = true;
+            this.quy_1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quy_1.ForeColor = System.Drawing.Color.Black;
+            this.quy_1.Location = new System.Drawing.Point(669, 197);
+            this.quy_1.Name = "quy_1";
+            this.quy_1.Size = new System.Drawing.Size(44, 25);
+            this.quy_1.TabIndex = 127;
+            this.quy_1.Text = "ND";
             // 
             // L_KQTL_Nam
             // 
@@ -119,10 +119,14 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // cbB_TL_Nam
             // 
             this.cbB_TL_Nam.FormattingEnabled = true;
+            this.cbB_TL_Nam.Items.AddRange(new object[] {
+            "2021",
+            "2022"});
             this.cbB_TL_Nam.Location = new System.Drawing.Point(392, 111);
             this.cbB_TL_Nam.Name = "cbB_TL_Nam";
             this.cbB_TL_Nam.Size = new System.Drawing.Size(121, 27);
             this.cbB_TL_Nam.TabIndex = 141;
+            this.cbB_TL_Nam.SelectedIndexChanged += new System.EventHandler(this.cbB_TL_Nam_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -134,62 +138,62 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label10.TabIndex = 142;
             this.label10.Text = "Cả Năm";
             // 
-            // label3
+            // quy_2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(669, 281);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 25);
-            this.label3.TabIndex = 144;
-            this.label3.Text = "ND";
+            this.quy_2.AutoSize = true;
+            this.quy_2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quy_2.ForeColor = System.Drawing.Color.Black;
+            this.quy_2.Location = new System.Drawing.Point(669, 281);
+            this.quy_2.Name = "quy_2";
+            this.quy_2.Size = new System.Drawing.Size(44, 25);
+            this.quy_2.TabIndex = 144;
+            this.quy_2.Text = "ND";
             // 
-            // label4
+            // quy_3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(669, 373);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 25);
-            this.label4.TabIndex = 145;
-            this.label4.Text = "ND";
+            this.quy_3.AutoSize = true;
+            this.quy_3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quy_3.ForeColor = System.Drawing.Color.Black;
+            this.quy_3.Location = new System.Drawing.Point(669, 373);
+            this.quy_3.Name = "quy_3";
+            this.quy_3.Size = new System.Drawing.Size(44, 25);
+            this.quy_3.TabIndex = 145;
+            this.quy_3.Text = "ND";
             // 
-            // label9
+            // quy_4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(669, 467);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 25);
-            this.label9.TabIndex = 146;
-            this.label9.Text = "ND";
+            this.quy_4.AutoSize = true;
+            this.quy_4.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quy_4.ForeColor = System.Drawing.Color.Black;
+            this.quy_4.Location = new System.Drawing.Point(669, 467);
+            this.quy_4.Name = "quy_4";
+            this.quy_4.Size = new System.Drawing.Size(44, 25);
+            this.quy_4.TabIndex = 146;
+            this.quy_4.Text = "ND";
             // 
-            // label13
+            // caNam
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(669, 556);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 25);
-            this.label13.TabIndex = 147;
-            this.label13.Text = "ND";
+            this.caNam.AutoSize = true;
+            this.caNam.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.caNam.ForeColor = System.Drawing.Color.Black;
+            this.caNam.Location = new System.Drawing.Point(669, 556);
+            this.caNam.Name = "caNam";
+            this.caNam.Size = new System.Drawing.Size(44, 25);
+            this.caNam.TabIndex = 147;
+            this.caNam.Text = "ND";
             // 
             // KQTL_Nam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.caNam);
+            this.Controls.Add(this.quy_4);
+            this.Controls.Add(this.quy_3);
+            this.Controls.Add(this.quy_2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cbB_TL_Nam);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.quy_1);
             this.Controls.Add(this.L_KQTL_Nam);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -197,13 +201,14 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Controls.Add(this.label8);
             this.Name = "KQTL_Nam";
             this.Size = new System.Drawing.Size(1074, 637);
+            this.Load += new System.EventHandler(this.KQTL_Nam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label quy_1;
         private System.Windows.Forms.Label L_KQTL_Nam;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -212,9 +217,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cbB_TL_Nam;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label quy_2;
+        private System.Windows.Forms.Label quy_3;
+        private System.Windows.Forms.Label quy_4;
+        private System.Windows.Forms.Label caNam;
     }
 }

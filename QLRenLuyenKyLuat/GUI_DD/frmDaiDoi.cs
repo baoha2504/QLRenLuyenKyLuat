@@ -397,7 +397,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void HDSD_KL_Click(object sender, EventArgs e)
         {
-            if (usr_ThayDoiQCTL == null)
+            if (usr_HDSD_KL == null)
             {
                 usr_HDSD_KL usr_HDSD_KL = new usr_HDSD_KL();
                 usr_HDSD_KL.Dock = DockStyle.Fill;

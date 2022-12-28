@@ -44,7 +44,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 "where QUYCHUAN.MaQLQC = QUYCHUANTHELUC.MaQLQC " +
                 "and QUYCHUAN.NguoiSuaDoi = QUANLY.MaQL " +
                 "and NoiDung LIKE N'%nam%' " +
-                "and QUYCHUAN.ThoiGian = '" + date.ToString("yyyy-MM-dd") + "'";
+                "and QUYCHUAN.ThoiGian = '" + date.ToString("yyyy-MM-dd") + "' " +
+                "order by (NoiDung)";
             connect(query);
         }
 
@@ -106,7 +107,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 "where QUYCHUAN.MaQLQC = QUYCHUANTHELUC.MaQLQC " +
                 "and QUYCHUAN.NguoiSuaDoi = QUANLY.MaQL " +
                 "and NoiDung LIKE N'%nữ%' " +
-                "and QUYCHUAN.ThoiGian = '" + cbbMuc.Text + "'";
+                "and QUYCHUAN.ThoiGian = '" + cbbMuc.Text + "' " +
+                "order by (NoiDung)";
             connect(query);
         }
 
@@ -117,7 +119,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 "where QUYCHUAN.MaQLQC = QUYCHUANTHELUC.MaQLQC " +
                 "and QUYCHUAN.NguoiSuaDoi = QUANLY.MaQL " +
                 "and NoiDung LIKE N'%nam%' " +
-                "and QUYCHUAN.ThoiGian = '" + cbbMuc.Text + "'";
+                "and QUYCHUAN.ThoiGian = '" + cbbMuc.Text + "' " +
+                "order by (NoiDung)";
             connect(query);
         }
 

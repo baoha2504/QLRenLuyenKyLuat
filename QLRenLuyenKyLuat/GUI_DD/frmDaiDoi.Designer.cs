@@ -95,10 +95,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(442, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.mainContainer.Location = new System.Drawing.Point(361, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(48);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(982, 702);
+            this.mainContainer.Size = new System.Drawing.Size(930, 690);
             this.mainContainer.TabIndex = 0;
             // 
             // fluentDesignFormControl1
@@ -116,7 +116,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1424, 46);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1291, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem6);
@@ -242,7 +242,6 @@
             this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.ThayDoiMatKhau,
             this.DangXuat});
-            this.accordionControlElement8.Expanded = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Text = "Tài khoản";
             // 
@@ -302,7 +301,6 @@
             this.QCTL,
             this.ThayDoiQCKL,
             this.ThayDoiQCTL});
-            this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "Quy chuẩn";
             // 
@@ -343,7 +341,6 @@
             this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement20,
             this.accordionControlElement21});
-            this.accordionControlElement5.Expanded = true;
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "Rèn luyện thể lực";
             // 
@@ -352,6 +349,7 @@
             this.accordionControlElement20.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.NhapKQTL,
             this.SuaKQTL});
+            this.accordionControlElement20.Expanded = true;
             this.accordionControlElement20.Name = "accordionControlElement20";
             this.accordionControlElement20.Text = "Nhập kết quả kiểm tra";
             // 
@@ -376,6 +374,7 @@
             this.accordionControlElement21.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.KQTLQuy,
             this.KQTLNam});
+            this.accordionControlElement21.Expanded = true;
             this.accordionControlElement21.Name = "accordionControlElement21";
             this.accordionControlElement21.Text = "Xem kết quả kiểm tra";
             // 
@@ -401,7 +400,6 @@
             this.accordionControlElement34,
             this.accordionControlElement35,
             this.accordionControlElement36});
-            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Rèn luyện kỷ luật";
             // 
@@ -410,6 +408,7 @@
             this.accordionControlElement34.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DanhGiaHV,
             this.SuaDanhGiaHV});
+            this.accordionControlElement34.Expanded = true;
             this.accordionControlElement34.Name = "accordionControlElement34";
             this.accordionControlElement34.Text = "Đánh giá";
             // 
@@ -434,6 +433,7 @@
             this.accordionControlElement35.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DeNghiHocVien,
             this.DeNghiLop});
+            this.accordionControlElement35.Expanded = true;
             this.accordionControlElement35.Name = "accordionControlElement35";
             this.accordionControlElement35.Text = "Kết quả đề nghị";
             // 
@@ -612,10 +612,10 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(48);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(442, 702);
+            this.accordionControl1.Size = new System.Drawing.Size(361, 690);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -623,7 +623,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 748);
+            this.ClientSize = new System.Drawing.Size(1291, 736);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);

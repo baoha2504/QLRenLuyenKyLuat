@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\QLRenLuyenKyLuat",
+    "\\QLRenLuyenKyLuat\\GUI_LOP"
   ],
-  "SelectedNode": "\\QLRenLuyenKyLuat.sln",
+  "SelectedNode": "\\QLRenLuyenKyLuat\\GUI_LOP\\KQKL_Year.cs",
   "PreviewInSolutionExplorer": false
 }

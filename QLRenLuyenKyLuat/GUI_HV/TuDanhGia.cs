@@ -28,14 +28,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             maHocVien = frmLogin.maNguoiDung;
             try
             {
-                /* sqlCon.Open();
-                 String query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES('" + "'[dbo].auto_MaDiemPLKL('" + txtboxMaHV.Text + "'),'" +
-                     int.Parse(txtboxDiemKL.Text) + "','" + int.Parse(txtBoxDiemHT.Text) + "','" + int.Parse(txtBoxDiemLS.Text) + "','" +
-                     txtBox_NhanXet.Text + "','" + txtBoxNgDG.Text + "','" + "'L'" + "','" + txtBoxXepLoai.Text + "')";
-                 SqlCommand sqlDa = new SqlCommand(query, sqlCon);
-                 sqlDa.ExecuteNonQuery();
-                 sqlCon.Close();*/
-             
+                sqlCon.Open();
+                String query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES('" + "'[dbo].auto_MaDiemPLKL('" + frmLogin.maNguoiDung+ "'),'" +
+                int.Parse(txtbox_DKL_CN.Text) + "','"  + int.Parse(txtbox_DHT_CN.Text) + "','" + int.Parse(txtbox_DLS_CN.Text) + "','"+
+                txtbox_NX_CN.Text + "',' ','" + "'CN'" + "','" + txtbox_PL_CN.Text + "')";
+                SqlCommand sqlDa = new SqlCommand(query, sqlCon);
+                sqlDa.ExecuteNonQuery();
+                sqlCon.Close();          
             }
             catch (Exception ex)
             {

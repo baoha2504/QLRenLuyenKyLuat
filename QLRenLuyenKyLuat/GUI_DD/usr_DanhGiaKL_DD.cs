@@ -124,7 +124,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             try
             {
                 query = "INSERT [dbo].[DIEM_PLKL] ([MaDiemPLKL], [DiemKL], [DiemLS], [DiemHT], [NhanXet], [CapDanhGia], [NguoiDanhGia], [MaPLKL]) " +
-                    "VALUES (N'" + MaDiemPLKL + "', " + txtKL_DD + ", " + txtLS_L.Text + ", " + txtHT_L.Text + ", N'" + txtNhanXet_L.Text + "', N'DD', N'" + frmLogin.maNguoiDung + "', N'" + txtMucPhanLoai_DD.Text + "')";
+                    "VALUES (N'" + MaDiemPLKL + "', " + txtKL_DD + ", " + txtLS_L.Text + ", " + txtHT_L.Text + ", N'" + txtNhanXet_L.Text + "', N'D', N'" + frmLogin.maNguoiDung + "', N'" + txtMucPhanLoai_DD.Text + "')";
                 CapNhat(query);
             }
             catch

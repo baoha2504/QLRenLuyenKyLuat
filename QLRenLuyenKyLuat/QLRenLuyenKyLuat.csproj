@@ -34,15 +34,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -70,11 +84,36 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_DD\DataSetThang.cs">
+      <DependentUpon>DataSetThang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\DataSetThang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\DataSetTLQuy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTLQuy.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GUI_DD\frmDaiDoi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_DD\frmDaiDoi.Designer.cs">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\ReportThang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\ReportThang.Designer.cs">
+      <DependentUpon>ReportThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DD\ReportTLQuy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI_DD\ReportTLQuy.Designer.cs">
+      <DependentUpon>ReportTLQuy.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_DD\usr_DanhGiaKL_DD.cs">
       <SubType>UserControl</SubType>
@@ -352,6 +391,12 @@
     <Compile Include="GUI_LOP\NhapRLKL.Designer.cs">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_LOP\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -359,6 +404,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\frmDaiDoi.resx">
       <DependentUpon>frmDaiDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\ReportThang.resx">
+      <DependentUpon>ReportThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DD\ReportTLQuy.resx">
+      <DependentUpon>ReportTLQuy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DD\usr_DanhGiaKL_CN.resx">
       <DependentUpon>usr_DanhGiaKL_CN.cs</DependentUpon>
@@ -498,6 +549,9 @@
     <EmbeddedResource Include="GUI_LOP\NhapRLKL.resx">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -509,6 +563,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="GUI_DD\DataSetThang.xsc">
+      <DependentUpon>DataSetThang.xsd</DependentUpon>
+    </None>
+    <None Include="GUI_DD\DataSetThang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GUI_DD\DataSetThang.xss">
+      <DependentUpon>DataSetThang.xsd</DependentUpon>
+    </None>
+    <None Include="GUI_DD\DataSetTLQuy.xsc">
+      <DependentUpon>DataSetTLQuy.xsd</DependentUpon>
+    </None>
+    <None Include="GUI_DD\DataSetTLQuy.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTLQuy.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="GUI_DD\DataSetTLQuy.xss">
+      <DependentUpon>DataSetTLQuy.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

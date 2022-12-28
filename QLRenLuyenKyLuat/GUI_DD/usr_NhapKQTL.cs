@@ -59,16 +59,6 @@ namespace QLRenLuyenKyLuat.GUI_DD
             sqlCon.Close();
         }
 
-        private void txtChayDai_TextChanged(object sender, EventArgs e)
-        {
-            txtChayDai.Text = string.Empty;
-        }
-
-        private void txtChayNgan_TextChanged(object sender, EventArgs e)
-        {
-            txtChayNgan.Text = string.Empty;
-        }
-
         private void LoadDTGV()
         {
             string check = date.ToString("MM") + date.ToString("yyyy");
@@ -177,6 +167,16 @@ namespace QLRenLuyenKyLuat.GUI_DD
             txtHoTen.Text = dtgv.SelectedRows[0].Cells[1].Value.ToString();
             txtLop.Text = dtgv.SelectedRows[0].Cells[2].Value.ToString().Trim();
             txtGioiTinh.Text = dtgv.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void txtChayDai_Click(object sender, EventArgs e)
+        {
+            txtChayDai.Text = String.Empty;
+        }
+
+        private void txtChayNgan_Click(object sender, EventArgs e)
+        {
+            txtChayNgan.Text = String.Empty;
         }
     }
 }

@@ -31,14 +31,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
         {
             this.L_KQKL_HK = new System.Windows.Forms.Label();
             this.NhanXet_KL_Ky = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Nam_KL_Ky = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.txt_NX = new Guna.UI2.WinForms.Guna2TextBox();
             this.MucPL_KL_Ky = new System.Windows.Forms.Label();
-            this.cbB_KL_HK = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txt_PL = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Lop = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Ten = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbbHK = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
             // L_KQKL_HK
@@ -61,129 +62,157 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.NhanXet_KL_Ky.TabIndex = 68;
             this.NhanXet_KL_Ky.Text = "Nhận xét:";
             // 
-            // guna2TextBox4
+            // txt_NX
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(354, 379);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(494, 142);
-            this.guna2TextBox4.TabIndex = 69;
-            // 
-            // Nam_KL_Ky
-            // 
-            this.Nam_KL_Ky.AutoSize = true;
-            this.Nam_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Nam_KL_Ky.Location = new System.Drawing.Point(189, 117);
-            this.Nam_KL_Ky.Name = "Nam_KL_Ky";
-            this.Nam_KL_Ky.Size = new System.Drawing.Size(53, 24);
-            this.Nam_KL_Ky.TabIndex = 148;
-            this.Nam_KL_Ky.Text = "Năm";
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(714, 257);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(81, 32);
-            this.guna2TextBox3.TabIndex = 172;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(591, 265);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 24);
-            this.label8.TabIndex = 171;
-            this.label8.Text = "Kỳ II";
-            // 
-            // guna2TextBox6
-            // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(420, 257);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(81, 32);
-            this.guna2TextBox6.TabIndex = 170;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(322, 265);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 24);
-            this.label10.TabIndex = 169;
-            this.label10.Text = "Kỳ I";
+            this.txt_NX.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_NX.DefaultText = "";
+            this.txt_NX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_NX.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_NX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_NX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_NX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_NX.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_NX.ForeColor = System.Drawing.Color.Black;
+            this.txt_NX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_NX.Location = new System.Drawing.Point(354, 412);
+            this.txt_NX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_NX.Name = "txt_NX";
+            this.txt_NX.PasswordChar = '\0';
+            this.txt_NX.PlaceholderText = "";
+            this.txt_NX.SelectedText = "";
+            this.txt_NX.Size = new System.Drawing.Size(410, 94);
+            this.txt_NX.TabIndex = 69;
             // 
             // MucPL_KL_Ky
             // 
             this.MucPL_KL_Ky.AutoSize = true;
             this.MucPL_KL_Ky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.MucPL_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MucPL_KL_Ky.Location = new System.Drawing.Point(189, 186);
+            this.MucPL_KL_Ky.Location = new System.Drawing.Point(189, 339);
             this.MucPL_KL_Ky.Name = "MucPL_KL_Ky";
             this.MucPL_KL_Ky.Size = new System.Drawing.Size(145, 24);
             this.MucPL_KL_Ky.TabIndex = 168;
             this.MucPL_KL_Ky.Text = "Mức phân loại:";
             // 
-            // cbB_KL_HK
+            // txt_PL
             // 
-            this.cbB_KL_HK.BackColor = System.Drawing.Color.Transparent;
-            this.cbB_KL_HK.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbB_KL_HK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbB_KL_HK.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbB_KL_HK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbB_KL_HK.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbB_KL_HK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbB_KL_HK.ItemHeight = 30;
-            this.cbB_KL_HK.Items.AddRange(new object[] {
-            "2022-2023",
-            "2023-2024",
-            "2024-2025",
-            "2025-2026",
-            "2026-2027"});
-            this.cbB_KL_HK.Location = new System.Drawing.Point(326, 105);
-            this.cbB_KL_HK.Name = "cbB_KL_HK";
-            this.cbB_KL_HK.Size = new System.Drawing.Size(210, 36);
-            this.cbB_KL_HK.TabIndex = 173;
+            this.txt_PL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_PL.DefaultText = "";
+            this.txt_PL.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_PL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_PL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_PL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_PL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_PL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_PL.ForeColor = System.Drawing.Color.Black;
+            this.txt_PL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_PL.Location = new System.Drawing.Point(354, 339);
+            this.txt_PL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_PL.Name = "txt_PL";
+            this.txt_PL.PasswordChar = '\0';
+            this.txt_PL.PlaceholderText = "";
+            this.txt_PL.SelectedText = "";
+            this.txt_PL.Size = new System.Drawing.Size(236, 43);
+            this.txt_PL.TabIndex = 175;
+            // 
+            // txt_Lop
+            // 
+            this.txt_Lop.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Lop.DefaultText = "";
+            this.txt_Lop.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Lop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Lop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Lop.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Lop.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Lop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Lop.ForeColor = System.Drawing.Color.Black;
+            this.txt_Lop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Lop.Location = new System.Drawing.Point(354, 183);
+            this.txt_Lop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Lop.Name = "txt_Lop";
+            this.txt_Lop.PasswordChar = '\0';
+            this.txt_Lop.PlaceholderText = "";
+            this.txt_Lop.SelectedText = "";
+            this.txt_Lop.Size = new System.Drawing.Size(140, 45);
+            this.txt_Lop.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_Lop.TabIndex = 183;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(189, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 24);
+            this.label7.TabIndex = 180;
+            this.label7.Text = "Họ tên:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(189, 204);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 24);
+            this.label6.TabIndex = 181;
+            this.label6.Text = "Lớp:";
+            // 
+            // txt_Ten
+            // 
+            this.txt_Ten.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Ten.DefaultText = "";
+            this.txt_Ten.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Ten.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Ten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Ten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Ten.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Ten.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Ten.ForeColor = System.Drawing.Color.Black;
+            this.txt_Ten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Ten.Location = new System.Drawing.Point(354, 106);
+            this.txt_Ten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Ten.Name = "txt_Ten";
+            this.txt_Ten.PasswordChar = '\0';
+            this.txt_Ten.PlaceholderText = "";
+            this.txt_Ten.SelectedText = "";
+            this.txt_Ten.Size = new System.Drawing.Size(448, 45);
+            this.txt_Ten.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_Ten.TabIndex = 182;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(187, 266);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 26);
+            this.label8.TabIndex = 185;
+            this.label8.Text = "Thời gian:";
+            // 
+            // cbbHK
+            // 
+            this.cbbHK.BackColor = System.Drawing.Color.Transparent;
+            this.cbbHK.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbHK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbHK.FocusedColor = System.Drawing.Color.Empty;
+            this.cbbHK.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbHK.ForeColor = System.Drawing.Color.Black;
+            this.cbbHK.FormattingEnabled = true;
+            this.cbbHK.ItemHeight = 30;
+            this.cbbHK.Items.AddRange(new object[] {
+            "HK1 2020-2021",
+            "HK2 2020-2021",
+            "HK1 2021-2022",
+            "HK2 2021-2022",
+            "HK1 2022-2023",
+            "HK2 2022-2023"});
+            this.cbbHK.Location = new System.Drawing.Point(354, 266);
+            this.cbbHK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbHK.Name = "cbbHK";
+            this.cbbHK.Size = new System.Drawing.Size(467, 36);
+            this.cbbHK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.cbbHK.TabIndex = 184;
+            this.cbbHK.SelectedIndexChanged += new System.EventHandler(this.cbbHK_SelectedIndexChanged);
             // 
             // KQKL_HK
             // 
@@ -191,18 +220,20 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cbB_KL_HK);
-            this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2TextBox6);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.cbbHK);
+            this.Controls.Add(this.txt_Lop);
+            this.Controls.Add(this.txt_Ten);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_PL);
             this.Controls.Add(this.MucPL_KL_Ky);
-            this.Controls.Add(this.Nam_KL_Ky);
             this.Controls.Add(this.L_KQKL_HK);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.txt_NX);
             this.Controls.Add(this.NhanXet_KL_Ky);
             this.Name = "KQKL_HK";
             this.Size = new System.Drawing.Size(1115, 642);
+            this.Load += new System.EventHandler(this.KQKL_HK_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,13 +243,14 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private System.Windows.Forms.Label L_KQKL_HK;
         private System.Windows.Forms.Label NhanXet_KL_Ky;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private System.Windows.Forms.Label Nam_KL_Ky;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txt_NX;
         private System.Windows.Forms.Label MucPL_KL_Ky;
-        private Guna.UI2.WinForms.Guna2ComboBox cbB_KL_HK;
+        private Guna.UI2.WinForms.Guna2TextBox txt_PL;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Lop;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Ten;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbHK;
     }
 }

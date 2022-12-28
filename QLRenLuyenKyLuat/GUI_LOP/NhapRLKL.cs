@@ -16,6 +16,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
     {
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
         public DSHocvien dshv;
+      
+      
         public NhapRLKL(DSHocvien frm, string mahv, string hoten, string NgDG)
         {
             InitializeComponent();
@@ -36,14 +38,20 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         {
             try
             {
-                sqlCon.Open();
-                String query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES('" + "'[dbo].auto_MaDiemPLKL('" + txtboxMaHV.Text + "'),'" +
-                    int.Parse(txtboxDiemKL.Text) + "','" + int.Parse(txtBoxDiemHT.Text) + "','" + int.Parse(txtBoxDiemLS.Text) + "','" +
-                    txtBox_NhanXet.Text + "','" + txtBoxNgDG.Text + "','" + "'L'" + "','" + txtBoxXepLoai.Text + "')";
-                SqlCommand sqlDa = new SqlCommand(query, sqlCon);
-                sqlDa.ExecuteNonQuery();
-                sqlCon.Close();
+                /* sqlCon.Close();
+                 sqlCon.Open();
+                 string query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES([dbo].auto_MaHVPLRL(N'" + txtboxMaHV.Text + "') , " + int.Parse(txtboxDiemKL.Text) + ","
+                     + int.Parse(txtBoxDiemHT.Text) + "," + int.Parse(txtBoxDiemLS.Text) + ", N'" +
+                     txtBox_NhanXet.Text + "', N'" + txtBoxNgDG.Text + "', N'L' , N'" + txtBoxXepLoai.Text + "')";*/
 
+
+                /*  SqlCommand sqlDa = new SqlCommand(query, sqlCon);
+                  sqlDa.ExecuteNonQuery();
+                  sqlCon.Close();*/
+                //dacheck = 1;
+                DSHocvien.check = 1;
+                
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -56,6 +64,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             DialogResult result = MessageBox.Show("Kết quả chưa được lưu. Bạn chắc chắn muốn thoát?", "HỎI?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                DSHocvien.check = 0;
+                //DSHocvien ds = new DSHocvien(this, check);
                 this.Hide();
             }
             else
@@ -75,6 +85,26 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             int diem1 = int.Parse(txtboxDiemKL.Text);
             int diem2 = int.Parse(txtBoxDiemLS.Text);
             int diem3 = int.Parse(txtBoxDiemHT.Text);
+           
+            while (diem1 > 10 || diem1 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtboxDiemKL.Focus();
+            }
+                
+            while (diem2 > 10 || diem2 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtBoxDiemLS.Focus();
+            }
+                
+            while (diem3 > 10 || diem3 < 0)
+            {
+                DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txtBoxDiemHT.Focus();
+            }
+                
+            
             sum = diem1 + diem2 + diem3;
             txtBoxSum.Text = sum.ToString();
 
@@ -112,50 +142,10 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             xeploai = Calculator.cal_DiemRLThang(diem1, diem2, diem3, KL, LS, HT);
 
 
-
-            /* if (sum >= 25)
-             {
-                 if (diem1 >= 9 && diem2 >= 9)
-                     xeploai = "T";
-                 else xeploai = "K";
-             }
-
-             else if (sum >= 22 && sum <= 24)
-             {
-                 if (diem1 >= 7 && diem2 >= 7)
-                     xeploai = "K";
-                 else
-                     xeploai = "TBK";
-             }
-
-             else if (sum >= 19 && sum <= 21)
-             {
-                 if (diem1 >= 6 && diem2 >= 6)
-                     xeploai = "TBK";
-                 else xeploai = "TB";
-             }
-
-             else if (sum >= 15 && sum <= 18 )
-             {
-                 if (sum >= 16 && sum <= 18)
-                 {
-                     if (diem1 >= 5 && diem2 >= 5 && diem3 >= 5)
-                         xeploai = "TB"; 
-                 }
-                 else if (diem1 < 4 && diem2 >= 4 && diem3 >= 4)
-                     xeploai = "Y";
-                 else if (diem2 < 4 && diem1 >= 4 && diem3 >= 4)
-                     xeploai = "Y";
-                 else if (diem3 < 4 && diem2 >= 4 && diem1 >= 4)
-                     xeploai = "Y";
-
-             }
-             else if ((diem1 < 4 && diem2 < 4) || ( diem1 < 4 && diem3 < 4) || (diem3 < 4 && diem2 < 4) || ( diem1 < 4 && diem2 < 4 && diem3 < 4))
-                 xeploai = "Ke";
-             else 
-                 xeploai = "Ke";*/
             txtBoxXepLoai.Text = xeploai;
             txtBox_NhanXet.Focus();
         }
+
+       
     }
 }
