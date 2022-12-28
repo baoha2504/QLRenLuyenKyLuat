@@ -45,7 +45,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             }
             string query;
             string Matkhau;
-            query = "select * from Lop where MaLop like N'%" + frmLogin.maLop.Trim() + "%'";
+            query = "select * from Lop where MaLop like N'%" + frmLogin.maNguoiDung.Trim() + "%'";
             sqlCon.Close();
             sqlCon.Open();
             SqlDataAdapter sqlHv = new SqlDataAdapter(query, sqlCon);
@@ -62,7 +62,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
                         {
                             query = "UPDATE Lop " +
                                "SET MatKhau = N'" + rePass + "' " +
-                               "WHERE  MaLop like N'%" + frmLogin.maLop.Trim() + "%'";
+                               "WHERE  MaLop like N'%" + frmLogin.maNguoiDung.Trim() + "%'";
                             SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                             sqlDa.ExecuteNonQuery();
                             sqlCon.Close();

@@ -36,7 +36,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             sqlCon.Close();
             sqlCon.Open();
             
-            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop like N'%" + frmLogin.maLop.Trim() + "%'", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop like N'%" + frmLogin.maNguoiDung.Trim() + "%'", sqlCon);
 
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
@@ -51,7 +51,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         {
             sqlCon.Close();
             sqlCon.Open();
-            string query = "Select * from Hocvien where maLop like N'%" + frmLogin.maLop.Trim() + "%' and chucvu= N'Lớp trưởng'";
+            string query = "Select * from Hocvien where maLop like N'%" + frmLogin.maNguoiDung.Trim() + "%' and chucvu= N'Lớp trưởng'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
             DataTable dt = new DataTable();
             sqlDa.Fill(dt);
@@ -81,7 +81,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             }
             sqlCon.Close();
             sqlCon.Open();
-            string query = "select count(MaHocVien) as soluong from HOCVIEN where MaLop = N'" + frmLogin.maLop + "'";
+            string query = "select count(MaHocVien) as soluong from HOCVIEN where MaLop = N'" + frmLogin.maNguoiDung + "'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
             DataTable dt = new DataTable();
             sqlDa.Fill(dt);

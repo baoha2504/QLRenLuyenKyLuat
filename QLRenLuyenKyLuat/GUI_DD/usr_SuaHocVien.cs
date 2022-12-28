@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -87,6 +88,34 @@ namespace QLRenLuyenKyLuat.GUI_DD
             txtMaLop.Text = dtgv.SelectedRows[0].Cells[3].Value.ToString();
             txtCapBac.Text = dtgv.SelectedRows[0].Cells[4].Value.ToString();
             txtChucVu.Text = dtgv.SelectedRows[0].Cells[5].Value.ToString();
+        }
+
+        private void txtTenHV_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^([^0-9]*)$");
+          
+            string text = txtTenHV.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtTenHV.Text))
+            {
+                e.Cancel = true;
+                txtTenHV.Focus();
+                errorProvider1.SetError(txtTenHV, "Vui lòng nhập tên học viên.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtTenHV.Focus();
+                    errorProvider1.SetError(txtTenHV, "Vui lòng kiểm tra lại tên học viên!");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider1.SetError(txtTenHV, null);
+                }
+            }
         }
     }
 }

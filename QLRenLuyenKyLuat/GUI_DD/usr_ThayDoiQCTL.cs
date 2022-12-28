@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -72,7 +73,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             string[] s1 = new string[10];
             string[] s2 = new string[10];
             string[] s3 = new string[10];
-            string s4 = "QL15501";
+            string s4 = frmLogin.maNguoiDung;
             string s5 = DateTime.Now.ToString("yyyy-MM-dd");
 
             s1[0] = txt1_1.Text;
@@ -172,62 +173,400 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void txt3_1_Click(object sender, EventArgs e)
         {
-            txt3_1.Text = string.Empty;
+            //txt3_1.Text = string.Empty;
         }
 
         private void txt3_2_Click(object sender, EventArgs e)
         {
-            txt3_2.Text = string.Empty;
+            //txt3_2.Text = string.Empty;
         }
 
         private void txt3_3_Click(object sender, EventArgs e)
         {
-            txt3_3.Text = string.Empty;
+            //txt3_3.Text = string.Empty;
         }
 
         private void txt4_1_Click(object sender, EventArgs e)
         {
-            txt4_1.Text = string.Empty;
+           // txt4_1.Text = string.Empty;
         }
 
         private void txt4_2_Click(object sender, EventArgs e)
         {
-            txt4_2.Text = string.Empty;
+            //txt4_2.Text = string.Empty;
         }
 
         private void txt4_3_Click(object sender, EventArgs e)
         {
-            txt4_3.Text = string.Empty;
+           // txt4_3.Text = string.Empty;
         }
 
         private void txt3_1_TextChanged(object sender, EventArgs e)
         {
-            txt3_1.Text = string.Empty;
+            //txt3_1.Text = string.Empty;
         }
 
         private void txt3_2_TextChanged(object sender, EventArgs e)
         {
-            txt3_2.Text = string.Empty;
+            //txt3_2.Text = string.Empty;
         }
 
         private void txt3_3_TextChanged(object sender, EventArgs e)
         {
-            txt3_3.Text = string.Empty;
+            //txt3_3.Text = string.Empty;
         }
 
         private void txt4_1_TextChanged(object sender, EventArgs e)
         {
-            txt4_1.Text = string.Empty;
+           // txt4_1.Text = string.Empty;
         }
 
         private void txt4_2_TextChanged(object sender, EventArgs e)
         {
-            txt4_2.Text = string.Empty;
+            //txt4_2.Text = string.Empty;
         }
 
         private void txt4_3_TextChanged(object sender, EventArgs e)
         {
-            txt4_3.Text = string.Empty;
+           // txt4_3.Text = string.Empty;
+        }
+
+
+        // bat xa
+        private void txt1_1_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txt1_1.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt1_1.Text))
+            {
+                e.Cancel = true;
+                txt1_1.Focus();
+                errorProvider1.SetError(txt1_1, "Vui lòng nhập số mét.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt1_1.Focus();
+                    errorProvider1.SetError(txt1_1, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txt1_1.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt1_1.Focus();
+                        errorProvider1.SetError(txt1_1, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt1_1, null);
+                    }
+                }
+            }
+        }
+        //boi
+        private void txt2_1_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txt2_1.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt2_1.Text))
+            {
+                e.Cancel = true;
+                txt2_1.Focus();
+                errorProvider1.SetError(txt2_1, "Vui lòng nhập số met.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt2_1.Focus();
+                    errorProvider1.SetError(txt2_1, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txt2_1.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt2_1.Focus();
+                        errorProvider1.SetError(txt2_1, "Vui lòng nhập số met lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt2_1, null);
+                    }
+                }
+            }
+        }
+        // chay dai -gioi
+        private void txt3_1_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-5][0-9]:[0-5][0-9]$");
+            string text = txt3_1.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt3_1.Text))
+            {
+                e.Cancel = true;
+                txt3_1.Focus();
+                errorProvider1.SetError(txt3_1, "Vui lòng nhập phút:giây!");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt3_1.Focus();
+                    errorProvider1.SetError(txt3_1, "Vui lòng nhập dạng mm:ss");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider1.SetError(txt3_1, null);
+                }
+
+            }
+        }
+        // chay ngan - gioi 
+        private void txt4_1_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txt4_1.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt4_1.Text))
+            {
+                e.Cancel = true;
+                txt4_1.Focus();
+                errorProvider1.SetError(txt4_1, "Vui lòng nhập số giây.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt4_1.Focus();
+                    errorProvider1.SetError(txt4_1, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txt4_1.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt4_1.Focus();
+                        errorProvider1.SetError(txt4_1, "Vui lòng nhập số giây lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt4_1, null);
+                    }
+                }
+            }
+        }
+
+        private void txt5_1_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txt5_1.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt5_1.Text))
+            {
+                e.Cancel = true;
+                txt5_1.Focus();
+                errorProvider1.SetError(txt5_1, "Vui lòng nhập số lần.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt5_1.Focus();
+                    errorProvider1.SetError(txt5_1, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txt5_1.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt5_1.Focus();
+                        errorProvider1.SetError(txt5_1, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt5_1, null);
+                    }
+                }
+            }
+        }
+        // bat xa-kha
+        private void txt1_2_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txt1_2.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt1_2.Text))
+            {
+                e.Cancel = true;
+                txt1_2.Focus();
+                errorProvider1.SetError(txt1_2, "Vui lòng nhập số mét.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt1_2.Focus();
+                    errorProvider1.SetError(txt1_2, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txt1_2.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt1_2.Focus();
+                        errorProvider1.SetError(txt1_2, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt1_2, null);
+                    }
+                }
+            }
+        }
+        // chay 3000 -kha
+        private void txt3_2_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-5][0-9]:[0-5][0-9]$");
+            string text = txt3_2.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt3_2.Text))
+            {
+                e.Cancel = true;
+                txt3_2.Focus();
+                errorProvider1.SetError(txt3_2, "Vui lòng nhập phút:giây!");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt3_2.Focus();
+                    errorProvider1.SetError(txt3_2, "Vui lòng nhập dạng mm:ss");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider1.SetError(txt3_2, null);
+                }
+
+            }
+        }
+        // chay ngan-kha
+        private void txt4_2_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txt4_2.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt4_2.Text))
+            {
+                e.Cancel = true;
+                txt4_2.Focus();
+                errorProvider1.SetError(txt4_2, "Vui lòng nhập số giây.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt4_2.Focus();
+                    errorProvider1.SetError(txt4_2, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txt4_2.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt4_2.Focus();
+                        errorProvider1.SetError(txt4_2, "Vui lòng nhập số giây lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt4_2, null);
+                    }
+                }
+            }
+        }
+        // chay dai - dat yc
+        private void txt3_3_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-5][0-9]:[0-5][0-9]$");
+            string text = txt3_3.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt3_3.Text))
+            {
+                e.Cancel = true;
+                txt3_3.Focus();
+                errorProvider1.SetError(txt3_3, "Vui lòng nhập phút:giây!");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt3_3.Focus();
+                    errorProvider1.SetError(txt3_3, "Vui lòng nhập dạng mm:ss");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider1.SetError(txt3_3, null);
+                }
+
+            }
+        }
+        // chay ngan - dat yc
+        private void txt4_3_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txt4_3.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txt4_3.Text))
+            {
+                e.Cancel = true;
+                txt4_3.Focus();
+                errorProvider1.SetError(txt4_3, "Vui lòng nhập số giây.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txt4_3.Focus();
+                    errorProvider1.SetError(txt4_3, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txt4_3.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txt4_3.Focus();
+                        errorProvider1.SetError(txt4_3, "Vui lòng nhập số giây lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txt4_3, null);
+                    }
+                }
+            }
         }
     }
 }

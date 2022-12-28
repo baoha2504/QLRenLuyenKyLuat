@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QLRenLuyenKyLuat.Data;
 
 namespace QLRenLuyenKyLuat.GUI_LOP
 {
@@ -21,7 +20,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         Calculator a = new Calculator();
         public KQTL_Year()
         {
-            query = "select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop like N'%" + frmLogin.maLop.Trim() + "%'";
+            query = "select MaHocVien as 'Mã học viên', TenHocVien as 'Họ và tên', GioiTinh as 'Giới tính', CapBac as 'Cấp bậc', ChucVu as 'Chức vụ' from HOCVIEN where maLop like N'%" + frmLogin.maNguoiDung.Trim() + "%'";
             InitializeComponent();
             connect(query);
         }
@@ -119,7 +118,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         {
             MaHocVien = DSKQThelucYear_LOP.SelectedRows[0].Cells[0].Value.ToString();
             HienText(MaHocVien);
-            txtCaNam.Text = a.cal_TinhTheLucNam(txtQuy1.Text.Trim(), txtQuy2.Text.Trim(), txtQuy3.Text.Trim(), txtQuy4.Text.Trim());
+            txtCaNam.Text = Calculator.cal_TinhTheLucNam(txtQuy1.Text.Trim(), txtQuy2.Text.Trim(), txtQuy3.Text.Trim(), txtQuy4.Text.Trim());
         }
     }
 }

@@ -94,5 +94,35 @@ namespace QLRenLuyenKyLuat.GUI_DD
             txtMaLop.Text = dtgv.SelectedRows[0].Cells[0].Value.ToString();
             txtTenLop.Text = dtgv.SelectedRows[0].Cells[1].Value.ToString();
         }
+
+        private void txtMKMoi_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMKMoi.Text))
+            {
+                e.Cancel = true;
+                txtMKMoi.Focus();
+                errorProvider1.SetError(txtMKMoi, "Vui lòng nhập mật khẩu.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtMKMoi, null);
+            }
+        }
+
+        private void txtNhapLaiMKMoi_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNhapLaiMKMoi.Text))
+            {
+                e.Cancel = true;
+                txtNhapLaiMKMoi.Focus();
+                errorProvider1.SetError(txtNhapLaiMKMoi, "Vui lòng nhập mật khẩu.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtNhapLaiMKMoi, null);
+            }
+        }
     }
 }

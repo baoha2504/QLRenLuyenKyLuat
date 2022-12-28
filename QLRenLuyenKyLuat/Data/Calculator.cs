@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QLRenLuyenKyLuat.Data
+﻿namespace QLRenLuyenKyLuat.Data
 {
     class Calculator
     {
-        public string cal_TinhTheLucNam(string KQ_Quy1, string KQ_Quy2, string KQ_Quy3, string KQ_Quy4)
+        public static string cal_TinhTheLucNam(string KQ_Quy1, string KQ_Quy2, string KQ_Quy3, string KQ_Quy4)
         {
             int ThongKeGioi = 0;
             int ThongKeKha = 0;
@@ -281,7 +275,7 @@ namespace QLRenLuyenKyLuat.Data
 
             else
             {
-                return "";
+                return "Kém";
             }
 
         }

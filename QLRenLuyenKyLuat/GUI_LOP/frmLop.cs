@@ -30,7 +30,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             
             //hienthi thong tin user:
             barStaticItem3.Caption = frmLogin.name;
-            barStaticItem4.Caption = frmLogin.maLop;
+            barStaticItem4.Caption = frmLogin.maNguoiDung;
             DateTime dt = DateTime.Now;
             barStaticItem6.Caption = dt.Date.ToString("yyyy/MM/dd");
             if (TrangChu == null)
