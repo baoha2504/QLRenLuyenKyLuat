@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using QLRenLuyenKyLuat.Data;
 
 namespace QLRenLuyenKyLuat.GUI_LOP
@@ -28,6 +29,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         
         private void DSHocvien_Load(object sender, EventArgs e)
         {
+            errorProvider1.ContainerControl = this;
             connect();
         }
 
@@ -129,7 +131,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             {
                 sqlCon.Close();
                 sqlCon.Open();
-                string query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES([dbo].auto_MaHVPLRL(N'" + txtboxMaHV.Text.Trim() + "') , " + int.Parse(txtboxDiemKL.Text) + 
+                string query = "INSERT INTO  Diem_PLKL(MaDiemPLKL, DiemKL, DiemHT, DiemLS, NhanXet, NguoiDanhGia, CapDanhGia, MaPLKL) VALUES([dbo].auto_MaDiemPLKL(N'" + txtboxMaHV.Text.Trim() + "') , " + int.Parse(txtboxDiemKL.Text) + 
                     "," + int.Parse(txtBoxDiemHT.Text.Trim()) + "," + int.Parse(txtBoxDiemLS.Text.Trim()) + ", N'" + txtBox_NhanXet.Text.Trim() + "', N'" + txtBoxNgDG.Text.Trim() + "', N'L' , N'" + txtBoxXepLoai.Text.Trim() + "')";
                 SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                 sqlDa.ExecuteNonQuery();
@@ -156,7 +158,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             int diem2 = int.Parse(txtBoxDiemLS.Text);
             int diem3 = int.Parse(txtBoxDiemHT.Text);
 
-            while (diem1 > 10 || diem1 < 0)
+            /*while (diem1 > 10 || diem1 < 0)
             {
                 DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 txtboxDiemKL.Focus();
@@ -172,7 +174,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             {
                 DialogResult warn = MessageBox.Show("Điểm nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại điểm!", "Cảnh báo?", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 txtBoxDiemHT.Focus();
-            }
+            }*/
 
 
             sum = diem1 + diem2 + diem3;
@@ -213,7 +215,131 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
 
             txtBoxXepLoai.Text = xeploai;
-            txtBox_NhanXet.Focus();
+            
         }
+
+        private void txtboxDiemKL_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txtboxDiemKL.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtboxDiemKL.Text))
+            {
+                e.Cancel = true;
+                txtboxDiemKL.Focus();
+                errorProvider1.SetError(txtboxDiemKL, "Vui lòng nhập điểm.");
+            }
+            else
+            {
+                if(result == false)
+                {
+                    e.Cancel = true;
+                    txtboxDiemKL.Focus();
+                    errorProvider1.SetError(txtboxDiemKL, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txtboxDiemKL.Text) > 10 || int.Parse(txtboxDiemKL.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtboxDiemKL.Focus();
+                        errorProvider1.SetError(txtboxDiemKL, "Vui lòng nhập điểm từ 0-10.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtboxDiemKL, null);
+                    }
+                }
+                
+            }
+        }
+       
+        private void txtBoxDiemLS_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txtBoxDiemLS.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtBoxDiemLS.Text))
+            {
+                e.Cancel = true;
+                txtBoxDiemLS.Focus();
+                errorProvider1.SetError(txtBoxDiemLS, "Vui lòng nhập điểm.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtBoxDiemLS.Focus();
+                    errorProvider1.SetError(txtboxDiemKL, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txtBoxDiemLS.Text) > 10 || int.Parse(txtBoxDiemLS.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtBoxDiemLS.Focus();
+                        errorProvider1.SetError(txtBoxDiemLS, "Vui lòng nhập điểm từ 0-10.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtBoxDiemLS, null);
+                    }
+                }
+            }
+            
+        }
+
+        private void txtBoxDiemHT_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txtBoxDiemLS.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtBoxDiemHT.Text))
+            {
+                e.Cancel = true;
+                txtBoxDiemHT.Focus();
+                errorProvider1.SetError(txtBoxDiemHT, "Vui lòng nhập điểm.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtBoxDiemLS.Focus();
+                    errorProvider1.SetError(txtboxDiemKL, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txtBoxDiemHT.Text) > 10 || int.Parse(txtBoxDiemHT.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtBoxDiemHT.Focus();
+                        errorProvider1.SetError(txtBoxDiemHT, "Vui lòng nhập điểm từ 0-10.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtBoxDiemHT, null);
+                    }
+                }               
+            }
+        }
+
+        private void txtBox_NhanXet_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtBox_NhanXet.Text))
+            {
+                e.Cancel = true;   
+                errorProvider1.SetError(txtBox_NhanXet, "Vui lòng cho nhận xét.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtBox_NhanXet, null);
+            }
+        }  
     }
 }
