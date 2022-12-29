@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,8 +52,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -332,6 +335,7 @@
             this.txtTenHV.Size = new System.Drawing.Size(555, 33);
             this.txtTenHV.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTenHV.TabIndex = 10;
+            this.txtTenHV.Validating += new System.ComponentModel.CancelEventHandler(this.txtTenHV_Validating);
             // 
             // txtMaHV
             // 
@@ -416,6 +420,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã học viên:";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // usr_SuaHocVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -427,6 +435,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -453,5 +462,6 @@
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2TextBox txtMaLop;
         private Guna.UI2.WinForms.Guna2TextBox txtGT;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

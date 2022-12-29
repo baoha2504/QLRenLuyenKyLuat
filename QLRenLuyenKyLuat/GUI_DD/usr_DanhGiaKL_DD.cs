@@ -124,7 +124,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             try
             {
                 query = "INSERT [dbo].[DIEM_PLKL] ([MaDiemPLKL], [DiemKL], [DiemLS], [DiemHT], [NhanXet], [CapDanhGia], [NguoiDanhGia], [MaPLKL]) " +
-                    "VALUES (N'" + MaDiemPLKL + "', " + txtKL_DD + ", " + txtLS_L.Text + ", " + txtHT_L.Text + ", N'" + txtNhanXet_L.Text + "', N'DD', N'" + frmLogin.maNguoiDung + "', N'" + txtMucPhanLoai_DD.Text + "')";
+                    "VALUES (N'" + MaDiemPLKL + "', " + txtKL_DD + ", " + txtLS_L.Text + ", " + txtHT_L.Text + ", N'" + txtNhanXet_L.Text + "', N'D', N'" + frmLogin.maNguoiDung + "', N'" + txtMucPhanLoai_DD.Text + "')";
                 CapNhat(query);
             }
             catch
@@ -141,6 +141,21 @@ namespace QLRenLuyenKyLuat.GUI_DD
             catch
             {
                 MessageBox.Show("Lỗi ở bảng HOCVIEN_PLRL");
+            }
+        }
+
+        private void txtNhanXet_DD_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNhanXet_DD.Text))
+            {
+                e.Cancel = true;
+                txtNhanXet_DD.Focus();
+                errorProvider1.SetError(txtNhanXet_DD, "Vui lòng cho nhận xét!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtNhanXet_DD, null);
             }
         }
     }

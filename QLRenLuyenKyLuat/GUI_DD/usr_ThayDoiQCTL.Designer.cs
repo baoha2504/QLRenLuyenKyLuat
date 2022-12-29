@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -72,7 +73,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -346,6 +349,7 @@
             this.txt4_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt4_3.TextChanged += new System.EventHandler(this.txt4_3_TextChanged);
             this.txt4_3.Click += new System.EventHandler(this.txt4_3_Click);
+            this.txt4_3.Validating += new System.ComponentModel.CancelEventHandler(this.txt4_3_Validating);
             // 
             // txt3_3
             // 
@@ -371,6 +375,7 @@
             this.txt3_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt3_3.TextChanged += new System.EventHandler(this.txt3_3_TextChanged);
             this.txt3_3.Click += new System.EventHandler(this.txt3_3_Click);
+            this.txt3_3.Validating += new System.ComponentModel.CancelEventHandler(this.txt3_3_Validating);
             // 
             // txt1_3
             // 
@@ -477,6 +482,7 @@
             this.txt4_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt4_2.TextChanged += new System.EventHandler(this.txt4_2_TextChanged);
             this.txt4_2.Click += new System.EventHandler(this.txt4_2_Click);
+            this.txt4_2.Validating += new System.ComponentModel.CancelEventHandler(this.txt4_2_Validating);
             // 
             // txt3_2
             // 
@@ -502,6 +508,7 @@
             this.txt3_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt3_2.TextChanged += new System.EventHandler(this.txt3_2_TextChanged);
             this.txt3_2.Click += new System.EventHandler(this.txt3_2_Click);
+            this.txt3_2.Validating += new System.ComponentModel.CancelEventHandler(this.txt3_2_Validating);
             // 
             // txt1_2
             // 
@@ -525,6 +532,7 @@
             this.txt1_2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt1_2.TabIndex = 225;
             this.txt1_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt1_2.Validating += new System.ComponentModel.CancelEventHandler(this.txt1_2_Validating);
             // 
             // txt2_2
             // 
@@ -607,6 +615,7 @@
             this.txt4_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt4_1.TextChanged += new System.EventHandler(this.txt4_1_TextChanged);
             this.txt4_1.Click += new System.EventHandler(this.txt4_1_Click);
+            this.txt4_1.Validating += new System.ComponentModel.CancelEventHandler(this.txt4_1_Validating);
             // 
             // txt3_1
             // 
@@ -632,6 +641,7 @@
             this.txt3_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txt3_1.TextChanged += new System.EventHandler(this.txt3_1_TextChanged);
             this.txt3_1.Click += new System.EventHandler(this.txt3_1_Click);
+            this.txt3_1.Validating += new System.ComponentModel.CancelEventHandler(this.txt3_1_Validating);
             // 
             // txt1_1
             // 
@@ -655,6 +665,7 @@
             this.txt1_1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt1_1.TabIndex = 219;
             this.txt1_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt1_1.Validating += new System.ComponentModel.CancelEventHandler(this.txt1_1_Validating);
             // 
             // txt2_1
             // 
@@ -678,6 +689,7 @@
             this.txt2_1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt2_1.TabIndex = 218;
             this.txt2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt2_1.Validating += new System.ComponentModel.CancelEventHandler(this.txt2_1_Validating);
             // 
             // txt5_1
             // 
@@ -701,6 +713,7 @@
             this.txt5_1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt5_1.TabIndex = 217;
             this.txt5_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt5_1.Validating += new System.ComponentModel.CancelEventHandler(this.txt5_1_Validating);
             // 
             // label11
             // 
@@ -804,6 +817,10 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // usr_ThayDoiQCTL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -814,6 +831,7 @@
             this.Load += new System.EventHandler(this.usr_ThayDoiQCTL_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -864,5 +882,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

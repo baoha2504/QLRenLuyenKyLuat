@@ -122,8 +122,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void KQTL_Quy_Load(object sender, EventArgs e)
         {
-            //Hien_CbbQuy();
-            //connect();
+            Hien_CbbQuy();
+            cbb_Nam.SelectedIndex = 1;
+            connect();
         }
 
         private void cbb_Quy_SelectedIndexChanged(object sender, EventArgs e)

@@ -201,16 +201,16 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbbHK.FormattingEnabled = true;
             this.cbbHK.ItemHeight = 30;
             this.cbbHK.Items.AddRange(new object[] {
+            "HK1 2020-2021",
+            "HK2 2020-2021",
             "HK1 2021-2022",
             "HK2 2021-2022",
             "HK1 2022-2023",
-            "HK2 2022-2023",
-            "HK1 2023-2024",
-            "HK2 2023-2024"});
+            "HK2 2022-2023"});
             this.cbbHK.Location = new System.Drawing.Point(354, 266);
             this.cbbHK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbHK.Name = "cbbHK";
-            this.cbbHK.Size = new System.Drawing.Size(316, 36);
+            this.cbbHK.Size = new System.Drawing.Size(467, 36);
             this.cbbHK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbHK.TabIndex = 184;
             this.cbbHK.SelectedIndexChanged += new System.EventHandler(this.cbbHK_SelectedIndexChanged);

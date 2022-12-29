@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace QLRenLuyenKyLuat.GUI_DD
@@ -79,7 +80,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
                     {
                         txtKeoXa_ChongDay.Text = DR["ChongDay"].ToString();
                         check = "ChongDay";
-                    } else
+                    }
+                    else
                     {
                         txtKeoXa_ChongDay.Text = DR["Xa"].ToString();
                         check = "Xa";
@@ -124,21 +126,193 @@ namespace QLRenLuyenKyLuat.GUI_DD
             {
                 query = "update KETQUATHELUC " +
                     "set Boi = " + txtBoi.Text + ", ChayDai = '" + txtChayDai.Text + "', ChayNgan = '" + txtChayNgan.Text + "', NhayXa = " + txtBatXa.Text + ", Xa = " + txtKeoXa_ChongDay.Text + " " +
-                    "where MaPLTL = '"+ MaKQTL + "'";
+                    "where MaPLTL = '" + MaKQTL + "'";
                 connect(query);
                 MessageBox.Show("Thay đổi kết quả thể lực thành công");
             }
-            else if(laycheck == "ChongDay") 
+            else if (laycheck == "ChongDay")
             {
                 query = "update KETQUATHELUC " +
                     "set Boi = " + txtBoi.Text + ", ChayDai = '" + txtChayDai.Text + "', ChayNgan = '" + txtChayNgan.Text + "', NhayXa = " + txtBatXa.Text + ", ChongDay = " + txtKeoXa_ChongDay.Text + " " +
-                    "where MaPLTL = '"+ MaKQTL + "'";
+                    "where MaPLTL = '" + MaKQTL + "'";
                 connect(query);
                 MessageBox.Show("Thay đổi kết quả thể lực thành công");
-            } 
+            }
             else
             {
                 MessageBox.Show("Lỗi");
+            }
+        }
+
+        private void txtChayDai_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-5][0-9]:[0-5][0-9]$");
+            string text = txtChayDai.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtChayDai.Text))
+            {
+                e.Cancel = true;
+                txtChayDai.Focus();
+                errorProvider1.SetError(txtChayDai, "Vui lòng nhập phút:giây!");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtChayDai.Focus();
+                    errorProvider1.SetError(txtChayDai, "Vui lòng nhập dạng mm:ss");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider1.SetError(txtChayDai, null);
+                }
+
+            }
+        }
+
+        private void txtChayNgan_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txtChayNgan.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtChayNgan.Text))
+            {
+                e.Cancel = true;
+                txtChayNgan.Focus();
+                errorProvider1.SetError(txtChayNgan, "Vui lòng nhập số giây.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtChayNgan.Focus();
+                    errorProvider1.SetError(txtChayNgan, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txtChayNgan.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtChayNgan.Focus();
+                        errorProvider1.SetError(txtChayNgan, "Vui lòng nhập số giây lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtChayNgan, null);
+                    }
+                }
+            }
+        }
+
+        private void txtBatXa_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^-?[0-9][0-9,\.]+$");
+            string text = txtBatXa.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtBatXa.Text))
+            {
+                e.Cancel = true;
+                txtBatXa.Focus();
+                errorProvider1.SetError(txtBatXa, "Vui lòng nhập số mét.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtBatXa.Focus();
+                    errorProvider1.SetError(txtBatXa, "Vui lòng nhập số thập phân có dấu '.'");
+                }
+                else
+                {
+                    if (double.Parse(txtBatXa.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtBatXa.Focus();
+                        errorProvider1.SetError(txtBatXa, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtBatXa, null);
+                    }
+                }
+            }
+        }
+
+        private void txtBoi_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txtBoi.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtBoi.Text))
+            {
+                e.Cancel = true;
+                txtBoi.Focus();
+                errorProvider1.SetError(txtBoi, "Vui lòng nhập số lần.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtBoi.Focus();
+                    errorProvider1.SetError(txtBoi, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txtBoi.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtBoi.Focus();
+                        errorProvider1.SetError(txtBoi, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtBoi, null);
+                    }
+                }
+            }
+        }
+
+        private void txtKeoXa_ChongDay_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex("^[0-9]+$");
+            string text = txtKeoXa_ChongDay.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (string.IsNullOrEmpty(txtKeoXa_ChongDay.Text))
+            {
+                e.Cancel = true;
+                txtKeoXa_ChongDay.Focus();
+                errorProvider1.SetError(txtKeoXa_ChongDay, "Vui lòng nhập số lần.");
+            }
+            else
+            {
+                if (result == false)
+                {
+                    e.Cancel = true;
+                    txtKeoXa_ChongDay.Focus();
+                    errorProvider1.SetError(txtKeoXa_ChongDay, "Chỉ có số!");
+                }
+                else
+                {
+                    if (int.Parse(txtKeoXa_ChongDay.Text) < 0)
+                    {
+                        e.Cancel = true;
+                        txtKeoXa_ChongDay.Focus();
+                        errorProvider1.SetError(txtKeoXa_ChongDay, "Vui lòng nhập số lần lớn hơn 0.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider1.SetError(txtKeoXa_ChongDay, null);
+                    }
+                }
             }
         }
     }

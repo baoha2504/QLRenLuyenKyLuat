@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.cbbKetQua = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -65,8 +66,12 @@
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -144,7 +149,7 @@
             this.txtGioiTinh.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinh.Location = new System.Drawing.Point(778, 687);
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(43, 15);
+            this.txtGioiTinh.Size = new System.Drawing.Size(45, 16);
             this.txtGioiTinh.TabIndex = 126;
             this.txtGioiTinh.Text = "Họ tên";
             // 
@@ -154,7 +159,7 @@
             this.txtMaHV.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHV.Location = new System.Drawing.Point(773, 679);
             this.txtMaHV.Name = "txtMaHV";
-            this.txtMaHV.Size = new System.Drawing.Size(43, 15);
+            this.txtMaHV.Size = new System.Drawing.Size(45, 16);
             this.txtMaHV.TabIndex = 117;
             this.txtMaHV.Text = "Họ tên";
             // 
@@ -295,6 +300,7 @@
             this.txtChayNgan.TabIndex = 112;
             this.txtChayNgan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtChayNgan.TextChanged += new System.EventHandler(this.txtChayNgan_TextChanged);
+            this.txtChayNgan.Validating += new System.ComponentModel.CancelEventHandler(this.txtChayNgan_Validating);
             // 
             // txtChayDai
             // 
@@ -319,6 +325,7 @@
             this.txtChayDai.TabIndex = 110;
             this.txtChayDai.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtChayDai.TextChanged += new System.EventHandler(this.txtChayDai_TextChanged);
+            this.txtChayDai.Validating += new System.ComponentModel.CancelEventHandler(this.txtChayDai_Validating);
             // 
             // label2
             // 
@@ -352,6 +359,7 @@
             this.txtBoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBoi.TabIndex = 106;
             this.txtBoi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtBoi.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoi_Validating);
             // 
             // txtBatXa
             // 
@@ -375,6 +383,7 @@
             this.txtBatXa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBatXa.TabIndex = 105;
             this.txtBatXa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtBatXa.Validating += new System.ComponentModel.CancelEventHandler(this.txtBatXa_Validating);
             // 
             // txtKeoXa_ChongDay
             // 
@@ -398,6 +407,7 @@
             this.txtKeoXa_ChongDay.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtKeoXa_ChongDay.TabIndex = 104;
             this.txtKeoXa_ChongDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtKeoXa_ChongDay.Validating += new System.ComponentModel.CancelEventHandler(this.txtKeoXa_ChongDay_Validating);
             // 
             // label1
             // 
@@ -568,26 +578,26 @@
             // 
             // dtgv
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dtgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dtgv.ColumnHeadersHeight = 20;
             this.dtgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv.DefaultCellStyle = dataGridViewCellStyle18;
             this.dtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv.Location = new System.Drawing.Point(44, 125);
             this.dtgv.Name = "dtgv";
@@ -619,6 +629,14 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellContentClick);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // usr_NhapKQTL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -630,6 +648,8 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -670,5 +690,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label txtGioiTinh;
         private Guna.UI2.WinForms.Guna2ComboBox cbbKetQua;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

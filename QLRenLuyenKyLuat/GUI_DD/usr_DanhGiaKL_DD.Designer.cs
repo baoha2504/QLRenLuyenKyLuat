@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -67,8 +68,10 @@
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -527,6 +530,7 @@
             this.txtNhanXet_DD.Size = new System.Drawing.Size(247, 204);
             this.txtNhanXet_DD.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtNhanXet_DD.TabIndex = 67;
+            this.txtNhanXet_DD.Validating += new System.ComponentModel.CancelEventHandler(this.txtNhanXet_DD_Validating);
             // 
             // label5
             // 
@@ -695,6 +699,10 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellContentClick);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // usr_DanhGiaKL_DD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -706,6 +714,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -748,5 +757,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMucPhanLoai_L;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2ComboBox txtMucPhanLoai_DD;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -138,5 +138,20 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 conn.Close();
             }
         }
+
+        private void txtNhanXet_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtNhanXet.Text))
+            {
+                e.Cancel = true;
+                txtNhanXet.Focus();
+                errorProvider1.SetError(txtNhanXet, "Vui lòng nhập nhận xét.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtNhanXet, null);
+            }
+        }
     }
 }

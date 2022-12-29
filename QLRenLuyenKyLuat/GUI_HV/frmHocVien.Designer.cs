@@ -68,10 +68,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(537, 54);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(6);
+            this.mainContainer.Location = new System.Drawing.Point(418, 30);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(755, 683);
+            this.mainContainer.Size = new System.Drawing.Size(587, 591);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
@@ -92,11 +92,11 @@
             this.ace_KQTL,
             this.ace_HDSD,
             this.ace_TK});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 54);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(6);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 30);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(537, 683);
+            this.accordionControl1.Size = new System.Drawing.Size(418, 591);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -230,6 +230,15 @@
             this.DangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.DangXuat.Text = "Đăng xuất";
             this.DangXuat.Click += new System.EventHandler(this.DangXuat_Click);
+            this.DoiMatKhau.Name = "DoiMatKhau";
+            this.DoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.DoiMatKhau.Text = "Thay đổi mật khẩu";
+            // 
+            // DangXuat
+            // 
+            this.DangXuat.Name = "DangXuat";
+            this.DangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.DangXuat.Text = "Đăng xuất";
             // 
             // fluentDesignFormControl1
             // 

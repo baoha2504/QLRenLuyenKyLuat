@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -59,6 +60,10 @@
             this.txtLop = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -93,6 +98,97 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1412, 718);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // txtLop
+            // 
+            this.txtLop.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLop.DefaultText = "";
+            this.txtLop.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLop.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLop.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLop.ForeColor = System.Drawing.Color.Black;
+            this.txtLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLop.Location = new System.Drawing.Point(969, 172);
+            this.txtLop.Name = "txtLop";
+            this.txtLop.PasswordChar = '\0';
+            this.txtLop.PlaceholderText = "";
+            this.txtLop.SelectedText = "";
+            this.txtLop.Size = new System.Drawing.Size(412, 36);
+            this.txtLop.TabIndex = 74;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHoTen.DefaultText = "";
+            this.txtHoTen.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHoTen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHoTen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoTen.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHoTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHoTen.ForeColor = System.Drawing.Color.Black;
+            this.txtHoTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHoTen.Location = new System.Drawing.Point(969, 119);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.PasswordChar = '\0';
+            this.txtHoTen.PlaceholderText = "";
+            this.txtHoTen.SelectedText = "";
+            this.txtHoTen.Size = new System.Drawing.Size(412, 36);
+            this.txtHoTen.TabIndex = 73;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(809, 172);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 19);
+            this.label8.TabIndex = 72;
+            this.label8.Text = "Lớp:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(809, 119);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 19);
+            this.label9.TabIndex = 71;
+            this.label9.Text = "Họ tên:";
+            // 
+            // txtMucDanhGia
+            // 
+            this.txtMucDanhGia.BackColor = System.Drawing.Color.Transparent;
+            this.txtMucDanhGia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMucDanhGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMucDanhGia.FocusedColor = System.Drawing.Color.Empty;
+            this.txtMucDanhGia.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMucDanhGia.ForeColor = System.Drawing.Color.Black;
+            this.txtMucDanhGia.FormattingEnabled = true;
+            this.txtMucDanhGia.ItemHeight = 30;
+            this.txtMucDanhGia.Items.AddRange(new object[] {
+            "T",
+            "K",
+            "TB",
+            "TBK",
+            "Y"});
+            this.txtMucDanhGia.Location = new System.Drawing.Point(969, 397);
+            this.txtMucDanhGia.Name = "txtMucDanhGia";
+            this.txtMucDanhGia.Size = new System.Drawing.Size(412, 36);
+            this.txtMucDanhGia.TabIndex = 70;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(809, 397);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 19);
+            this.label7.TabIndex = 69;
+            this.label7.Text = "Mức đánh giá:";
             // 
             // btnLuu
             // 
@@ -405,6 +501,7 @@
             this.txtNhanXet.SelectedText = "";
             this.txtNhanXet.Size = new System.Drawing.Size(412, 168);
             this.txtNhanXet.TabIndex = 53;
+            this.txtNhanXet.Validating += new System.ComponentModel.CancelEventHandler(this.txtNhanXet_Validating);
             // 
             // label1
             // 
@@ -536,6 +633,9 @@
             this.txtLop.SelectedText = "";
             this.txtLop.Size = new System.Drawing.Size(412, 36);
             this.txtLop.TabIndex = 74;
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // usr_SuaDanhGia
             // 
@@ -548,6 +648,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -580,5 +681,6 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2ComboBox txtMucDanhGia;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

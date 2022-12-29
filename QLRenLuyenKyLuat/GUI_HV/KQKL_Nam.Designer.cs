@@ -67,19 +67,19 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbB_KL_Nam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbB_KL_Nam.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbB_KL_Nam.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbB_KL_Nam.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.cbB_KL_Nam.ForeColor = System.Drawing.Color.Black;
+            this.cbB_KL_Nam.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbB_KL_Nam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbB_KL_Nam.ItemHeight = 30;
             this.cbB_KL_Nam.Items.AddRange(new object[] {
+            "2020-2021",
+            "2020-2021",
+            "2021-2022",
             "2021-2022",
             "2022-2023",
-            "2023-2024",
-            "2024-2025"});
-            this.cbB_KL_Nam.Location = new System.Drawing.Point(510, 236);
-            this.cbB_KL_Nam.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            "2022-2023"});
+            this.cbB_KL_Nam.Location = new System.Drawing.Point(336, 192);
             this.cbB_KL_Nam.Name = "cbB_KL_Nam";
-            this.cbB_KL_Nam.Size = new System.Drawing.Size(300, 36);
-            this.cbB_KL_Nam.StartIndex = 2;
+            this.cbB_KL_Nam.Size = new System.Drawing.Size(246, 36);
             this.cbB_KL_Nam.TabIndex = 178;
             this.cbB_KL_Nam.SelectedIndexChanged += new System.EventHandler(this.cbB_KL_Nam_SelectedIndexChanged);
             // 
@@ -92,17 +92,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_NX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NX.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_NX.ForeColor = System.Drawing.Color.Black;
+            this.txt_NX.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NX.Location = new System.Drawing.Point(510, 403);
-            this.txt_NX.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.txt_NX.Multiline = true;
+            this.txt_NX.Location = new System.Drawing.Point(417, 348);
+            this.txt_NX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_NX.Name = "txt_NX";
             this.txt_NX.PasswordChar = '\0';
             this.txt_NX.PlaceholderText = "";
             this.txt_NX.SelectedText = "";
-            this.txt_NX.Size = new System.Drawing.Size(471, 141);
+            this.txt_NX.Size = new System.Drawing.Size(551, 87);
             this.txt_NX.TabIndex = 175;
             // 
             // NhanXet_KL_Nam
@@ -110,8 +108,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.NhanXet_KL_Nam.AutoSize = true;
             this.NhanXet_KL_Nam.BackColor = System.Drawing.Color.Transparent;
             this.NhanXet_KL_Nam.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhanXet_KL_Nam.Location = new System.Drawing.Point(309, 433);
-            this.NhanXet_KL_Nam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NhanXet_KL_Nam.Location = new System.Drawing.Point(253, 374);
             this.NhanXet_KL_Nam.Name = "NhanXet_KL_Nam";
             this.NhanXet_KL_Nam.Size = new System.Drawing.Size(97, 24);
             this.NhanXet_KL_Nam.TabIndex = 174;
@@ -126,16 +123,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_PL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_PL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_PL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_PL.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.txt_PL.ForeColor = System.Drawing.Color.Black;
+            this.txt_PL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_PL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_PL.Location = new System.Drawing.Point(510, 310);
-            this.txt_PL.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txt_PL.Location = new System.Drawing.Point(417, 268);
+            this.txt_PL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_PL.Name = "txt_PL";
             this.txt_PL.PasswordChar = '\0';
             this.txt_PL.PlaceholderText = "";
             this.txt_PL.SelectedText = "";
-            this.txt_PL.Size = new System.Drawing.Size(144, 49);
+            this.txt_PL.Size = new System.Drawing.Size(186, 42);
             this.txt_PL.TabIndex = 177;
             // 
             // MucPhanLoai
@@ -143,8 +139,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.MucPhanLoai.AutoSize = true;
             this.MucPhanLoai.BackColor = System.Drawing.Color.Transparent;
             this.MucPhanLoai.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MucPhanLoai.Location = new System.Drawing.Point(309, 331);
-            this.MucPhanLoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MucPhanLoai.Location = new System.Drawing.Point(253, 286);
             this.MucPhanLoai.Name = "MucPhanLoai";
             this.MucPhanLoai.Size = new System.Drawing.Size(145, 24);
             this.MucPhanLoai.TabIndex = 176;
