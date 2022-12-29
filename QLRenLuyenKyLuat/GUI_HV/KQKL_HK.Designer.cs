@@ -71,16 +71,17 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_NX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_NX.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_NX.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_NX.ForeColor = System.Drawing.Color.Black;
             this.txt_NX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_NX.Location = new System.Drawing.Point(354, 412);
             this.txt_NX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_NX.Multiline = true;
             this.txt_NX.Name = "txt_NX";
             this.txt_NX.PasswordChar = '\0';
             this.txt_NX.PlaceholderText = "";
             this.txt_NX.SelectedText = "";
-            this.txt_NX.Size = new System.Drawing.Size(410, 94);
+            this.txt_NX.Size = new System.Drawing.Size(360, 135);
             this.txt_NX.TabIndex = 69;
             // 
             // MucPL_KL_Ky
@@ -103,7 +104,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_PL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_PL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_PL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_PL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_PL.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_PL.ForeColor = System.Drawing.Color.Black;
             this.txt_PL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_PL.Location = new System.Drawing.Point(354, 339);
@@ -112,7 +113,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_PL.PasswordChar = '\0';
             this.txt_PL.PlaceholderText = "";
             this.txt_PL.SelectedText = "";
-            this.txt_PL.Size = new System.Drawing.Size(236, 43);
+            this.txt_PL.Size = new System.Drawing.Size(140, 43);
             this.txt_PL.TabIndex = 175;
             // 
             // txt_Lop
@@ -124,7 +125,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Lop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Lop.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Lop.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Lop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Lop.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_Lop.ForeColor = System.Drawing.Color.Black;
             this.txt_Lop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Lop.Location = new System.Drawing.Point(354, 183);
@@ -166,7 +167,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Ten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Ten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Ten.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Ten.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Ten.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_Ten.ForeColor = System.Drawing.Color.Black;
             this.txt_Ten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Ten.Location = new System.Drawing.Point(354, 106);
@@ -175,7 +176,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Ten.PasswordChar = '\0';
             this.txt_Ten.PlaceholderText = "";
             this.txt_Ten.SelectedText = "";
-            this.txt_Ten.Size = new System.Drawing.Size(448, 45);
+            this.txt_Ten.Size = new System.Drawing.Size(351, 45);
             this.txt_Ten.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_Ten.TabIndex = 182;
             // 
@@ -195,21 +196,21 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbbHK.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbbHK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbHK.FocusedColor = System.Drawing.Color.Empty;
-            this.cbbHK.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbHK.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.cbbHK.ForeColor = System.Drawing.Color.Black;
             this.cbbHK.FormattingEnabled = true;
             this.cbbHK.ItemHeight = 30;
             this.cbbHK.Items.AddRange(new object[] {
-            "HK1 2020-2021",
-            "HK2 2020-2021",
             "HK1 2021-2022",
             "HK2 2021-2022",
             "HK1 2022-2023",
-            "HK2 2022-2023"});
+            "HK2 2022-2023",
+            "HK1 2023-2024",
+            "HK2 2023-2024"});
             this.cbbHK.Location = new System.Drawing.Point(354, 266);
             this.cbbHK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbbHK.Name = "cbbHK";
-            this.cbbHK.Size = new System.Drawing.Size(467, 36);
+            this.cbbHK.Size = new System.Drawing.Size(316, 36);
             this.cbbHK.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbbHK.TabIndex = 184;
             this.cbbHK.SelectedIndexChanged += new System.EventHandler(this.cbbHK_SelectedIndexChanged);

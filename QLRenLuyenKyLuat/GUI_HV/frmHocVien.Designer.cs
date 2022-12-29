@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHocVien));
             this.mainContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.aceTrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -43,6 +44,7 @@
             this.ace_HDSD = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_KyLuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_TheLuc = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.HDSD_QuanLy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_TK = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.DoiMatKhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.DangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -66,10 +68,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(418, 30);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.mainContainer.Location = new System.Drawing.Point(537, 54);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(6);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(587, 591);
+            this.mainContainer.Size = new System.Drawing.Size(755, 683);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
@@ -90,17 +92,16 @@
             this.ace_KQTL,
             this.ace_HDSD,
             this.ace_TK});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 30);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 54);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(6);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(418, 591);
+            this.accordionControl1.Size = new System.Drawing.Size(537, 683);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // aceTrangChu
             // 
-            this.aceTrangChu.Expanded = true;
             this.aceTrangChu.Name = "aceTrangChu";
             this.aceTrangChu.Text = "Trang chủ";
             this.aceTrangChu.Click += new System.EventHandler(this.aceTrangChu_Click);
@@ -124,6 +125,7 @@
             // 
             // ace_KQKL_Thang
             // 
+            this.ace_KQKL_Thang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ace_KQKL_Thang.ImageOptions.Image")));
             this.ace_KQKL_Thang.Name = "ace_KQKL_Thang";
             this.ace_KQKL_Thang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ace_KQKL_Thang.Text = "Kết quả kỷ luật tháng";
@@ -131,6 +133,7 @@
             // 
             // ace_KQKL_Ky
             // 
+            this.ace_KQKL_Ky.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ace_KQKL_Ky.ImageOptions.Image")));
             this.ace_KQKL_Ky.Name = "ace_KQKL_Ky";
             this.ace_KQKL_Ky.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ace_KQKL_Ky.Text = "Kết quả kỷ luật học kỳ";
@@ -138,6 +141,7 @@
             // 
             // ace_KQKL_Nam
             // 
+            this.ace_KQKL_Nam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ace_KQKL_Nam.ImageOptions.Image")));
             this.ace_KQKL_Nam.Name = "ace_KQKL_Nam";
             this.ace_KQKL_Nam.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ace_KQKL_Nam.Text = "Kết quả kỷ luật năm";
@@ -154,6 +158,7 @@
             // 
             // ace_KQTL_Quy
             // 
+            this.ace_KQTL_Quy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ace_KQTL_Quy.ImageOptions.Image")));
             this.ace_KQTL_Quy.Name = "ace_KQTL_Quy";
             this.ace_KQTL_Quy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ace_KQTL_Quy.Text = "Kết quả thể lực qúy";
@@ -161,6 +166,7 @@
             // 
             // ace_KQTL_Nam
             // 
+            this.ace_KQTL_Nam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ace_KQTL_Nam.ImageOptions.Image")));
             this.ace_KQTL_Nam.Name = "ace_KQTL_Nam";
             this.ace_KQTL_Nam.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ace_KQTL_Nam.Text = "Kết quả thể lực năm";
@@ -178,6 +184,7 @@
             // 
             // HDSD_KyLuat
             // 
+            this.HDSD_KyLuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("HDSD_KyLuat.ImageOptions.Image")));
             this.HDSD_KyLuat.Name = "HDSD_KyLuat";
             this.HDSD_KyLuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.HDSD_KyLuat.Text = "Chức năng quản lý kỷ luât";
@@ -185,10 +192,19 @@
             // 
             // HDSD_TheLuc
             // 
+            this.HDSD_TheLuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("HDSD_TheLuc.ImageOptions.Image")));
             this.HDSD_TheLuc.Name = "HDSD_TheLuc";
             this.HDSD_TheLuc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.HDSD_TheLuc.Text = "Chức năng quản lý thể lực";
             this.HDSD_TheLuc.Click += new System.EventHandler(this.HDSD_TheLuc_Click);
+            // 
+            // HDSD_QuanLy
+            // 
+            this.HDSD_QuanLy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("HDSD_QuanLy.ImageOptions.Image")));
+            this.HDSD_QuanLy.Name = "HDSD_QuanLy";
+            this.HDSD_QuanLy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.HDSD_QuanLy.Text = "Chức năng quản lý";
+            this.HDSD_QuanLy.Click += new System.EventHandler(this.HDSD_QuanLy_Click);
             // 
             // ace_TK
             // 
@@ -201,15 +217,19 @@
             // 
             // DoiMatKhau
             // 
+            this.DoiMatKhau.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("DoiMatKhau.ImageOptions.SvgImage")));
             this.DoiMatKhau.Name = "DoiMatKhau";
             this.DoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.DoiMatKhau.Text = "Thay đổi mật khẩu";
+            this.DoiMatKhau.Click += new System.EventHandler(this.DoiMatKhau_Click);
             // 
             // DangXuat
             // 
+            this.DangXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("DangXuat.ImageOptions.Image")));
             this.DangXuat.Name = "DangXuat";
             this.DangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.DangXuat.Text = "Đăng xuất";
+            this.DangXuat.Click += new System.EventHandler(this.DangXuat_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -226,7 +246,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1005, 30);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1292, 54);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.time);
@@ -244,6 +264,10 @@
             this.time.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.time.Caption = "time";
             this.time.Id = 0;
+            this.time.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.time.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.time.ItemAppearance.Normal.Options.UseFont = true;
+            this.time.ItemAppearance.Normal.Options.UseForeColor = true;
             this.time.Name = "time";
             // 
             // barStaticItem1
@@ -251,6 +275,8 @@
             this.barStaticItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barStaticItem1.Caption = "Thời gian:";
             this.barStaticItem1.Id = 1;
+            this.barStaticItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
             // position
@@ -258,6 +284,10 @@
             this.position.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.position.Caption = "position";
             this.position.Id = 2;
+            this.position.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.position.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.position.ItemAppearance.Normal.Options.UseFont = true;
+            this.position.ItemAppearance.Normal.Options.UseForeColor = true;
             this.position.Name = "position";
             // 
             // barStaticItem3
@@ -265,6 +295,8 @@
             this.barStaticItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barStaticItem3.Caption = "Chức vụ:";
             this.barStaticItem3.Id = 3;
+            this.barStaticItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem3.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem3.Name = "barStaticItem3";
             // 
             // name
@@ -272,6 +304,10 @@
             this.name.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.name.Caption = "name";
             this.name.Id = 4;
+            this.name.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.name.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.name.ItemAppearance.Normal.Options.UseFont = true;
+            this.name.ItemAppearance.Normal.Options.UseForeColor = true;
             this.name.Name = "name";
             // 
             // barStaticItem5
@@ -279,6 +315,8 @@
             this.barStaticItem5.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barStaticItem5.Caption = "Họ tên:";
             this.barStaticItem5.Id = 5;
+            this.barStaticItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.barStaticItem5.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem5.Name = "barStaticItem5";
             // 
             // barStaticItem6
@@ -290,6 +328,10 @@
             // 
             this.lblTieuDe.Caption = "TieuDe";
             this.lblTieuDe.Id = 7;
+            this.lblTieuDe.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTieuDe.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblTieuDe.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblTieuDe.ItemAppearance.Normal.Options.UseForeColor = true;
             this.lblTieuDe.Name = "lblTieuDe";
             // 
             // fluentFormDefaultManager1

@@ -29,6 +29,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtbox_DHT_CN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtbox_DLS_CN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtbox_DKL_CN = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,6 +45,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label6 = new System.Windows.Forms.Label();
             this.txtbox_sum_CN = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtbox_DHT_CN
@@ -55,7 +58,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DHT_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DHT_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DHT_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_DHT_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_DHT_CN.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txtbox_DHT_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_DHT_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_DHT_CN.Location = new System.Drawing.Point(342, 270);
             this.txtbox_DHT_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -65,6 +69,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DHT_CN.SelectedText = "";
             this.txtbox_DHT_CN.Size = new System.Drawing.Size(124, 39);
             this.txtbox_DHT_CN.TabIndex = 77;
+            this.txtbox_DHT_CN.Validating += new System.ComponentModel.CancelEventHandler(this.txtbox_DHT_CN_Validating);
             // 
             // txtbox_DLS_CN
             // 
@@ -75,7 +80,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DLS_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DLS_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DLS_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_DLS_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_DLS_CN.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txtbox_DLS_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_DLS_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_DLS_CN.Location = new System.Drawing.Point(342, 206);
             this.txtbox_DLS_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -85,6 +91,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DLS_CN.SelectedText = "";
             this.txtbox_DLS_CN.Size = new System.Drawing.Size(124, 39);
             this.txtbox_DLS_CN.TabIndex = 76;
+            this.txtbox_DLS_CN.Validating += new System.ComponentModel.CancelEventHandler(this.txtbox_DLS_CN_Validating);
             // 
             // txtbox_DKL_CN
             // 
@@ -95,7 +102,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DKL_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DKL_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_DKL_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_DKL_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_DKL_CN.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_DKL_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_DKL_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_DKL_CN.Location = new System.Drawing.Point(342, 145);
             this.txtbox_DKL_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -105,6 +113,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_DKL_CN.SelectedText = "";
             this.txtbox_DKL_CN.Size = new System.Drawing.Size(124, 38);
             this.txtbox_DKL_CN.TabIndex = 75;
+            this.txtbox_DKL_CN.Validating += new System.ComponentModel.CancelEventHandler(this.txtbox_DKL_CN_Validating);
             // 
             // label5
             // 
@@ -125,16 +134,19 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_NX_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_NX_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_NX_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_NX_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_NX_CN.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txtbox_NX_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_NX_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_NX_CN.Location = new System.Drawing.Point(342, 334);
             this.txtbox_NX_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbox_NX_CN.Multiline = true;
             this.txtbox_NX_CN.Name = "txtbox_NX_CN";
             this.txtbox_NX_CN.PasswordChar = '\0';
             this.txtbox_NX_CN.PlaceholderText = "";
             this.txtbox_NX_CN.SelectedText = "";
             this.txtbox_NX_CN.Size = new System.Drawing.Size(575, 126);
             this.txtbox_NX_CN.TabIndex = 73;
+            this.txtbox_NX_CN.Validating += new System.ComponentModel.CancelEventHandler(this.txtbox_NX_CN_Validating);
             // 
             // label1
             // 
@@ -212,13 +224,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_PL_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_PL_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_PL_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_PL_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_PL_CN.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txtbox_PL_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_PL_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_PL_CN.Location = new System.Drawing.Point(342, 571);
             this.txtbox_PL_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbox_PL_CN.Name = "txtbox_PL_CN";
             this.txtbox_PL_CN.PasswordChar = '\0';
             this.txtbox_PL_CN.PlaceholderText = "";
+            this.txtbox_PL_CN.ReadOnly = true;
             this.txtbox_PL_CN.SelectedText = "";
             this.txtbox_PL_CN.Size = new System.Drawing.Size(124, 39);
             this.txtbox_PL_CN.TabIndex = 82;
@@ -242,13 +256,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtbox_sum_CN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_sum_CN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtbox_sum_CN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtbox_sum_CN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtbox_sum_CN.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txtbox_sum_CN.ForeColor = System.Drawing.Color.Black;
             this.txtbox_sum_CN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtbox_sum_CN.Location = new System.Drawing.Point(342, 497);
             this.txtbox_sum_CN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbox_sum_CN.Name = "txtbox_sum_CN";
             this.txtbox_sum_CN.PasswordChar = '\0';
             this.txtbox_sum_CN.PlaceholderText = "";
+            this.txtbox_sum_CN.ReadOnly = true;
             this.txtbox_sum_CN.SelectedText = "";
             this.txtbox_sum_CN.Size = new System.Drawing.Size(124, 39);
             this.txtbox_sum_CN.TabIndex = 84;
@@ -263,6 +279,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label7.Size = new System.Drawing.Size(112, 24);
             this.label7.TabIndex = 83;
             this.label7.Text = "Tổng điểm:";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // TuDanhGia
             // 
@@ -287,6 +307,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Controls.Add(this.label3);
             this.Name = "TuDanhGia";
             this.Size = new System.Drawing.Size(1152, 655);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +330,6 @@ namespace QLRenLuyenKyLuat.GUI_HV
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txtbox_sum_CN;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

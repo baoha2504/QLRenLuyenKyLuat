@@ -41,43 +41,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void FindCheck(string date)
         {
-            if (date == "HK1 2019-2020") // nam 1
-            {
-                t1 = "082019";
-                t2 = "092019";
-                t3 = "102019";
-                t4 = "112019";
-                t5 = "122019";
-                t6 = "012020";
-            }
-            else if (date == "HK2 2019-2020")
-            {
-                t1 = "022020";
-                t2 = "032020";
-                t3 = "042020";
-                t4 = "052020";
-                t5 = "062020";
-                t6 = "072020";
-            }
-            else if (date == "HK1 2020-2021") // nam 2
-            {
-                t1 = "082020";
-                t2 = "092020";
-                t3 = "102020";
-                t4 = "112020";
-                t5 = "122020";
-                t6 = "012021";
-            }
-            else if (date == "HK2 2020-2021")
-            {
-                t1 = "022021";
-                t2 = "032021";
-                t3 = "042021";
-                t4 = "052021";
-                t5 = "062021";
-                t6 = "072021";
-            }
-            else if (date == "HK1 2021-2022") // nam 3
+            if (date == "HK1 2021-2022") // nam 3
             {
                 t1 = "082021";
                 t2 = "092021";
@@ -113,26 +77,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
                 t5 = "062023";
                 t6 = "072023";
             }
-            else if (date == "HK1 2023-2024") // nam 5
-            {
-                t1 = "082023";
-                t2 = "092023";
-                t3 = "102023";
-                t4 = "112023";
-                t5 = "122023";
-                t6 = "012024";
-            }
-            else if (date == "HK2 2023-2024")
-            {
-                t1 = "022024";
-                t2 = "032024";
-                t3 = "042024";
-                t4 = "052024";
-                t5 = "062024";
-                t6 = "062024";
-            }
+            
+            
         }
-
+      
 
         private void cbbHK_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -160,10 +108,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             {
                 foreach (DataRow dr in dtb.Rows)
                 {
-                    kq[i]= dr["MaPLKL"].ToString();
                     txt_NX.Text = dr["NhanXet"].ToString();
                 }
-                txt_PL.Text = Calculator.cal_DiemRLHocKy(kq[0], kq[1], kq[2], kq[3], kq[4], kq[5]);
+                for (int i = 0; i < dtb.Rows.Count; i++)
+                {
+                    kq[i] = dtb.Rows[i][0].ToString();
+                }
+                string text = Calculator.cal_DiemRLHocKy(kq[0].Trim(), kq[1].Trim(), kq[2].Trim(), kq[3].Trim(), kq[4].Trim(), kq[5].Trim());
+                txt_PL.Text = text;
+                
             }
             else
             {

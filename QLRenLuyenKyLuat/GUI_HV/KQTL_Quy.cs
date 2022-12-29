@@ -10,7 +10,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         public KQTL_Quy()
         {
             InitializeComponent();
-            cbb_Nam.Text = DateTime.Now.Year.ToString();
+            //cbb_Nam.Text = DateTime.Now.Year.ToString();
             ThangDau(DateTime.Now.Month);
         }
 
@@ -122,9 +122,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void KQTL_Quy_Load(object sender, EventArgs e)
         {
-            Hien_CbbQuy();
-            cbb_Nam.SelectedIndex = 1;
-            connect();
+            //Hien_CbbQuy();
+            //connect();
         }
 
         private void cbb_Quy_SelectedIndexChanged(object sender, EventArgs e)

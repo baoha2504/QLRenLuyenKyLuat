@@ -118,13 +118,15 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             // cbB_TL_Nam
             // 
+            this.cbB_TL_Nam.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.cbB_TL_Nam.ForeColor = System.Drawing.Color.Black;
             this.cbB_TL_Nam.FormattingEnabled = true;
             this.cbB_TL_Nam.Items.AddRange(new object[] {
             "2021",
             "2022"});
             this.cbB_TL_Nam.Location = new System.Drawing.Point(392, 111);
             this.cbB_TL_Nam.Name = "cbB_TL_Nam";
-            this.cbB_TL_Nam.Size = new System.Drawing.Size(121, 27);
+            this.cbB_TL_Nam.Size = new System.Drawing.Size(121, 30);
             this.cbB_TL_Nam.TabIndex = 141;
             this.cbB_TL_Nam.SelectedIndexChanged += new System.EventHandler(this.cbB_TL_Nam_SelectedIndexChanged);
             // 

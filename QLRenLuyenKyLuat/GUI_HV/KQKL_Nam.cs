@@ -20,7 +20,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         public KQKL_Nam()
         {
             InitializeComponent();
-            cbB_KL_Nam.Text = "2021-2022";
+            
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
@@ -37,37 +37,21 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void FindCheckHK(string date)
         {
-            if (date == "2019-2020") // nam 1
+            if (date == "2024-2025") // nam 1
             {
-                t1 = "082019";
-                t2 = "092019";
-                t3 = "102019";
-                t4 = "112019";
-                t5 = "122019";
-                t6 = "012020";
-                t7 = "022020";
-                t8 = "032020";
-                t9 = "042020";
-                t10 = "052020";
-                t11 = "062020";
-                t12 = "072020";
+                t1 = "082024";
+                t2 = "092024";
+                t3 = "102024";
+                t4 = "112024";
+                t5 = "122024";
+                t6 = "012025";
+                t7 = "022025";
+                t8 = "032025";
+                t9 = "042025";
+                t10 = "052025";
+                t11 = "062025";
+                t12 = "072025";
             }
-            else if (date == "2020-2021") // nam 2
-            {
-                t1 = "082020";
-                t2 = "092020";
-                t3 = "102020";
-                t4 = "112020";
-                t5 = "122020";
-                t6 = "012021";
-                t7 = "022021";
-                t8 = "032021";
-                t9 = "042021";
-                t10 = "052021";
-                t11 = "062021";
-                t12 = "072021";
-            }
-
             else if (date == "2021-2022") // nam 3
             {
                 t1 = "082021";
@@ -153,10 +137,14 @@ namespace QLRenLuyenKyLuat.GUI_HV
             {
                 foreach (DataRow dr in dtb.Rows)
                 {
-                    kqhk1[i] = dr["MaPLKL"].ToString();
+                    
                     txt_NX.Text = dr["NhanXet"].ToString();
                 }
-                KetQuaHK1 = Calculator.cal_DiemRLHocKy(kqhk1[0], kqhk1[1], kqhk1[2], kqhk1[3], kqhk1[4], kqhk1[5]);
+                for (int i = 0; i < dtb.Rows.Count; i++)
+                {
+                    kqhk1[i] = dtb.Rows[i][0].ToString();
+                }
+                KetQuaHK1 = Calculator.cal_DiemRLHocKy(kqhk1[0].Trim(), kqhk1[1].Trim(), kqhk1[2].Trim(), kqhk1[3].Trim(), kqhk1[4].Trim(), kqhk1[5].Trim());
             }
 
             sqlCon.Open();
@@ -164,14 +152,18 @@ namespace QLRenLuyenKyLuat.GUI_HV
             DataTable dtb1 = new DataTable();
             sqlDa1.Fill(dtb1);
             sqlCon.Close();
-            if (dtb.Rows.Count == 6)
+            if (dtb1.Rows.Count == 6)
             {
-                foreach (DataRow dr in dtb.Rows)
+                foreach (DataRow dr in dtb1.Rows)
                 {
-                    kqhk1[i] = dr["MaPLKL"].ToString();
+                  
                     txt_NX.Text = dr["NhanXet"].ToString();
                 }
-                KetQuaHK2 = Calculator.cal_DiemRLHocKy(kqhk1[0], kqhk1[1], kqhk1[2], kqhk1[3], kqhk1[4], kqhk1[5]);
+                for (int i = 0; i < dtb1.Rows.Count; i++)
+                {
+                    kqhk1[i] = dtb1.Rows[i][0].ToString();
+                }
+                KetQuaHK2 = Calculator.cal_DiemRLHocKy(kqhk1[0].Trim(), kqhk1[1].Trim(), kqhk1[2].Trim(), kqhk1[3].Trim(), kqhk1[4].Trim(), kqhk1[5].Trim());
             }
 
             if (dtb.Rows.Count == 6 && dtb1.Rows.Count == 6)
@@ -188,10 +180,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         }
         private void KQKL_Nam_Load(object sender, EventArgs e)
         {
-            cbB_KL_Nam.Text = "2021-2022";
-            string date = cbB_KL_Nam.Text.ToString();
-            FindCheckHK(date);
-            connect();
+
         }
 
         private void cbB_KL_Nam_SelectedIndexChanged(object sender, EventArgs e)

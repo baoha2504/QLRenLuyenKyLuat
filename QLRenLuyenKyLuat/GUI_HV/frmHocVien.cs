@@ -33,6 +33,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         usr_HDSD_KL usr_HDSD_KL;
         usr_HDSD_TL usr_HDSD_TL;
         usr_HDSD_QL usr_HDSD_QL;
+        ThayDoiMatKhau ThayDoiMatKhau;
         private void fluentDesignFormControl1_Click(object sender, EventArgs e)
         {
 
@@ -45,7 +46,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void frmHocVien_Load(object sender, EventArgs e)
         {
-            
+            aceTrangChu_Click(sender, e);
         }
 
         private void ace_TuDanhGia_Click(object sender, EventArgs e)
@@ -206,6 +207,33 @@ namespace QLRenLuyenKyLuat.GUI_HV
                 usr_HDSD_QL.BringToFront();
             }
             lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý đơn vị";
+        }
+
+        private void DoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (ThayDoiMatKhau == null)
+            {
+                ThayDoiMatKhau ThayDoiMatKhau = new ThayDoiMatKhau();
+                ThayDoiMatKhau.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(ThayDoiMatKhau);
+                ThayDoiMatKhau.BringToFront();
+            }
+            else
+            {
+                ThayDoiMatKhau.BringToFront();
+            }
+            lblTieuDe.Caption = "Thay đổi mật khẩu";
+        }
+
+        private void DangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Show();
+                this.Hide();
+            }
         }
     }
 }
