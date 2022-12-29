@@ -44,7 +44,7 @@
             this.ace_HDSD = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_KyLuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.HDSD_TheLuc = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.HDSD_QuanLy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            //this.HDSD_QuanLy = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_TK = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.DoiMatKhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.DangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
