@@ -67,10 +67,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(347, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.mainContainer.Location = new System.Drawing.Point(356, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(658, 575);
+            this.mainContainer.Size = new System.Drawing.Size(922, 692);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
@@ -92,23 +92,21 @@
             this.ace_HDSD,
             this.ace_TK});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(347, 575);
+            this.accordionControl1.Size = new System.Drawing.Size(356, 692);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // aceTrangChu
             // 
-            this.aceTrangChu.Expanded = true;
             this.aceTrangChu.Name = "aceTrangChu";
             this.aceTrangChu.Text = "Trang chủ";
             this.aceTrangChu.Click += new System.EventHandler(this.aceTrangChu_Click);
             // 
             // ace_TuDanhGia
             // 
-            this.ace_TuDanhGia.Expanded = true;
             this.ace_TuDanhGia.Name = "ace_TuDanhGia";
             this.ace_TuDanhGia.Text = "Tự đánh giá";
             this.ace_TuDanhGia.Click += new System.EventHandler(this.ace_TuDanhGia_Click);
@@ -119,7 +117,6 @@
             this.ace_KQKL_Thang,
             this.ace_KQKL_Ky,
             this.ace_KQKL_Nam});
-            this.ace_KQKL.Expanded = true;
             this.ace_KQKL.Name = "ace_KQKL";
             this.ace_KQKL.Text = "Kết quả kỷ luật";
             // 
@@ -152,7 +149,6 @@
             this.ace_KQTL.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.ace_KQTL_Quy,
             this.ace_KQTL_Nam});
-            this.ace_KQTL.Expanded = true;
             this.ace_KQTL.Name = "ace_KQTL";
             this.ace_KQTL.Text = "Kết quả thể lực";
             // 
@@ -178,7 +174,6 @@
             this.HDSD_KyLuat,
             this.HDSD_TheLuc,
             this.HDSD_QuanLy});
-            this.ace_HDSD.Expanded = true;
             this.ace_HDSD.Name = "ace_HDSD";
             this.ace_HDSD.Text = "Hướng dẫn sử dụng";
             // 
@@ -211,7 +206,6 @@
             this.ace_TK.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.DoiMatKhau,
             this.DangXuat});
-            this.ace_TK.Expanded = true;
             this.ace_TK.Name = "ace_TK";
             this.ace_TK.Text = "Tài khoản";
             // 
@@ -246,7 +240,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1005, 46);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1278, 46);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.time);
@@ -358,7 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 621);
+            this.ClientSize = new System.Drawing.Size(1278, 738);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);

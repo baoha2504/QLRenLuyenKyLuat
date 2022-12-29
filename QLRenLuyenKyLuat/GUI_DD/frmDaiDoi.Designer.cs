@@ -95,10 +95,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(361, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(48);
+            this.mainContainer.Location = new System.Drawing.Point(346, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(930, 690);
+            this.mainContainer.Size = new System.Drawing.Size(945, 690);
             this.mainContainer.TabIndex = 0;
             // 
             // fluentDesignFormControl1
@@ -267,7 +267,6 @@
             this.HDSD_KL,
             this.HDSD_TL,
             this.QuanLy});
-            this.accordionControlElement7.Expanded = true;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "Hướng dẫn sử dụng";
             // 
@@ -493,7 +492,6 @@
             this.accordionControlElement11,
             this.accordionControlElement12,
             this.accordionControlElement13});
-            this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Quản lý";
             // 
@@ -577,7 +575,6 @@
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.TrangChu,
             this.ThongBao});
-            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Trang chủ";
             // 
@@ -617,10 +614,10 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(48);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(361, 690);
+            this.accordionControl1.Size = new System.Drawing.Size(346, 690);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 

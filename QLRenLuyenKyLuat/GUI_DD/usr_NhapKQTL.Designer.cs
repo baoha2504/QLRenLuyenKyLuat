@@ -67,13 +67,9 @@
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -187,7 +183,7 @@
             this.txtGioiTinh.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinh.Location = new System.Drawing.Point(860, 776);
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(45, 16);
+            this.txtGioiTinh.Size = new System.Drawing.Size(43, 15);
             this.txtGioiTinh.TabIndex = 126;
             this.txtGioiTinh.Text = "Họ tên";
             // 
@@ -197,7 +193,7 @@
             this.txtMaHV.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHV.Location = new System.Drawing.Point(855, 768);
             this.txtMaHV.Name = "txtMaHV";
-            this.txtMaHV.Size = new System.Drawing.Size(45, 16);
+            this.txtMaHV.Size = new System.Drawing.Size(43, 15);
             this.txtMaHV.TabIndex = 117;
             this.txtMaHV.Text = "Họ tên";
             // 
@@ -342,7 +338,7 @@
             this.txtChayNgan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayNgan.TabIndex = 112;
             this.txtChayNgan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            //this.txtChayNgan.Click += new System.EventHandler(this.txtChayNgan_Click);
+            this.txtChayNgan.Click += new System.EventHandler(this.txtChayNgan_Click);
             // 
             // txtChayDai
             // 
@@ -366,7 +362,7 @@
             this.txtChayDai.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayDai.TabIndex = 110;
             this.txtChayDai.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            //this.txtChayDai.Click += new System.EventHandler(this.txtChayDai_Click);
+            this.txtChayDai.Click += new System.EventHandler(this.txtChayDai_Click);
             // 
             // label2
             // 
@@ -401,7 +397,6 @@
             this.txtBoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBoi.TabIndex = 106;
             this.txtBoi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtBoi.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoi_Validating);
             // 
             // txtBatXa
             // 
@@ -425,7 +420,6 @@
             this.txtBatXa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBatXa.TabIndex = 105;
             this.txtBatXa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtBatXa.Validating += new System.ComponentModel.CancelEventHandler(this.txtBatXa_Validating);
             // 
             // txtKeoXa_ChongDay
             // 
@@ -449,7 +443,6 @@
             this.txtKeoXa_ChongDay.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtKeoXa_ChongDay.TabIndex = 104;
             this.txtKeoXa_ChongDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtKeoXa_ChongDay.Validating += new System.ComponentModel.CancelEventHandler(this.txtKeoXa_ChongDay_Validating);
             // 
             // label1
             // 
@@ -666,13 +659,6 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellContentClick);
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // errorProvider2
-            // 
-            this.errorProvider2.ContainerControl = this;
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
@@ -695,8 +681,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -736,8 +720,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label txtGioiTinh;
         private Guna.UI2.WinForms.Guna2ComboBox cbbKetQua;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;

@@ -45,22 +45,22 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // L_KQKL_HK
             // 
             this.L_KQKL_HK.AutoSize = true;
-            this.L_KQKL_HK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.L_KQKL_HK.Location = new System.Drawing.Point(522, 233);
+            this.L_KQKL_HK.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_KQKL_HK.Location = new System.Drawing.Point(468, 185);
             this.L_KQKL_HK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_KQKL_HK.Name = "L_KQKL_HK";
-            this.L_KQKL_HK.Size = new System.Drawing.Size(402, 23);
+            this.L_KQKL_HK.Size = new System.Drawing.Size(476, 25);
             this.L_KQKL_HK.TabIndex = 87;
             this.L_KQKL_HK.Text = "KẾT QUẢ RÈN LUYỆN KỶ LUẬT THEO KỲ";
             // 
             // NhanXet_KL_Ky
             // 
             this.NhanXet_KL_Ky.AutoSize = true;
-            this.NhanXet_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhanXet_KL_Ky.Location = new System.Drawing.Point(436, 536);
+            this.NhanXet_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NhanXet_KL_Ky.Location = new System.Drawing.Point(417, 536);
             this.NhanXet_KL_Ky.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NhanXet_KL_Ky.Name = "NhanXet_KL_Ky";
-            this.NhanXet_KL_Ky.Size = new System.Drawing.Size(79, 19);
+            this.NhanXet_KL_Ky.Size = new System.Drawing.Size(84, 20);
             this.NhanXet_KL_Ky.TabIndex = 68;
             this.NhanXet_KL_Ky.Text = "Nhận xét:";
             // 
@@ -90,11 +90,11 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.MucPL_KL_Ky.AutoSize = true;
             this.MucPL_KL_Ky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.MucPL_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MucPL_KL_Ky.Location = new System.Drawing.Point(436, 474);
+            this.MucPL_KL_Ky.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MucPL_KL_Ky.Location = new System.Drawing.Point(417, 474);
             this.MucPL_KL_Ky.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MucPL_KL_Ky.Name = "MucPL_KL_Ky";
-            this.MucPL_KL_Ky.Size = new System.Drawing.Size(121, 19);
+            this.MucPL_KL_Ky.Size = new System.Drawing.Size(128, 20);
             this.MucPL_KL_Ky.TabIndex = 168;
             this.MucPL_KL_Ky.Text = "Mức phân loại:";
             // 
@@ -144,22 +144,22 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(436, 288);
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(417, 278);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 19);
+            this.label7.Size = new System.Drawing.Size(67, 20);
             this.label7.TabIndex = 180;
             this.label7.Text = "Họ tên:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(436, 361);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(417, 343);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 19);
+            this.label6.Size = new System.Drawing.Size(46, 20);
             this.label6.TabIndex = 181;
             this.label6.Text = "Lớp:";
             // 
@@ -188,11 +188,11 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(434, 413);
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(417, 413);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 23);
+            this.label8.Size = new System.Drawing.Size(88, 20);
             this.label8.TabIndex = 185;
             this.label8.Text = "Thời gian:";
             // 

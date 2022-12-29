@@ -55,11 +55,11 @@
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.lblTieude = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.FormContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.barSubItem3 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem4 = new DevExpress.XtraBars.BarSubItem();
             this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.FormContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -84,10 +84,10 @@
             this.accordionControlElement3,
             this.accordionControlElement4});
             this.accordionControl1.Location = new System.Drawing.Point(0, 43);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(326, 886);
+            this.accordionControl1.Size = new System.Drawing.Size(368, 886);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -105,7 +105,6 @@
             // 
             // NhapKL
             // 
-            this.NhapKL.Expanded = true;
             this.NhapKL.Name = "NhapKL";
             this.NhapKL.Text = "Nhập KQRL  tháng";
             this.NhapKL.Click += new System.EventHandler(this.NhapKL_Click);
@@ -240,7 +239,6 @@
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemMK,
             this.itemOut});
-            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Tài khoản";
             // 
@@ -378,32 +376,6 @@
             this.barSubItem2.Id = 10;
             this.barSubItem2.Name = "barSubItem2";
             // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.Form = this;
-            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barStaticItem2,
-            this.barStaticItem1,
-            this.barStaticItem3,
-            this.barStaticItem4,
-            this.barStaticItem5,
-            this.barSubItem1,
-            this.lblTieude,
-            this.barSubItem2,
-            this.barSubItem3,
-            this.barSubItem4,
-            this.barStaticItem6});
-            this.fluentFormDefaultManager1.MaxItemId = 14;
-            // 
-            // FormContainer
-            // 
-            this.FormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormContainer.Location = new System.Drawing.Point(326, 39);
-            this.FormContainer.Margin = new System.Windows.Forms.Padding(4);
-            this.FormContainer.Name = "FormContainer";
-            this.FormContainer.Size = new System.Drawing.Size(1527, 890);
-            this.FormContainer.TabIndex = 0;
-            // 
             // barSubItem3
             // 
             this.barSubItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
@@ -428,6 +400,32 @@
             this.barStaticItem6.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem6.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barStaticItem6.Name = "barStaticItem6";
+            // 
+            // fluentFormDefaultManager1
+            // 
+            this.fluentFormDefaultManager1.Form = this;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barStaticItem2,
+            this.barStaticItem1,
+            this.barStaticItem3,
+            this.barStaticItem4,
+            this.barStaticItem5,
+            this.barSubItem1,
+            this.lblTieude,
+            this.barSubItem2,
+            this.barSubItem3,
+            this.barSubItem4,
+            this.barStaticItem6});
+            this.fluentFormDefaultManager1.MaxItemId = 14;
+            // 
+            // FormContainer
+            // 
+            this.FormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FormContainer.Location = new System.Drawing.Point(368, 43);
+            this.FormContainer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FormContainer.Name = "FormContainer";
+            this.FormContainer.Size = new System.Drawing.Size(1485, 886);
+            this.FormContainer.TabIndex = 0;
             // 
             // frmLop
             // 

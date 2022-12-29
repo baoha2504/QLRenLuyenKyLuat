@@ -61,11 +61,9 @@
             this.txtNoiDung = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbbMuc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtgv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -288,7 +286,6 @@
             this.txtChayNgan.Size = new System.Drawing.Size(352, 33);
             this.txtChayNgan.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayNgan.TabIndex = 108;
-            this.txtChayNgan.Validating += new System.ComponentModel.CancelEventHandler(this.txtChayNgan_Validating);
             // 
             // txtChayDai
             // 
@@ -311,7 +308,6 @@
             this.txtChayDai.Size = new System.Drawing.Size(351, 33);
             this.txtChayDai.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtChayDai.TabIndex = 107;
-            this.txtChayDai.Validating += new System.ComponentModel.CancelEventHandler(this.txtChayDai_Validating);
             // 
             // txtBoi
             // 
@@ -334,7 +330,6 @@
             this.txtBoi.Size = new System.Drawing.Size(352, 33);
             this.txtBoi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBoi.TabIndex = 106;
-            this.txtBoi.Validating += new System.ComponentModel.CancelEventHandler(this.txtBoi_Validating);
             // 
             // txtBatXa
             // 
@@ -357,7 +352,6 @@
             this.txtBatXa.Size = new System.Drawing.Size(352, 33);
             this.txtBatXa.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtBatXa.TabIndex = 105;
-            this.txtBatXa.Validating += new System.ComponentModel.CancelEventHandler(this.txtBatXa_Validating);
             // 
             // txtKeoXa_ChongDay
             // 
@@ -380,7 +374,6 @@
             this.txtKeoXa_ChongDay.Size = new System.Drawing.Size(352, 33);
             this.txtKeoXa_ChongDay.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtKeoXa_ChongDay.TabIndex = 104;
-            this.txtKeoXa_ChongDay.Validating += new System.ComponentModel.CancelEventHandler(this.txtKeoXa_ChongDay_Validating);
             // 
             // label1
             // 
@@ -586,9 +579,6 @@
             this.dtgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_CellContentClick);
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
@@ -611,7 +601,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -643,7 +632,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbNam;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox cbbThang;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
