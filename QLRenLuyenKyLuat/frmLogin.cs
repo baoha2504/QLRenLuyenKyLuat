@@ -114,5 +114,21 @@ namespace QLRenLuyenKyLuat
             }
             hashPass = ComputeSha256Hash(txtLoginPass.Text);
         }
+
+        private void txtLoginMaHV_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtLoginPass.Focus();
+            }
+        }
+
+        private void txtLoginPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
     }
 }

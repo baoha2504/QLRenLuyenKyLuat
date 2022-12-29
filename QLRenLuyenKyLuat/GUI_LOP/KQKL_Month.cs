@@ -72,6 +72,10 @@ namespace QLRenLuyenKyLuat.GUI_LOP
                 }
                 DR.Close();
             }
+            if (string.IsNullOrEmpty(txtBox_DLS.Text))
+            {
+                MessageBox.Show("Đại đội chưa đánh giá.", "Thông báo", MessageBoxButtons.OK);
+            }
         }
 
         private void danhsach_KL_month_CellContentClick(object sender, DataGridViewCellEventArgs e)

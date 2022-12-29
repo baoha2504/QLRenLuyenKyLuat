@@ -106,7 +106,14 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             }
             txtBoxHk2.Text = Calculator.cal_DiemRLHocKy(HK2[0].Trim(), HK2[1].Trim(), HK2[2].Trim(), HK2[3].Trim(), HK2[4].Trim(), HK2[5].Trim());
             txtBoxHk1.Text = Calculator.cal_DiemRLHocKy(HK1[0].Trim(), HK1[1].Trim(), HK1[2].Trim(), HK1[3].Trim(), HK1[4].Trim(), HK1[5].Trim());
-            //txtBoxHk1.Text = Calculator.cal_DiemRLHocKy("T", "K", "K", "T", "T", "T");
+            if(txtBoxHk1.Text == string.Empty)
+            {
+                MessageBox.Show("Chưa đủ dữ liệu học kì 1.", "Thông báo", MessageBoxButtons.OK);
+            }
+            if (txtBoxHk2.Text == string.Empty)
+            {
+                MessageBox.Show("Chưa đủ dữ liệu học kì 2.", "Thông báo", MessageBoxButtons.OK);
+            }
         }
 
         private void danhsach_KL_term_CellContentClick(object sender, DataGridViewCellEventArgs e)

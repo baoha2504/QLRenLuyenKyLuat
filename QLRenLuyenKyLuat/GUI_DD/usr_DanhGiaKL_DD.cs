@@ -63,8 +63,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 "where HocVien.MaHocVien = HocVien_PLRL.MaHocVien " +
                 "and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL " +
                 "and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL " +
-                "and DIEM_PLKL.MaDiemPLKL LIKE '%L%' " +
-                "and DIEM_PLKL.MaDiemPLKL LIKE '%" + check + "%' " +
+                "and DIEM_PLKL.MaDiemPLKL LIKE '%" + check + "L%' " +
                 "and HocVien_PLRL.MaHocVien = '" + dtgv.SelectedRows[0].Cells[0].Value.ToString().Trim() + "'";
             using (SqlConnection conn = new SqlConnection(constr))
             {
@@ -129,7 +128,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             }
             catch
             {
-                MessageBox.Show("Lỗi ở bảng DIEM_PLKL");
+                MessageBox.Show("Học viên đã được đánh giá");
             }
             try
             {
@@ -140,7 +139,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             }
             catch
             {
-                MessageBox.Show("Lỗi ở bảng HOCVIEN_PLRL");
+                MessageBox.Show("Học viên đã được đánh giá");
             }
         }
 

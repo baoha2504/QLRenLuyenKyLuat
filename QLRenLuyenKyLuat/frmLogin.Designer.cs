@@ -59,7 +59,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu";
             // 
-            // txtLoginMaLop
+            // txtLoginMaHV
             // 
             this.txtLoginMaHV.BorderThickness = 2;
             this.txtLoginMaHV.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -81,6 +81,7 @@
             this.txtLoginMaHV.Size = new System.Drawing.Size(240, 33);
             this.txtLoginMaHV.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtLoginMaHV.TabIndex = 5;
+            this.txtLoginMaHV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginMaHV_KeyDown);
             // 
             // txtLoginPass
             // 
@@ -104,6 +105,7 @@
             this.txtLoginPass.Size = new System.Drawing.Size(240, 33);
             this.txtLoginPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtLoginPass.TabIndex = 6;
+            this.txtLoginPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLoginPass_KeyDown);
             // 
             // btnLogin
             // 
