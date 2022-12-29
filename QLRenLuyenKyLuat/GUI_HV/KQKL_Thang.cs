@@ -59,9 +59,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
             txtBoxPL1.Clear();
             txtBoxNX_Cuoi.Clear();
             txtBoxPL_Cuoi.Clear();
-            query = "select  DiemKL, DiemHT, DiemLS, TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%CN%' and HocVien_PLRL.MaHocVien = '"+ frmLogin.maHV +"'and HOCVIEN_PLRL.ThoiGian LIKE '"+check+ "%'";
-            query1 = "select DiemKL, DiemHT, DiemLS, TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%L' and HocVien_PLRL.MaHocVien = '" + frmLogin.maHV + "'and HOCVIEN_PLRL.ThoiGian LIKE '" + check + "%'";
-            query2 = "select TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%DD%' and HocVien_PLRL.MaHocVien = '" + frmLogin.maHV + "'and HOCVIEN_PLRL.ThoiGian LIKE '" + check + "%'";
+            query = "select  DiemKL, DiemHT, DiemLS, TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%CN%' and HocVien_PLRL.MaHocVien = '"+ frmLogin.maNguoiDung +"' and left(HOCVIEN_PLRL.ThoiGian,7) LIKE N'%"+check+ "%'";
+            query1 = "select DiemKL, DiemHT, DiemLS, TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%L' and HocVien_PLRL.MaHocVien = '" + frmLogin.maNguoiDung + "' and left(HOCVIEN_PLRL.ThoiGian,7) LIKE N'%" + check + "%'";
+            query2 = "select TenPhanLoai, NhanXet from HOCVIEN, HocVien_PLRL, DIEM_PLKL, PHANLOAIKYLUAT where HocVien.MaHocVien = HocVien_PLRL.MaHocVien and HOCVIEN_PLRL.MaDiemPLRL = DIEM_PLKL.MaDiemPLKL and DIEM_PLKL.MaPLKL = PHANLOAIKYLUAT.MaPLKL and DIEM_PLKL.MaDiemPLKL LIKE '%DD%' and HocVien_PLRL.MaHocVien = '" + frmLogin.maNguoiDung + "' and left(HOCVIEN_PLRL.ThoiGian,7) LIKE N'%" + check + "%'";
             
             sqlCon.Open();
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
@@ -103,6 +103,66 @@ namespace QLRenLuyenKyLuat.GUI_HV
                 txtBoxNX_Cuoi.Text = dr["NhanXet"].ToString();
                 txtBoxPL_Cuoi.Text = dr["TenPhanLoai"].ToString();
             }
+        }
+
+        private void txtBoxDLS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxDKL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxDHT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxNX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxPL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxDKL1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxDLS1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxDHT1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxNX1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxPL1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxNX_Cuoi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxPL_Cuoi_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

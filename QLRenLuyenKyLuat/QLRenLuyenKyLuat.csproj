@@ -274,6 +274,12 @@
     <Compile Include="GUI_HV\KQTL_Quy.Designer.cs">
       <DependentUpon>KQTL_Quy.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_HV\ThayDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_HV\ThayDoiMatKhau.Designer.cs">
+      <DependentUpon>ThayDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_HV\TrangChu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -351,6 +357,12 @@
     </Compile>
     <Compile Include="GUI_LOP\NhapRLKL.Designer.cs">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LOP\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_LOP\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -459,6 +471,9 @@
     <EmbeddedResource Include="GUI_HV\KQTL_Quy.resx">
       <DependentUpon>KQTL_Quy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HV\ThayDoiMatKhau.resx">
+      <DependentUpon>ThayDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_HV\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
@@ -497,6 +512,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_LOP\NhapRLKL.resx">
       <DependentUpon>NhapRLKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LOP\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

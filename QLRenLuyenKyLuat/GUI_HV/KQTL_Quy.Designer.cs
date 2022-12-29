@@ -58,8 +58,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_ChayNgan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ChayNgan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ChayNgan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ChayNgan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_ChayNgan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_ChayNgan.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_ChayNgan.ForeColor = System.Drawing.Color.Black;
             this.txt_ChayNgan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ChayNgan.Location = new System.Drawing.Point(432, 233);
             this.txt_ChayNgan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -67,7 +67,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_ChayNgan.PasswordChar = '\0';
             this.txt_ChayNgan.PlaceholderText = "";
             this.txt_ChayNgan.SelectedText = "";
-            this.txt_ChayNgan.Size = new System.Drawing.Size(501, 41);
+            this.txt_ChayNgan.Size = new System.Drawing.Size(402, 41);
             this.txt_ChayNgan.TabIndex = 134;
             // 
             // txt_ChayDai
@@ -79,8 +79,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_ChayDai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ChayDai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ChayDai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ChayDai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_ChayDai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_ChayDai.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_ChayDai.ForeColor = System.Drawing.Color.Black;
             this.txt_ChayDai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ChayDai.Location = new System.Drawing.Point(432, 148);
             this.txt_ChayDai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -100,8 +100,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Boi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Boi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Boi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Boi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Boi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_Boi.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_Boi.ForeColor = System.Drawing.Color.Black;
             this.txt_Boi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Boi.Location = new System.Drawing.Point(433, 396);
             this.txt_Boi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -109,7 +109,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Boi.PasswordChar = '\0';
             this.txt_Boi.PlaceholderText = "";
             this.txt_Boi.SelectedText = "";
-            this.txt_Boi.Size = new System.Drawing.Size(501, 41);
+            this.txt_Boi.Size = new System.Drawing.Size(405, 41);
             this.txt_Boi.TabIndex = 132;
             // 
             // txt_BatXa
@@ -121,8 +121,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_BatXa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_BatXa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_BatXa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_BatXa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_BatXa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_BatXa.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_BatXa.ForeColor = System.Drawing.Color.Black;
             this.txt_BatXa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_BatXa.Location = new System.Drawing.Point(432, 323);
             this.txt_BatXa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -130,7 +130,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_BatXa.PasswordChar = '\0';
             this.txt_BatXa.PlaceholderText = "";
             this.txt_BatXa.SelectedText = "";
-            this.txt_BatXa.Size = new System.Drawing.Size(501, 41);
+            this.txt_BatXa.Size = new System.Drawing.Size(406, 41);
             this.txt_BatXa.TabIndex = 131;
             // 
             // L_KQTL_Quy
@@ -202,8 +202,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Xa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Xa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Xa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Xa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Xa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_Xa.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_Xa.ForeColor = System.Drawing.Color.Black;
             this.txt_Xa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Xa.Location = new System.Drawing.Point(433, 469);
             this.txt_Xa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -211,7 +211,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Xa.PasswordChar = '\0';
             this.txt_Xa.PlaceholderText = "";
             this.txt_Xa.SelectedText = "";
-            this.txt_Xa.Size = new System.Drawing.Size(501, 41);
+            this.txt_Xa.Size = new System.Drawing.Size(405, 41);
             this.txt_Xa.TabIndex = 139;
             // 
             // label1
@@ -228,7 +228,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(905, 87);
+            this.label9.Location = new System.Drawing.Point(683, 87);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 24);
             this.label9.TabIndex = 141;
@@ -241,15 +241,19 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbb_Nam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_Nam.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_Nam.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_Nam.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbb_Nam.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbb_Nam.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.cbb_Nam.ForeColor = System.Drawing.Color.Black;
             this.cbb_Nam.ItemHeight = 30;
             this.cbb_Nam.Items.AddRange(new object[] {
             "2021",
-            "2022"});
+            "2022",
+            "2023",
+            "2024",
+            "2025"});
             this.cbb_Nam.Location = new System.Drawing.Point(432, 78);
             this.cbb_Nam.Name = "cbb_Nam";
-            this.cbb_Nam.Size = new System.Drawing.Size(327, 36);
+            this.cbb_Nam.Size = new System.Drawing.Size(202, 36);
+            this.cbb_Nam.StartIndex = 1;
             this.cbb_Nam.TabIndex = 180;
             this.cbb_Nam.SelectedIndexChanged += new System.EventHandler(this.cbb_Nam_SelectedIndexChanged);
             // 
@@ -282,8 +286,8 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_KetQua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_KetQua.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_KetQua.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_KetQua.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_KetQua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_KetQua.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.txt_KetQua.ForeColor = System.Drawing.Color.Black;
             this.txt_KetQua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_KetQua.Location = new System.Drawing.Point(432, 548);
             this.txt_KetQua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -291,7 +295,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_KetQua.PasswordChar = '\0';
             this.txt_KetQua.PlaceholderText = "";
             this.txt_KetQua.SelectedText = "";
-            this.txt_KetQua.Size = new System.Drawing.Size(501, 41);
+            this.txt_KetQua.Size = new System.Drawing.Size(222, 41);
             this.txt_KetQua.TabIndex = 181;
             // 
             // cbb_Quy
@@ -301,7 +305,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbb_Quy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_Quy.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_Quy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbb_Quy.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbb_Quy.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.cbb_Quy.ForeColor = System.Drawing.Color.Black;
             this.cbb_Quy.ItemHeight = 30;
             this.cbb_Quy.Items.AddRange(new object[] {
@@ -309,7 +313,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             "2",
             "3",
             "4"});
-            this.cbb_Quy.Location = new System.Drawing.Point(1006, 78);
+            this.cbb_Quy.Location = new System.Drawing.Point(784, 78);
             this.cbb_Quy.Name = "cbb_Quy";
             this.cbb_Quy.Size = new System.Drawing.Size(140, 36);
             this.cbb_Quy.TabIndex = 183;

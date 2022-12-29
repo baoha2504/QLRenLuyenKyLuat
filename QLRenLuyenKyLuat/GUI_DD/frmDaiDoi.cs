@@ -18,6 +18,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
         {
             InitializeComponent();
             txtThoiGian.Caption = DateTime.Now.ToString("dd/MM/yyyy");
+            barStaticName.Caption = frmLogin.name;
+            barStaticPosition.Caption = frmLogin.position;
         }
 
         usr_ThemHocVien usr_ThemHocVien;
@@ -395,7 +397,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
 
         private void HDSD_KL_Click(object sender, EventArgs e)
         {
-            if (usr_ThayDoiQCTL == null)
+            if (usr_HDSD_KL == null)
             {
                 usr_HDSD_KL usr_HDSD_KL = new usr_HDSD_KL();
                 usr_HDSD_KL.Dock = DockStyle.Fill;
@@ -450,17 +452,6 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 frmLogin.Show();
                 this.Hide();
             }
-            //else if (result == DialogResult.No)
-            //{
-            //    //...
-            //}
-            //else
-            //{
-            //    //...
-            //}
-            //frmLogin frmLogin = new frmLogin();
-            //frmLogin.Show();
-            //this.Hide();
         }
 
         private void TrangChu_Click(object sender, EventArgs e)

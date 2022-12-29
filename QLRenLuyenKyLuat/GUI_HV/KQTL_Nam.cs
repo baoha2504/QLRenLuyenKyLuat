@@ -18,7 +18,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         public KQTL_Nam()
         {
             InitializeComponent();
-            cbB_TL_Nam.Text = DateTime.Now.Year.ToString();
+            //cbB_TL_Nam.Text = DateTime.Now.Year.ToString();
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
@@ -31,22 +31,18 @@ namespace QLRenLuyenKyLuat.GUI_HV
             "and HOCVIEN_PLTL.MaKQTL = KETQUATHELUC.MaKQTL " +
             "and KETQUATHELUC.MaPLTL = PHANLOAITHELUC.MaPLTL " +
             "and YEAR(ThoiGian) = " + cbB_TL_Nam.Text +
-            "and HOCVIEN.MaHocVien = N'" + frmLogin.maHV + "' order by ThoiGian asc";
+            "and HOCVIEN.MaHocVien = N'" + frmLogin.maNguoiDung + "' order by ThoiGian asc";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             sqlCon.Close();
             if (dtb.Rows.Count == 4)
             {
-                foreach (DataRow dr in dtb.Rows)
-                {
-                    quy_1.Text = dr["TenPLTL"].ToString();
-                    quy_2.Text = dr["TenPLTL"].ToString();
-                    quy_3.Text = dr["TenPLTL"].ToString();
-                    quy_4.Text = dr["TenPLTL"].ToString();
-
-                }
-                caNam.Text = Calculator.cal_TinhTheLucNam(quy_1.Text, quy_2.Text, quy_3.Text, quy_4.Text);
+                quy_1.Text = dtb.Rows[0][2].ToString();
+                quy_2.Text = dtb.Rows[1][2].ToString();
+                quy_3.Text = dtb.Rows[2][2].ToString();
+                quy_4.Text = dtb.Rows[3][2].ToString();
+                caNam.Text = Calculator.cal_TinhTheLucNam(quy_1.Text.Trim(), quy_2.Text.Trim(), quy_3.Text.Trim(), quy_4.Text.Trim());
             }
             else
             {
@@ -58,7 +54,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void KQTL_Nam_Load(object sender, EventArgs e)
         {
-            connect();
+            //connect();
         }
 
         private void cbB_TL_Nam_SelectedIndexChanged(object sender, EventArgs e)

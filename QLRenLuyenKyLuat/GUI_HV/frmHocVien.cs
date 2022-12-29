@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraBars;
+using QLRenLuyenKyLuat.GUI_DD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +30,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
         KQTL_Quy KQTL_Quy;
         TrangChu TrangChu;
         TuDanhGia TuDanhGia;
-
+        usr_HDSD_KL usr_HDSD_KL;
+        usr_HDSD_TL usr_HDSD_TL;
+        usr_HDSD_QL usr_HDSD_QL;
+        ThayDoiMatKhau ThayDoiMatKhau;
         private void fluentDesignFormControl1_Click(object sender, EventArgs e)
         {
 
@@ -42,7 +46,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
 
         private void frmHocVien_Load(object sender, EventArgs e)
         {
-            
+            aceTrangChu_Click(sender, e);
         }
 
         private void ace_TuDanhGia_Click(object sender, EventArgs e)
@@ -155,6 +159,81 @@ namespace QLRenLuyenKyLuat.GUI_HV
                 KQTL_Nam.BringToFront();
             }
             lblTieuDe.Caption = "Kết quả thể lực quý";
+        }
+
+        private void HDSD_KyLuat_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_KL == null)
+            {
+                usr_HDSD_KL usr_HDSD_KL = new usr_HDSD_KL();
+                usr_HDSD_KL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_KL);
+                usr_HDSD_KL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_KL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý kỷ luật";
+        }
+
+        private void HDSD_TheLuc_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_TL == null)
+            {
+                usr_HDSD_TL usr_HDSD_TL = new usr_HDSD_TL();
+                usr_HDSD_TL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_TL);
+                usr_HDSD_TL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_TL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý thể lực";
+        }
+
+        private void HDSD_QuanLy_Click(object sender, EventArgs e)
+        {
+            if (usr_HDSD_QL == null)
+            {
+                usr_HDSD_QL usr_HDSD_QL = new usr_HDSD_QL();
+                usr_HDSD_QL.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(usr_HDSD_QL);
+                usr_HDSD_QL.BringToFront();
+            }
+            else
+            {
+                usr_HDSD_QL.BringToFront();
+            }
+            lblTieuDe.Caption = "Hướng dẫn sử dụng chức năng quản lý đơn vị";
+        }
+
+        private void DoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (ThayDoiMatKhau == null)
+            {
+                ThayDoiMatKhau ThayDoiMatKhau = new ThayDoiMatKhau();
+                ThayDoiMatKhau.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(ThayDoiMatKhau);
+                ThayDoiMatKhau.BringToFront();
+            }
+            else
+            {
+                ThayDoiMatKhau.BringToFront();
+            }
+            lblTieuDe.Caption = "Thay đổi mật khẩu";
+        }
+
+        private void DangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Show();
+                this.Hide();
+            }
         }
     }
 }

@@ -69,7 +69,7 @@ namespace QLRenLuyenKyLuat.GUI_DD
             string[] s2 = new string[10];
             string[] s3 = new string[10];
             string[] s4 = new string[10];
-            string s5 = "QL15501";
+            string s5 = frmLogin.maNguoiDung;
 
             s1[0] = txtTC1.Text;
             s2[0] = txtMuc11.Text;

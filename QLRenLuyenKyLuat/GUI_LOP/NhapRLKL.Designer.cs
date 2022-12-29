@@ -216,7 +216,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txBoxNhapThang.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txBoxNhapThang.ForeColor = System.Drawing.Color.Black;
             this.txBoxNhapThang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txBoxNhapThang.Location = new System.Drawing.Point(986, 43);
+            this.txBoxNhapThang.Location = new System.Drawing.Point(1027, 43);
             this.txBoxNhapThang.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txBoxNhapThang.Name = "txBoxNhapThang";
             this.txBoxNhapThang.PasswordChar = '\0';
@@ -350,6 +350,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.txtBoxSum.SelectedText = "";
             this.txtBoxSum.Size = new System.Drawing.Size(89, 50);
             this.txtBoxSum.TabIndex = 33;
+          
             this.txtBoxSum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxSum_MouseClick);
             // 
             // txtBoxXepLoai
