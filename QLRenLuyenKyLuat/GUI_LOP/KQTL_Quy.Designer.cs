@@ -137,7 +137,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DSKQThelucQUY_LOP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DSKQThelucQUY_LOP.ColumnHeadersHeight = 4;
+            this.DSKQThelucQUY_LOP.ColumnHeadersHeight = 40;
             this.DSKQThelucQUY_LOP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -167,7 +167,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.DSKQThelucQUY_LOP.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.DSKQThelucQUY_LOP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.DSKQThelucQUY_LOP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DSKQThelucQUY_LOP.ThemeStyle.HeaderStyle.Height = 4;
+            this.DSKQThelucQUY_LOP.ThemeStyle.HeaderStyle.Height = 40;
             this.DSKQThelucQUY_LOP.ThemeStyle.ReadOnly = false;
             this.DSKQThelucQUY_LOP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.DSKQThelucQUY_LOP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

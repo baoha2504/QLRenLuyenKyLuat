@@ -140,7 +140,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
                 datagridDSHV.SelectedRows[0].Cells[0].Value = 1;
                 clear();
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Học viên đã được đánh giá rèn luyện kỷ luật tháng!", "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

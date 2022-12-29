@@ -199,9 +199,13 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
         private void itemOut_Click(object sender, EventArgs e)
         {
-            frmLogin frm = new frmLogin();
-            this.Close();
-            frm.Show();
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Show();
+                this.Hide();
+            }
         }
 
         private void NhapKL_Click(object sender, EventArgs e)

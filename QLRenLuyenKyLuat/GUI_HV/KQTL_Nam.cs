@@ -18,7 +18,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         public KQTL_Nam()
         {
             InitializeComponent();
-            //cbB_TL_Nam.Text = DateTime.Now.Year.ToString();
+            cbB_TL_Nam.Text = DateTime.Now.Year.ToString();
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);

@@ -1,13 +1,8 @@
-﻿using QLRenLuyenKyLuat.Data;
+﻿using DevExpress.XtraReports.UI;
+using QLRenLuyenKyLuat.Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QLRenLuyenKyLuat.GUI_DD
@@ -24,6 +19,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
         int thang;
         int thangConLai1;
         int thangConLai2;
+        int thangConLai1Xuat;
+        int thangConLai2Xuat;
         int nam;
         private void connect(string query)
         {
@@ -56,22 +53,30 @@ namespace QLRenLuyenKyLuat.GUI_DD
             }
         }
 
-            private void TinhQuy (DateTime dateTime)
+        private void TinhQuy(DateTime dateTime)
         {
             thang = dateTime.Month;
             nam = dateTime.Year;
-            if(thang == 1 || thang == 4 || thang == 7 || thang == 10)
+            if (thang == 1 || thang == 4 || thang == 7 || thang == 10)
             {
                 thangConLai1 = thang + 1;
                 thangConLai2 = thang + 2;
-            } else if(thang == 2 || thang == 5 || thang == 8 || thang == 11)
+                thangConLai1Xuat = thang;
+                thangConLai2Xuat = thangConLai2;
+            }
+            else if (thang == 2 || thang == 5 || thang == 8 || thang == 11)
             {
                 thangConLai1 = thang - 1;
                 thangConLai2 = thang + 1;
-            } else
+                thangConLai1Xuat = thangConLai1;
+                thangConLai2Xuat = thangConLai2;
+            }
+            else
             {
-                thangConLai1 = thang - 1;
-                thangConLai2 = thang - 2;
+                thangConLai1 = thang - 2;
+                thangConLai2 = thang - 1;
+                thangConLai1Xuat = thangConLai1;
+                thangConLai2Xuat = thang;
             }
         }
 
@@ -96,7 +101,8 @@ namespace QLRenLuyenKyLuat.GUI_DD
             if (cbbThoiGian.Text != string.Empty)
             {
                 TinhQuy(DateTime.Parse(cbbThoiGian.Text));
-            } else
+            }
+            else
             {
                 TinhQuy(DateTime.Now);
             }
@@ -139,9 +145,37 @@ namespace QLRenLuyenKyLuat.GUI_DD
             {
                 txtKeoXa_ChongDay.Text = dtgv.SelectedRows[0].Cells[7].Value.ToString();
             }
-            
+
             txtKetQua.Text = dtgv.SelectedRows[0].Cells[8].Value.ToString();
 
+        }
+
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            string date1 = "";
+            string date2 = "";
+            if (cbbThoiGian.Text != string.Empty)
+            {
+                TinhQuy(DateTime.Parse(cbbThoiGian.Text));
+                date1 = nam.ToString() + "-" + thangConLai1Xuat.ToString() + "-1";
+                date2 = nam.ToString() + "-" + thangConLai2Xuat.ToString() + "-30";
+            }
+            else
+            {
+                TinhQuy(DateTime.Now);
+                date1 = nam.ToString() + "-" + thangConLai1Xuat.ToString() + "-1";
+                date2 = nam.ToString() + "-" + thangConLai2Xuat.ToString() + "-30";
+            }
+            sqlCon.Open();
+            DataSetTLQuy dataset = new DataSetTLQuy();
+            DataSetTLQuyTableAdapters.DataTable1TableAdapter nhap = new DataSetTLQuyTableAdapters.DataTable1TableAdapter();
+            nhap.Connection.ConnectionString = Data_Provider.connectionSTR;
+            nhap.ClearBeforeFill = true;
+            nhap.Fill(dataset.DataTable1, date1, date2);
+            sqlCon.Close();
+            ReportTLQuy report = new ReportTLQuy();
+            report.DataSource = dataset;
+            report.ShowPreviewDialog();
         }
     }
 }

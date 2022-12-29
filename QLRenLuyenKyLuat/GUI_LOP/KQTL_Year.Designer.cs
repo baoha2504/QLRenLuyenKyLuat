@@ -178,7 +178,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.DSKQThelucYear_LOP.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DSKQThelucYear_LOP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.DSKQThelucYear_LOP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DSKQThelucYear_LOP.ThemeStyle.HeaderStyle.Height = 4;
+            this.DSKQThelucYear_LOP.ThemeStyle.HeaderStyle.Height = 40;
             this.DSKQThelucYear_LOP.ThemeStyle.ReadOnly = false;
             this.DSKQThelucYear_LOP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.DSKQThelucYear_LOP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

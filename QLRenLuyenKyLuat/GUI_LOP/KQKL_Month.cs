@@ -76,10 +76,17 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
         private void danhsach_KL_month_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Mahocvien = danhsach_KL_month.SelectedRows[0].Cells[0].Value.ToString();
-            Thang = cbBox_Month.Text;
-            Nam = cbb_Nam.Text;
-            HienThiText(Mahocvien, Thang, Nam);
+            if (string.IsNullOrEmpty(cbBox_Month.Text) && string.IsNullOrEmpty(cbb_Nam.Text))
+            {
+                MessageBox.Show("Vui lòng chọn năm học và tháng.", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                Mahocvien = danhsach_KL_month.SelectedRows[0].Cells[0].Value.ToString();
+                Thang = cbBox_Month.Text;
+                Nam = cbb_Nam.Text;
+                HienThiText(Mahocvien, Thang, Nam);
+            }      
         }
     }
 }

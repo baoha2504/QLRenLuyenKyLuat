@@ -252,9 +252,15 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
         private void DSKQThelucQUY_LOP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MaHocVien = DSKQThelucQUY_LOP.SelectedRows[0].Cells[0].Value.ToString();
-            HienText(MaHocVien);
-            
+            if (string.IsNullOrEmpty(cbboxNam.Text) && string.IsNullOrEmpty(cbbQuy.Text))
+            {
+                MessageBox.Show("Vui lòng chọn năm học và quý.", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MaHocVien = DSKQThelucQUY_LOP.SelectedRows[0].Cells[0].Value.ToString();
+                HienText(MaHocVien);
+            }    
         }
     }
 }

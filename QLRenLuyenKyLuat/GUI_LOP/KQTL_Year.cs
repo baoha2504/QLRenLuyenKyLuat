@@ -116,9 +116,17 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
         private void DSKQThelucYear_LOP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MaHocVien = DSKQThelucYear_LOP.SelectedRows[0].Cells[0].Value.ToString();
-            HienText(MaHocVien);
-            txtCaNam.Text = Calculator.cal_TinhTheLucNam(txtQuy1.Text.Trim(), txtQuy2.Text.Trim(), txtQuy3.Text.Trim(), txtQuy4.Text.Trim());
+            if (string.IsNullOrEmpty(cmboxNamhoc.Text))
+            {
+                MessageBox.Show("Vui lòng chọn năm học.", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MaHocVien = DSKQThelucYear_LOP.SelectedRows[0].Cells[0].Value.ToString();
+                HienText(MaHocVien);
+                txtCaNam.Text = Calculator.cal_TinhTheLucNam(txtQuy1.Text.Trim(), txtQuy2.Text.Trim(), txtQuy3.Text.Trim(), txtQuy4.Text.Trim());
+            }    
+               
         }
     }
 }

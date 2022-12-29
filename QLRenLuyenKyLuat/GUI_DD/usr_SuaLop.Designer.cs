@@ -63,7 +63,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1312, 704);
+            this.guna2Panel2.Size = new System.Drawing.Size(1454, 795);
             this.guna2Panel2.TabIndex = 3;
             // 
             // btnTimKiem
@@ -71,7 +71,7 @@
             this.btnTimKiem.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(483, 597);
+            this.btnTimKiem.Location = new System.Drawing.Point(610, 709);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(110, 36);
             this.btnTimKiem.TabIndex = 30;
@@ -82,7 +82,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(23, 597);
+            this.label11.Location = new System.Drawing.Point(150, 709);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 23);
             this.label11.TabIndex = 29;
@@ -92,7 +92,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(23, 547);
+            this.label10.Location = new System.Drawing.Point(150, 659);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 23);
             this.label10.TabIndex = 28;
@@ -111,7 +111,7 @@
             this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNoiDung.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoiDung.Location = new System.Drawing.Point(130, 597);
+            this.txtNoiDung.Location = new System.Drawing.Point(257, 709);
             this.txtNoiDung.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
@@ -134,7 +134,7 @@
             this.cbbMuc.Items.AddRange(new object[] {
             "Mã lớp",
             "Tên lớp"});
-            this.cbbMuc.Location = new System.Drawing.Point(130, 547);
+            this.cbbMuc.Location = new System.Drawing.Point(257, 659);
             this.cbbMuc.Name = "cbbMuc";
             this.cbbMuc.Size = new System.Drawing.Size(336, 36);
             this.cbbMuc.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -163,7 +163,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgv.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv.Location = new System.Drawing.Point(27, 100);
+            this.dtgv.Location = new System.Drawing.Point(154, 212);
             this.dtgv.Name = "dtgv";
             this.dtgv.RowHeadersVisible = false;
             this.dtgv.RowHeadersWidth = 51;
@@ -198,7 +198,7 @@
             this.btnEdit.FillColor = System.Drawing.Color.DarkOrange;
             this.btnEdit.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(1167, 597);
+            this.btnEdit.Location = new System.Drawing.Point(1294, 709);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(110, 36);
             this.btnEdit.TabIndex = 20;
@@ -217,7 +217,7 @@
             this.txtTenLop.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTenLop.ForeColor = System.Drawing.Color.Black;
             this.txtTenLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenLop.Location = new System.Drawing.Point(805, 339);
+            this.txtTenLop.Location = new System.Drawing.Point(932, 451);
             this.txtTenLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.PasswordChar = '\0';
@@ -239,11 +239,12 @@
             this.txtMaLop.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaLop.ForeColor = System.Drawing.Color.Black;
             this.txtMaLop.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaLop.Location = new System.Drawing.Point(805, 255);
+            this.txtMaLop.Location = new System.Drawing.Point(932, 367);
             this.txtMaLop.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.PasswordChar = '\0';
             this.txtMaLop.PlaceholderText = "";
+            this.txtMaLop.ReadOnly = true;
             this.txtMaLop.SelectedText = "";
             this.txtMaLop.Size = new System.Drawing.Size(472, 33);
             this.txtMaLop.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -253,7 +254,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(631, 339);
+            this.label3.Location = new System.Drawing.Point(758, 451);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 19);
             this.label3.TabIndex = 2;
@@ -263,7 +264,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(631, 255);
+            this.label2.Location = new System.Drawing.Point(758, 367);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 1;
@@ -275,7 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel2);
             this.Name = "usr_SuaLop";
-            this.Size = new System.Drawing.Size(1312, 704);
+            this.Size = new System.Drawing.Size(1454, 795);
             this.Load += new System.EventHandler(this.usr_SuaLop_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();

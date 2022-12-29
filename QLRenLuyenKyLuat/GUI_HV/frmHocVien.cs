@@ -47,6 +47,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
         private void frmHocVien_Load(object sender, EventArgs e)
         {
             aceTrangChu_Click(sender, e);
+            
         }
 
         private void ace_TuDanhGia_Click(object sender, EventArgs e)

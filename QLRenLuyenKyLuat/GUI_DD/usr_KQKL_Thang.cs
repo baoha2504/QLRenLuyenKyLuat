@@ -1,4 +1,6 @@
-﻿using QLRenLuyenKyLuat.Data;
+﻿using DevExpress.DataProcessing.InMemoryDataProcessor;
+using DevExpress.XtraReports.UI;
+using QLRenLuyenKyLuat.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -117,6 +119,42 @@ namespace QLRenLuyenKyLuat.GUI_DD
                 }
                 DR.Close();
                 conn.Close();
+            }
+        }
+
+        private void btnXuat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbbThang.Text == string.Empty)
+                {
+                    MessageBox.Show("Phải lựa chọn tháng để xuất file", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cbbThang.Focus();
+                }
+                else if (cbbNam.Text == string.Empty)
+                {
+                    MessageBox.Show("Phải lựa chọn năm để xuất file", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cbbNam.Focus();
+                }
+                else
+                {
+                    sqlCon.Open();
+                    DataSetThang dataset = new DataSetThang();
+                    DataSetThangTableAdapters.DataTable1TableAdapter nhap = new DataSetThangTableAdapters.DataTable1TableAdapter();
+                    nhap.Connection.ConnectionString = Data_Provider.connectionSTR;
+                    nhap.ClearBeforeFill = true;
+                    string date1 = cbbNam.Text.Trim() + "-" + cbbThang.Text.Trim() + "-1";
+                    string date2 = cbbNam.Text.Trim() + "-" + (Convert.ToInt32(cbbThang.Text) + 1).ToString().Trim() + "-1";
+                    nhap.Fill(dataset.DataTable1, date1, date2);
+                    sqlCon.Close();
+                    ReportThang report = new ReportThang();
+                    report.DataSource = dataset;
+                    report.ShowPreviewDialog();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

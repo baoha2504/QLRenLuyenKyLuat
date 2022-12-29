@@ -61,13 +61,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_ChayNgan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_ChayNgan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_ChayNgan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ChayNgan.Location = new System.Drawing.Point(432, 233);
-            this.txt_ChayNgan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_ChayNgan.Location = new System.Drawing.Point(488, 384);
+            this.txt_ChayNgan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ChayNgan.Name = "txt_ChayNgan";
             this.txt_ChayNgan.PasswordChar = '\0';
             this.txt_ChayNgan.PlaceholderText = "";
             this.txt_ChayNgan.SelectedText = "";
-            this.txt_ChayNgan.Size = new System.Drawing.Size(501, 41);
+            this.txt_ChayNgan.Size = new System.Drawing.Size(390, 35);
             this.txt_ChayNgan.TabIndex = 134;
             // 
             // txt_ChayDai
@@ -82,13 +82,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_ChayDai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_ChayDai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_ChayDai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ChayDai.Location = new System.Drawing.Point(432, 148);
-            this.txt_ChayDai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_ChayDai.Location = new System.Drawing.Point(488, 313);
+            this.txt_ChayDai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ChayDai.Name = "txt_ChayDai";
             this.txt_ChayDai.PasswordChar = '\0';
             this.txt_ChayDai.PlaceholderText = "";
             this.txt_ChayDai.SelectedText = "";
-            this.txt_ChayDai.Size = new System.Drawing.Size(166, 41);
+            this.txt_ChayDai.Size = new System.Drawing.Size(129, 35);
             this.txt_ChayDai.TabIndex = 133;
             // 
             // txt_Boi
@@ -103,13 +103,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Boi.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_Boi.ForeColor = System.Drawing.Color.Black;
             this.txt_Boi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Boi.Location = new System.Drawing.Point(433, 396);
-            this.txt_Boi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Boi.Location = new System.Drawing.Point(489, 521);
+            this.txt_Boi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Boi.Name = "txt_Boi";
             this.txt_Boi.PasswordChar = '\0';
             this.txt_Boi.PlaceholderText = "";
             this.txt_Boi.SelectedText = "";
-            this.txt_Boi.Size = new System.Drawing.Size(405, 41);
+            this.txt_Boi.Size = new System.Drawing.Size(389, 35);
             this.txt_Boi.TabIndex = 132;
             // 
             // txt_BatXa
@@ -124,22 +124,23 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_BatXa.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_BatXa.ForeColor = System.Drawing.Color.Black;
             this.txt_BatXa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_BatXa.Location = new System.Drawing.Point(432, 323);
-            this.txt_BatXa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_BatXa.Location = new System.Drawing.Point(488, 460);
+            this.txt_BatXa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_BatXa.Name = "txt_BatXa";
             this.txt_BatXa.PasswordChar = '\0';
             this.txt_BatXa.PlaceholderText = "";
             this.txt_BatXa.SelectedText = "";
-            this.txt_BatXa.Size = new System.Drawing.Size(406, 41);
+            this.txt_BatXa.Size = new System.Drawing.Size(390, 35);
             this.txt_BatXa.TabIndex = 131;
             // 
             // L_KQTL_Quy
             // 
             this.L_KQTL_Quy.AutoSize = true;
             this.L_KQTL_Quy.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_KQTL_Quy.Location = new System.Drawing.Point(592, 18);
+            this.L_KQTL_Quy.Location = new System.Drawing.Point(612, 203);
+            this.L_KQTL_Quy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_KQTL_Quy.Name = "L_KQTL_Quy";
-            this.L_KQTL_Quy.Size = new System.Drawing.Size(123, 35);
+            this.L_KQTL_Quy.Size = new System.Drawing.Size(104, 29);
             this.L_KQTL_Quy.TabIndex = 130;
             this.L_KQTL_Quy.Text = "Kết Quả";
             // 
@@ -147,9 +148,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(243, 322);
+            this.label5.Location = new System.Drawing.Point(341, 459);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 24);
+            this.label5.Size = new System.Drawing.Size(55, 19);
             this.label5.TabIndex = 129;
             this.label5.Text = "Bật xa";
             // 
@@ -157,9 +159,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(243, 413);
+            this.label6.Location = new System.Drawing.Point(341, 536);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 24);
+            this.label6.Size = new System.Drawing.Size(36, 19);
             this.label6.TabIndex = 128;
             this.label6.Text = "Bơi";
             // 
@@ -167,9 +170,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(242, 236);
+            this.label7.Location = new System.Drawing.Point(340, 387);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 24);
+            this.label7.Size = new System.Drawing.Size(85, 19);
             this.label7.TabIndex = 127;
             this.label7.Text = "Chạy ngắn";
             // 
@@ -177,9 +181,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(243, 156);
+            this.label8.Location = new System.Drawing.Point(341, 319);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 24);
+            this.label8.Size = new System.Drawing.Size(73, 19);
             this.label8.TabIndex = 126;
             this.label8.Text = "Chạy dài";
             // 
@@ -187,9 +192,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(243, 565);
+            this.label4.Location = new System.Drawing.Point(341, 664);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 24);
+            this.label4.Size = new System.Drawing.Size(121, 19);
             this.label4.TabIndex = 140;
             this.label4.Text = "Kết Quả Chung";
             // 
@@ -205,22 +211,23 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_Xa.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.txt_Xa.ForeColor = System.Drawing.Color.Black;
             this.txt_Xa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Xa.Location = new System.Drawing.Point(433, 469);
-            this.txt_Xa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Xa.Location = new System.Drawing.Point(489, 583);
+            this.txt_Xa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Xa.Name = "txt_Xa";
             this.txt_Xa.PasswordChar = '\0';
             this.txt_Xa.PlaceholderText = "";
             this.txt_Xa.SelectedText = "";
-            this.txt_Xa.Size = new System.Drawing.Size(405, 41);
+            this.txt_Xa.Size = new System.Drawing.Size(389, 35);
             this.txt_Xa.TabIndex = 139;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(243, 486);
+            this.label1.Location = new System.Drawing.Point(341, 597);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 24);
+            this.label1.Size = new System.Drawing.Size(136, 19);
             this.label1.TabIndex = 138;
             this.label1.Text = "Kéo xà/chống đẩy";
             // 
@@ -228,9 +235,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(683, 87);
+            this.label9.Location = new System.Drawing.Point(683, 261);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 24);
+            this.label9.Size = new System.Drawing.Size(39, 19);
             this.label9.TabIndex = 141;
             this.label9.Text = "Qúy";
             // 
@@ -250,9 +258,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             "2023",
             "2024",
             "2025"});
-            this.cbb_Nam.Location = new System.Drawing.Point(432, 78);
+            this.cbb_Nam.Location = new System.Drawing.Point(488, 254);
+            this.cbb_Nam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbb_Nam.Name = "cbb_Nam";
-            this.cbb_Nam.Size = new System.Drawing.Size(202, 36);
+            this.cbb_Nam.Size = new System.Drawing.Size(158, 36);
             this.cbb_Nam.StartIndex = 1;
             this.cbb_Nam.TabIndex = 180;
             this.cbb_Nam.SelectedIndexChanged += new System.EventHandler(this.cbb_Nam_SelectedIndexChanged);
@@ -261,9 +270,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(244, 87);
+            this.label10.Location = new System.Drawing.Point(342, 261);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 24);
+            this.label10.Size = new System.Drawing.Size(43, 19);
             this.label10.TabIndex = 179;
             this.label10.Text = "Năm";
             // 
@@ -271,9 +281,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(605, 158);
+            this.label2.Location = new System.Drawing.Point(623, 321);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 23);
+            this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 135;
             this.label2.Text = "phút";
             // 
@@ -289,13 +300,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_KetQua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_KetQua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_KetQua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_KetQua.Location = new System.Drawing.Point(432, 548);
-            this.txt_KetQua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_KetQua.Location = new System.Drawing.Point(488, 649);
+            this.txt_KetQua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_KetQua.Name = "txt_KetQua";
             this.txt_KetQua.PasswordChar = '\0';
             this.txt_KetQua.PlaceholderText = "";
             this.txt_KetQua.SelectedText = "";
-            this.txt_KetQua.Size = new System.Drawing.Size(501, 41);
+            this.txt_KetQua.Size = new System.Drawing.Size(390, 35);
             this.txt_KetQua.TabIndex = 181;
             // 
             // cbb_Quy
@@ -313,15 +324,16 @@ namespace QLRenLuyenKyLuat.GUI_HV
             "2",
             "3",
             "4"});
-            this.cbb_Quy.Location = new System.Drawing.Point(1006, 78);
+            this.cbb_Quy.Location = new System.Drawing.Point(768, 254);
+            this.cbb_Quy.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbb_Quy.Name = "cbb_Quy";
-            this.cbb_Quy.Size = new System.Drawing.Size(140, 36);
+            this.cbb_Quy.Size = new System.Drawing.Size(110, 36);
             this.cbb_Quy.TabIndex = 183;
             this.cbb_Quy.SelectedIndexChanged += new System.EventHandler(this.cbb_Quy_SelectedIndexChanged);
             // 
             // KQTL_Quy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbb_Quy);
             this.Controls.Add(this.txt_KetQua);
@@ -341,8 +353,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "KQTL_Quy";
-            this.Size = new System.Drawing.Size(1248, 699);
+            this.Size = new System.Drawing.Size(1322, 776);
             this.Load += new System.EventHandler(this.KQTL_Quy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

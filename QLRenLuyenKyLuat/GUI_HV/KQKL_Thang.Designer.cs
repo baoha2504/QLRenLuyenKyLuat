@@ -71,9 +71,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 81);
+            this.label5.Location = new System.Drawing.Point(19, 68);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 24);
+            this.label5.Size = new System.Drawing.Size(129, 19);
             this.label5.TabIndex = 82;
             this.label5.Text = "Tiêu chí kỷ luật:";
             // 
@@ -82,9 +83,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.NhanXetX_.AutoSize = true;
             this.NhanXetX_.BackColor = System.Drawing.Color.Transparent;
             this.NhanXetX_.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhanXetX_.Location = new System.Drawing.Point(24, 260);
+            this.NhanXetX_.Location = new System.Drawing.Point(19, 219);
+            this.NhanXetX_.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NhanXetX_.Name = "NhanXetX_";
-            this.NhanXetX_.Size = new System.Drawing.Size(97, 24);
+            this.NhanXetX_.Size = new System.Drawing.Size(79, 19);
             this.NhanXetX_.TabIndex = 80;
             this.NhanXetX_.Text = "Nhận xét:";
             // 
@@ -93,9 +95,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 139);
+            this.label4.Location = new System.Drawing.Point(19, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 24);
+            this.label4.Size = new System.Drawing.Size(138, 19);
             this.label4.TabIndex = 79;
             this.label4.Text = "Tiêu chí lối sống:";
             // 
@@ -104,9 +107,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 199);
+            this.label3.Location = new System.Drawing.Point(19, 168);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 24);
+            this.label3.Size = new System.Drawing.Size(132, 19);
             this.label3.TabIndex = 78;
             this.label3.Text = "Tiêu chí học tập:";
             // 
@@ -114,9 +118,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.L_KQKL_Thang.AutoSize = true;
             this.L_KQKL_Thang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.L_KQKL_Thang.Location = new System.Drawing.Point(452, 21);
+            this.L_KQKL_Thang.Location = new System.Drawing.Point(533, 156);
+            this.L_KQKL_Thang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_KQKL_Thang.Name = "L_KQKL_Thang";
-            this.L_KQKL_Thang.Size = new System.Drawing.Size(471, 26);
+            this.L_KQKL_Thang.Size = new System.Drawing.Size(385, 23);
             this.L_KQKL_Thang.TabIndex = 86;
             this.L_KQKL_Thang.Text = "KẾT QUẢ RÈN LUYỆN KỶ LUẬT THÁNG";
             // 
@@ -136,18 +141,20 @@ namespace QLRenLuyenKyLuat.GUI_HV
             "10",
             "11",
             "12"});
-            this.cbB_KL_Thang.Location = new System.Drawing.Point(580, 71);
+            this.cbB_KL_Thang.Location = new System.Drawing.Point(632, 198);
+            this.cbB_KL_Thang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbB_KL_Thang.Name = "cbB_KL_Thang";
-            this.cbB_KL_Thang.Size = new System.Drawing.Size(122, 27);
+            this.cbB_KL_Thang.Size = new System.Drawing.Size(96, 24);
             this.cbB_KL_Thang.TabIndex = 145;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(478, 72);
+            this.label9.Location = new System.Drawing.Point(553, 199);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 24);
+            this.label9.Size = new System.Drawing.Size(54, 19);
             this.label9.TabIndex = 144;
             this.label9.Text = "Tháng";
             // 
@@ -156,9 +163,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(18, 407);
+            this.label6.Location = new System.Drawing.Point(14, 343);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 24);
+            this.label6.Size = new System.Drawing.Size(121, 19);
             this.label6.TabIndex = 146;
             this.label6.Text = "Mức phân loại:";
             // 
@@ -174,13 +182,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDKL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDKL.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDKL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDKL.Location = new System.Drawing.Point(230, 63);
-            this.txtBoxDKL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDKL.Location = new System.Drawing.Point(179, 53);
             this.txtBoxDKL.Name = "txtBoxDKL";
             this.txtBoxDKL.PasswordChar = '\0';
             this.txtBoxDKL.PlaceholderText = "";
             this.txtBoxDKL.SelectedText = "";
-            this.txtBoxDKL.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDKL.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDKL.TabIndex = 161;
             // 
             // txtBoxDLS
@@ -195,13 +202,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDLS.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDLS.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDLS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDLS.Location = new System.Drawing.Point(230, 121);
-            this.txtBoxDLS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDLS.Location = new System.Drawing.Point(179, 102);
             this.txtBoxDLS.Name = "txtBoxDLS";
             this.txtBoxDLS.PasswordChar = '\0';
             this.txtBoxDLS.PlaceholderText = "";
             this.txtBoxDLS.SelectedText = "";
-            this.txtBoxDLS.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDLS.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDLS.TabIndex = 162;
             // 
             // txtBoxDHT
@@ -216,13 +222,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDHT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDHT.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDHT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDHT.Location = new System.Drawing.Point(230, 181);
-            this.txtBoxDHT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDHT.Location = new System.Drawing.Point(179, 152);
             this.txtBoxDHT.Name = "txtBoxDHT";
             this.txtBoxDHT.PasswordChar = '\0';
             this.txtBoxDHT.PlaceholderText = "";
             this.txtBoxDHT.SelectedText = "";
-            this.txtBoxDHT.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDHT.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDHT.TabIndex = 163;
             // 
             // txtBoxNX
@@ -237,13 +242,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNX.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxNX.Location = new System.Drawing.Point(230, 242);
-            this.txtBoxNX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxNX.Location = new System.Drawing.Point(179, 204);
             this.txtBoxNX.Name = "txtBoxNX";
             this.txtBoxNX.PasswordChar = '\0';
             this.txtBoxNX.PlaceholderText = "";
             this.txtBoxNX.SelectedText = "";
-            this.txtBoxNX.Size = new System.Drawing.Size(339, 121);
+            this.txtBoxNX.Size = new System.Drawing.Size(264, 102);
             this.txtBoxNX.TabIndex = 164;
             // 
             // txtBoxPL
@@ -258,13 +262,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPL.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPL.Location = new System.Drawing.Point(230, 389);
-            this.txtBoxPL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxPL.Location = new System.Drawing.Point(179, 328);
             this.txtBoxPL.Name = "txtBoxPL";
             this.txtBoxPL.PasswordChar = '\0';
             this.txtBoxPL.PlaceholderText = "";
             this.txtBoxPL.SelectedText = "";
-            this.txtBoxPL.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxPL.Size = new System.Drawing.Size(80, 35);
             this.txtBoxPL.TabIndex = 165;
             // 
             // guna2GroupBoxHV
@@ -283,9 +286,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.guna2GroupBoxHV.CustomBorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.guna2GroupBoxHV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBoxHV.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBoxHV.Location = new System.Drawing.Point(67, 127);
+            this.guna2GroupBoxHV.Location = new System.Drawing.Point(233, 245);
+            this.guna2GroupBoxHV.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2GroupBoxHV.Name = "guna2GroupBoxHV";
-            this.guna2GroupBoxHV.Size = new System.Drawing.Size(602, 454);
+            this.guna2GroupBoxHV.Size = new System.Drawing.Size(468, 382);
             this.guna2GroupBoxHV.TabIndex = 166;
             this.guna2GroupBoxHV.Text = "Cá nhân tự đánh giá";
             this.guna2GroupBoxHV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -306,9 +310,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(749, 127);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(764, 245);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(602, 454);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(468, 382);
             this.guna2GroupBox1.TabIndex = 167;
             this.guna2GroupBox1.Text = "Lớp đánh giá";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -325,13 +330,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPL1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPL1.Location = new System.Drawing.Point(240, 389);
-            this.txtBoxPL1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxPL1.Location = new System.Drawing.Point(187, 328);
             this.txtBoxPL1.Name = "txtBoxPL1";
             this.txtBoxPL1.PasswordChar = '\0';
             this.txtBoxPL1.PlaceholderText = "";
             this.txtBoxPL1.SelectedText = "";
-            this.txtBoxPL1.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxPL1.Size = new System.Drawing.Size(80, 35);
             this.txtBoxPL1.TabIndex = 166;
             // 
             // label8
@@ -339,9 +343,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 139);
+            this.label8.Location = new System.Drawing.Point(15, 117);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 24);
+            this.label8.Size = new System.Drawing.Size(138, 19);
             this.label8.TabIndex = 79;
             this.label8.Text = "Tiêu chí lối sống:";
             // 
@@ -357,13 +362,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDHT1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDHT1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDHT1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDHT1.Location = new System.Drawing.Point(230, 176);
-            this.txtBoxDHT1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDHT1.Location = new System.Drawing.Point(179, 148);
             this.txtBoxDHT1.Name = "txtBoxDHT1";
             this.txtBoxDHT1.PasswordChar = '\0';
             this.txtBoxDHT1.PlaceholderText = "";
             this.txtBoxDHT1.SelectedText = "";
-            this.txtBoxDHT1.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDHT1.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDHT1.TabIndex = 165;
             // 
             // label10
@@ -371,9 +375,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 176);
+            this.label10.Location = new System.Drawing.Point(16, 148);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 24);
+            this.label10.Size = new System.Drawing.Size(132, 19);
             this.label10.TabIndex = 78;
             this.label10.Text = "Tiêu chí học tập:";
             // 
@@ -382,9 +387,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(20, 260);
+            this.label11.Location = new System.Drawing.Point(16, 219);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 24);
+            this.label11.Size = new System.Drawing.Size(79, 19);
             this.label11.TabIndex = 80;
             this.label11.Text = "Nhận xét:";
             // 
@@ -400,13 +406,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDLS1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDLS1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDLS1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDLS1.Location = new System.Drawing.Point(230, 121);
-            this.txtBoxDLS1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDLS1.Location = new System.Drawing.Point(179, 102);
             this.txtBoxDLS1.Name = "txtBoxDLS1";
             this.txtBoxDLS1.PasswordChar = '\0';
             this.txtBoxDLS1.PlaceholderText = "";
             this.txtBoxDLS1.SelectedText = "";
-            this.txtBoxDLS1.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDLS1.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDLS1.TabIndex = 163;
             // 
             // label12
@@ -414,9 +419,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(22, 81);
+            this.label12.Location = new System.Drawing.Point(17, 68);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 24);
+            this.label12.Size = new System.Drawing.Size(129, 19);
             this.label12.TabIndex = 82;
             this.label12.Text = "Tiêu chí kỷ luật:";
             // 
@@ -425,9 +431,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 407);
+            this.label13.Location = new System.Drawing.Point(16, 343);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 24);
+            this.label13.Size = new System.Drawing.Size(121, 19);
             this.label13.TabIndex = 146;
             this.label13.Text = "Mức phân loại:";
             // 
@@ -443,13 +450,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDKL1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDKL1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDKL1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDKL1.Location = new System.Drawing.Point(230, 63);
-            this.txtBoxDKL1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxDKL1.Location = new System.Drawing.Point(179, 53);
             this.txtBoxDKL1.Name = "txtBoxDKL1";
             this.txtBoxDKL1.PasswordChar = '\0';
             this.txtBoxDKL1.PlaceholderText = "";
             this.txtBoxDKL1.SelectedText = "";
-            this.txtBoxDKL1.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxDKL1.Size = new System.Drawing.Size(80, 35);
             this.txtBoxDKL1.TabIndex = 161;
             // 
             // txtBoxNX1
@@ -464,22 +470,22 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNX1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxNX1.Location = new System.Drawing.Point(230, 242);
-            this.txtBoxNX1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxNX1.Location = new System.Drawing.Point(179, 204);
             this.txtBoxNX1.Name = "txtBoxNX1";
             this.txtBoxNX1.PasswordChar = '\0';
             this.txtBoxNX1.PlaceholderText = "";
             this.txtBoxNX1.SelectedText = "";
-            this.txtBoxNX1.Size = new System.Drawing.Size(339, 121);
+            this.txtBoxNX1.Size = new System.Drawing.Size(264, 102);
             this.txtBoxNX1.TabIndex = 164;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(95, 632);
+            this.label7.Location = new System.Drawing.Point(255, 670);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 24);
+            this.label7.Size = new System.Drawing.Size(155, 19);
             this.label7.TabIndex = 168;
             this.label7.Text = "Kết luận của đại đội";
             // 
@@ -495,13 +501,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX_Cuoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNX_Cuoi.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX_Cuoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxNX_Cuoi.Location = new System.Drawing.Point(214, 673);
-            this.txtBoxNX_Cuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxNX_Cuoi.Location = new System.Drawing.Point(347, 705);
             this.txtBoxNX_Cuoi.Name = "txtBoxNX_Cuoi";
             this.txtBoxNX_Cuoi.PasswordChar = '\0';
             this.txtBoxNX_Cuoi.PlaceholderText = "";
             this.txtBoxNX_Cuoi.SelectedText = "";
-            this.txtBoxNX_Cuoi.Size = new System.Drawing.Size(551, 87);
+            this.txtBoxNX_Cuoi.Size = new System.Drawing.Size(429, 73);
             this.txtBoxNX_Cuoi.TabIndex = 170;
             // 
             // label14
@@ -509,9 +514,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(96, 698);
+            this.label14.Location = new System.Drawing.Point(256, 726);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 24);
+            this.label14.Size = new System.Drawing.Size(79, 19);
             this.label14.TabIndex = 169;
             this.label14.Text = "Nhận xét:";
             // 
@@ -527,13 +533,12 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL_Cuoi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPL_Cuoi.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL_Cuoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPL_Cuoi.Location = new System.Drawing.Point(1040, 680);
-            this.txtBoxPL_Cuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBoxPL_Cuoi.Location = new System.Drawing.Point(990, 711);
             this.txtBoxPL_Cuoi.Name = "txtBoxPL_Cuoi";
             this.txtBoxPL_Cuoi.PasswordChar = '\0';
             this.txtBoxPL_Cuoi.PlaceholderText = "";
             this.txtBoxPL_Cuoi.SelectedText = "";
-            this.txtBoxPL_Cuoi.Size = new System.Drawing.Size(103, 42);
+            this.txtBoxPL_Cuoi.Size = new System.Drawing.Size(80, 35);
             this.txtBoxPL_Cuoi.TabIndex = 172;
             // 
             // label15
@@ -541,9 +546,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(876, 698);
+            this.label15.Location = new System.Drawing.Point(862, 726);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(145, 24);
+            this.label15.Size = new System.Drawing.Size(121, 19);
             this.label15.TabIndex = 171;
             this.label15.Text = "Mức phân loại:";
             // 
@@ -551,9 +557,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(113, 71);
+            this.label1.Location = new System.Drawing.Point(269, 198);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 24);
+            this.label1.Size = new System.Drawing.Size(43, 19);
             this.label1.TabIndex = 173;
             this.label1.Text = "Năm";
             // 
@@ -563,9 +570,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.cbB_KL_Nam.Items.AddRange(new object[] {
             "2021",
             "2022"});
-            this.cbB_KL_Nam.Location = new System.Drawing.Point(249, 71);
+            this.cbB_KL_Nam.Location = new System.Drawing.Point(375, 198);
+            this.cbB_KL_Nam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbB_KL_Nam.Name = "cbB_KL_Nam";
-            this.cbB_KL_Nam.Size = new System.Drawing.Size(122, 27);
+            this.cbB_KL_Nam.Size = new System.Drawing.Size(96, 24);
             this.cbB_KL_Nam.TabIndex = 174;
             this.cbB_KL_Nam.SelectedIndexChanged += new System.EventHandler(this.cbB_KL_Nam_SelectedIndexChanged);
             // 
@@ -579,10 +587,11 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.btn_Xem.FillColor = System.Drawing.Color.White;
             this.btn_Xem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_Xem.ForeColor = System.Drawing.Color.Black;
-            this.btn_Xem.Location = new System.Drawing.Point(802, 62);
+            this.btn_Xem.Location = new System.Drawing.Point(805, 190);
+            this.btn_Xem.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Xem.Name = "btn_Xem";
             this.btn_Xem.PressedColor = System.Drawing.Color.Transparent;
-            this.btn_Xem.Size = new System.Drawing.Size(138, 45);
+            this.btn_Xem.Size = new System.Drawing.Size(107, 38);
             this.btn_Xem.TabIndex = 175;
             this.btn_Xem.Text = "Xem";
             this.btn_Xem.Click += new System.EventHandler(this.btn_Xem_Click);
@@ -591,7 +600,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(241)))), ((int)(((byte)(254)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_Xem);
             this.Controls.Add(this.cbB_KL_Nam);
@@ -606,8 +615,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Controls.Add(this.cbB_KL_Thang);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.L_KQKL_Thang);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "KQKL_Thang";
-            this.Size = new System.Drawing.Size(1406, 785);
+            this.Size = new System.Drawing.Size(1406, 795);
             this.Load += new System.EventHandler(this.KQKL_Thang_Load);
             this.guna2GroupBoxHV.ResumeLayout(false);
             this.guna2GroupBoxHV.PerformLayout();

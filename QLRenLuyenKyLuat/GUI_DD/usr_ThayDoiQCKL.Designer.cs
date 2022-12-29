@@ -77,7 +77,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1389, 761);
+            this.guna2Panel1.Size = new System.Drawing.Size(1481, 786);
             this.guna2Panel1.TabIndex = 1;
             // 
             // btnLuu
@@ -85,7 +85,7 @@
             this.btnLuu.FillColor = System.Drawing.Color.LimeGreen;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(1223, 583);
+            this.btnLuu.Location = new System.Drawing.Point(1310, 704);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(111, 36);
             this.btnLuu.TabIndex = 87;
@@ -113,7 +113,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc33.Location = new System.Drawing.Point(1223, 445);
+            this.txtMuc33.Location = new System.Drawing.Point(1310, 566);
             this.txtMuc33.Name = "txtMuc33";
             this.txtMuc33.Size = new System.Drawing.Size(111, 36);
             this.txtMuc33.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -140,7 +140,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc23.Location = new System.Drawing.Point(1223, 334);
+            this.txtMuc23.Location = new System.Drawing.Point(1310, 455);
             this.txtMuc23.Name = "txtMuc23";
             this.txtMuc23.Size = new System.Drawing.Size(111, 36);
             this.txtMuc23.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -167,7 +167,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc13.Location = new System.Drawing.Point(1223, 237);
+            this.txtMuc13.Location = new System.Drawing.Point(1310, 358);
             this.txtMuc13.Name = "txtMuc13";
             this.txtMuc13.Size = new System.Drawing.Size(111, 36);
             this.txtMuc13.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -177,7 +177,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1242, 148);
+            this.label7.Location = new System.Drawing.Point(1329, 269);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 29);
             this.label7.TabIndex = 83;
@@ -204,7 +204,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc32.Location = new System.Drawing.Point(1020, 445);
+            this.txtMuc32.Location = new System.Drawing.Point(1107, 566);
             this.txtMuc32.Name = "txtMuc32";
             this.txtMuc32.Size = new System.Drawing.Size(111, 36);
             this.txtMuc32.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -231,7 +231,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc22.Location = new System.Drawing.Point(1020, 334);
+            this.txtMuc22.Location = new System.Drawing.Point(1107, 455);
             this.txtMuc22.Name = "txtMuc22";
             this.txtMuc22.Size = new System.Drawing.Size(111, 36);
             this.txtMuc22.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -258,7 +258,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc12.Location = new System.Drawing.Point(1020, 237);
+            this.txtMuc12.Location = new System.Drawing.Point(1107, 358);
             this.txtMuc12.Name = "txtMuc12";
             this.txtMuc12.Size = new System.Drawing.Size(111, 36);
             this.txtMuc12.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -268,7 +268,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1039, 148);
+            this.label4.Location = new System.Drawing.Point(1126, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 29);
             this.label4.TabIndex = 79;
@@ -295,7 +295,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc31.Location = new System.Drawing.Point(811, 445);
+            this.txtMuc31.Location = new System.Drawing.Point(898, 566);
             this.txtMuc31.Name = "txtMuc31";
             this.txtMuc31.Size = new System.Drawing.Size(111, 36);
             this.txtMuc31.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -322,7 +322,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc21.Location = new System.Drawing.Point(811, 334);
+            this.txtMuc21.Location = new System.Drawing.Point(898, 455);
             this.txtMuc21.Name = "txtMuc21";
             this.txtMuc21.Size = new System.Drawing.Size(111, 36);
             this.txtMuc21.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -349,7 +349,7 @@
             "8",
             "9",
             "10"});
-            this.txtMuc11.Location = new System.Drawing.Point(811, 237);
+            this.txtMuc11.Location = new System.Drawing.Point(898, 358);
             this.txtMuc11.Name = "txtMuc11";
             this.txtMuc11.Size = new System.Drawing.Size(111, 36);
             this.txtMuc11.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -359,7 +359,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(830, 148);
+            this.label3.Location = new System.Drawing.Point(917, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 29);
             this.label3.TabIndex = 75;
@@ -369,7 +369,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(399, 148);
+            this.label1.Location = new System.Drawing.Point(486, 269);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 29);
             this.label1.TabIndex = 74;
@@ -387,7 +387,7 @@
             this.txtTC3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC3.ForeColor = System.Drawing.Color.Black;
             this.txtTC3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC3.Location = new System.Drawing.Point(187, 445);
+            this.txtTC3.Location = new System.Drawing.Point(274, 566);
             this.txtTC3.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC3.Name = "txtTC3";
             this.txtTC3.PasswordChar = '\0';
@@ -409,7 +409,7 @@
             this.txtTC2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC2.ForeColor = System.Drawing.Color.Black;
             this.txtTC2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC2.Location = new System.Drawing.Point(187, 334);
+            this.txtTC2.Location = new System.Drawing.Point(274, 455);
             this.txtTC2.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC2.Name = "txtTC2";
             this.txtTC2.PasswordChar = '\0';
@@ -423,7 +423,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(79, 334);
+            this.label6.Location = new System.Drawing.Point(166, 455);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 19);
             this.label6.TabIndex = 71;
@@ -433,7 +433,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 445);
+            this.label5.Location = new System.Drawing.Point(166, 566);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 19);
             this.label5.TabIndex = 70;
@@ -451,7 +451,7 @@
             this.txtTC1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTC1.ForeColor = System.Drawing.Color.Black;
             this.txtTC1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTC1.Location = new System.Drawing.Point(187, 237);
+            this.txtTC1.Location = new System.Drawing.Point(274, 358);
             this.txtTC1.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC1.Name = "txtTC1";
             this.txtTC1.PasswordChar = '\0';
@@ -465,7 +465,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 237);
+            this.label2.Location = new System.Drawing.Point(166, 358);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 19);
             this.label2.TabIndex = 68;
@@ -477,7 +477,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "usr_ThayDoiQCKL";
-            this.Size = new System.Drawing.Size(1389, 761);
+            this.Size = new System.Drawing.Size(1481, 786);
             this.Load += new System.EventHandler(this.usr_ThayDoiQCKL_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

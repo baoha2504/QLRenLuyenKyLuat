@@ -21,7 +21,7 @@ namespace QLRenLuyenKyLuat
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmDaiDoi());
 
-             Application.Run(new frmLogin());
+            Application.Run(new frmLogin());
         }
     }
 }

@@ -30,9 +30,9 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDeNghi = new System.Windows.Forms.Button();
             this.datagridDSHV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -77,28 +77,28 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             // 
             // datagridDSHV
             // 
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.datagridDSHV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridDSHV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.datagridDSHV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridDSHV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.datagridDSHV.ColumnHeadersHeight = 40;
             this.datagridDSHV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.datagridDSHV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCheck});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridDSHV.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridDSHV.DefaultCellStyle = dataGridViewCellStyle3;
             this.datagridDSHV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.datagridDSHV.Location = new System.Drawing.Point(59, 132);
             this.datagridDSHV.Name = "datagridDSHV";
@@ -166,7 +166,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label2.Location = new System.Drawing.Point(382, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(729, 32);
+            this.label2.Size = new System.Drawing.Size(728, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "NHẬP KẾT QUẢ RÈN LUYỆN KỶ LUẬT THEO THÁNG";
             // 
@@ -199,7 +199,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label8.Location = new System.Drawing.Point(784, 895);
             this.label8.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 21);
+            this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 54;
             this.label8.Text = "Người đánh giá: ";
             // 
@@ -389,7 +389,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label12.Location = new System.Drawing.Point(1129, 824);
             this.label12.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 21);
+            this.label12.Size = new System.Drawing.Size(78, 20);
             this.label12.TabIndex = 45;
             this.label12.Text = "Xếp loại :";
             // 
@@ -400,7 +400,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label11.Location = new System.Drawing.Point(784, 824);
             this.label11.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 21);
+            this.label11.Size = new System.Drawing.Size(96, 20);
             this.label11.TabIndex = 44;
             this.label11.Text = "Tổng điểm :";
             // 
@@ -424,7 +424,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label7.Location = new System.Drawing.Point(784, 668);
             this.label7.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 21);
+            this.label7.Size = new System.Drawing.Size(83, 20);
             this.label7.TabIndex = 42;
             this.label7.Text = "Nhận xét :";
             // 
@@ -435,7 +435,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label6.Location = new System.Drawing.Point(781, 507);
             this.label6.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 21);
+            this.label6.Size = new System.Drawing.Size(117, 20);
             this.label6.TabIndex = 41;
             this.label6.Text = "Điểm lối sống :";
             // 
@@ -446,7 +446,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label5.Location = new System.Drawing.Point(784, 594);
             this.label5.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 21);
+            this.label5.Size = new System.Drawing.Size(115, 20);
             this.label5.TabIndex = 40;
             this.label5.Text = "Điểm học tập :";
             // 
@@ -457,7 +457,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label4.Location = new System.Drawing.Point(781, 423);
             this.label4.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 21);
+            this.label4.Size = new System.Drawing.Size(111, 20);
             this.label4.TabIndex = 39;
             this.label4.Text = "Điểm kỷ luật :";
             // 
@@ -468,7 +468,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label3.Location = new System.Drawing.Point(781, 344);
             this.label3.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 38;
             this.label3.Text = "Họ và tên :";
             // 
@@ -479,7 +479,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label1.Location = new System.Drawing.Point(780, 252);
             this.label1.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 21);
+            this.label1.Size = new System.Drawing.Size(108, 20);
             this.label1.TabIndex = 37;
             this.label1.Text = "Mã học viên :";
             // 
@@ -552,5 +552,6 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        // private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -71,7 +71,7 @@
             this.datetimepicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.datetimepicker.ForeColor = System.Drawing.Color.Black;
             this.datetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datetimepicker.Location = new System.Drawing.Point(676, 144);
+            this.datetimepicker.Location = new System.Drawing.Point(784, 235);
             this.datetimepicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.datetimepicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.datetimepicker.Name = "datetimepicker";
@@ -91,11 +91,12 @@
             this.txtSoKQTL.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoKQTL.ForeColor = System.Drawing.Color.Black;
             this.txtSoKQTL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoKQTL.Location = new System.Drawing.Point(676, 487);
+            this.txtSoKQTL.Location = new System.Drawing.Point(784, 578);
             this.txtSoKQTL.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoKQTL.Name = "txtSoKQTL";
             this.txtSoKQTL.PasswordChar = '\0';
             this.txtSoKQTL.PlaceholderText = "";
+            this.txtSoKQTL.ReadOnly = true;
             this.txtSoKQTL.SelectedText = "";
             this.txtSoKQTL.Size = new System.Drawing.Size(444, 36);
             this.txtSoKQTL.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -105,11 +106,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(260, 487);
+            this.label3.Location = new System.Drawing.Point(368, 578);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(325, 19);
+            this.label3.Size = new System.Drawing.Size(310, 19);
             this.label3.TabIndex = 143;
-            this.label3.Text = "Số kết quả RLTL được đánh giá trong tháng";
+            this.label3.Text = "Số kết quả RLTL được đánh giá trong quý";
             // 
             // txtSoKQKL
             // 
@@ -123,11 +124,12 @@
             this.txtSoKQKL.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoKQKL.ForeColor = System.Drawing.Color.Black;
             this.txtSoKQKL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoKQKL.Location = new System.Drawing.Point(676, 416);
+            this.txtSoKQKL.Location = new System.Drawing.Point(784, 507);
             this.txtSoKQKL.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoKQKL.Name = "txtSoKQKL";
             this.txtSoKQKL.PasswordChar = '\0';
             this.txtSoKQKL.PlaceholderText = "";
+            this.txtSoKQKL.ReadOnly = true;
             this.txtSoKQKL.SelectedText = "";
             this.txtSoKQKL.Size = new System.Drawing.Size(444, 36);
             this.txtSoKQKL.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -137,7 +139,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(260, 416);
+            this.label4.Location = new System.Drawing.Point(368, 507);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(329, 19);
             this.label4.TabIndex = 141;
@@ -155,11 +157,12 @@
             this.txtTongHV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTongHV.ForeColor = System.Drawing.Color.Black;
             this.txtTongHV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongHV.Location = new System.Drawing.Point(676, 342);
+            this.txtTongHV.Location = new System.Drawing.Point(784, 433);
             this.txtTongHV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongHV.Name = "txtTongHV";
             this.txtTongHV.PasswordChar = '\0';
             this.txtTongHV.PlaceholderText = "";
+            this.txtTongHV.ReadOnly = true;
             this.txtTongHV.SelectedText = "";
             this.txtTongHV.Size = new System.Drawing.Size(444, 36);
             this.txtTongHV.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -169,7 +172,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 342);
+            this.label2.Location = new System.Drawing.Point(368, 433);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 19);
             this.label2.TabIndex = 139;
@@ -187,11 +190,12 @@
             this.txtTongCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTongCB.ForeColor = System.Drawing.Color.Black;
             this.txtTongCB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongCB.Location = new System.Drawing.Point(676, 271);
+            this.txtTongCB.Location = new System.Drawing.Point(784, 362);
             this.txtTongCB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongCB.Name = "txtTongCB";
             this.txtTongCB.PasswordChar = '\0';
             this.txtTongCB.PlaceholderText = "";
+            this.txtTongCB.ReadOnly = true;
             this.txtTongCB.SelectedText = "";
             this.txtTongCB.Size = new System.Drawing.Size(444, 36);
             this.txtTongCB.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -201,7 +205,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 271);
+            this.label1.Location = new System.Drawing.Point(368, 362);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 19);
             this.label1.TabIndex = 137;
@@ -219,11 +223,12 @@
             this.txtTongQS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTongQS.ForeColor = System.Drawing.Color.Black;
             this.txtTongQS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongQS.Location = new System.Drawing.Point(676, 206);
+            this.txtTongQS.Location = new System.Drawing.Point(784, 297);
             this.txtTongQS.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongQS.Name = "txtTongQS";
             this.txtTongQS.PasswordChar = '\0';
             this.txtTongQS.PlaceholderText = "";
+            this.txtTongQS.ReadOnly = true;
             this.txtTongQS.SelectedText = "";
             this.txtTongQS.Size = new System.Drawing.Size(444, 36);
             this.txtTongQS.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -233,7 +238,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(260, 206);
+            this.label15.Location = new System.Drawing.Point(368, 297);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(154, 19);
             this.label15.TabIndex = 134;
@@ -243,7 +248,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(260, 144);
+            this.label16.Location = new System.Drawing.Point(368, 235);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(118, 19);
             this.label16.TabIndex = 133;

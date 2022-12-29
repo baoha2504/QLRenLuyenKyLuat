@@ -115,9 +115,17 @@ namespace QLRenLuyenKyLuat.GUI_LOP
 
         private void danhsach_KL_Year_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MaHocvien = danhsach_KL_Year.SelectedRows[0].Cells[0].Value.ToString();
-            txtBoxTen.Text = danhsach_KL_Year.SelectedRows[0].Cells[1].Value.ToString();
-            HienThi(MaHocvien);
+            if (string.IsNullOrEmpty(cbBox_RLKL_Year.Text))
+            {
+                MessageBox.Show("Vui lòng chọn năm học.", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MaHocvien = danhsach_KL_Year.SelectedRows[0].Cells[0].Value.ToString();
+                txtBoxTen.Text = danhsach_KL_Year.SelectedRows[0].Cells[1].Value.ToString();
+                HienThi(MaHocvien);
+            }    
+                
         }
     }
 }

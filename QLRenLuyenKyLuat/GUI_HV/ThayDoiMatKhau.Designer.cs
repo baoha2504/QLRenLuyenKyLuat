@@ -50,13 +50,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtReNewPass.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReNewPass.ForeColor = System.Drawing.Color.Black;
             this.txtReNewPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtReNewPass.Location = new System.Drawing.Point(517, 299);
-            this.txtReNewPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtReNewPass.Location = new System.Drawing.Point(486, 428);
+            this.txtReNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.PasswordChar = '*';
             this.txtReNewPass.PlaceholderText = "";
             this.txtReNewPass.SelectedText = "";
-            this.txtReNewPass.Size = new System.Drawing.Size(500, 45);
+            this.txtReNewPass.Size = new System.Drawing.Size(389, 38);
             this.txtReNewPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtReNewPass.TabIndex = 139;
             // 
@@ -64,9 +64,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 299);
+            this.label1.Location = new System.Drawing.Point(299, 428);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 24);
+            this.label1.Size = new System.Drawing.Size(175, 19);
             this.label1.TabIndex = 138;
             this.label1.Text = "Nhập lại mật khẩu mới";
             // 
@@ -75,10 +76,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.btnLuu.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(899, 398);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLuu.Location = new System.Drawing.Point(783, 511);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(117, 45);
+            this.btnLuu.Size = new System.Drawing.Size(91, 38);
             this.btnLuu.TabIndex = 137;
             this.btnLuu.Text = "Thay đổi";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -95,13 +96,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Location = new System.Drawing.Point(517, 141);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPass.Location = new System.Drawing.Point(486, 295);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.PlaceholderText = "";
             this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(500, 45);
+            this.txtPass.Size = new System.Drawing.Size(389, 38);
             this.txtPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtPass.TabIndex = 136;
             // 
@@ -117,13 +118,13 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtNewPass.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPass.ForeColor = System.Drawing.Color.Black;
             this.txtNewPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNewPass.Location = new System.Drawing.Point(517, 218);
-            this.txtNewPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNewPass.Location = new System.Drawing.Point(486, 360);
+            this.txtNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.PasswordChar = '*';
             this.txtNewPass.PlaceholderText = "";
             this.txtNewPass.SelectedText = "";
-            this.txtNewPass.Size = new System.Drawing.Size(500, 45);
+            this.txtNewPass.Size = new System.Drawing.Size(389, 38);
             this.txtNewPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtNewPass.TabIndex = 135;
             // 
@@ -131,9 +132,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(277, 218);
+            this.label15.Location = new System.Drawing.Point(299, 360);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(135, 24);
+            this.label15.Size = new System.Drawing.Size(111, 19);
             this.label15.TabIndex = 134;
             this.label15.Text = "Mật khẩu mới";
             // 
@@ -141,15 +143,16 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(277, 141);
+            this.label16.Location = new System.Drawing.Point(299, 295);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(166, 24);
+            this.label16.Size = new System.Drawing.Size(138, 19);
             this.label16.TabIndex = 133;
             this.label16.Text = "Mật khẩu hiện tại";
             // 
             // ThayDoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtReNewPass);
             this.Controls.Add(this.label1);
@@ -158,8 +161,9 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.Controls.Add(this.txtNewPass);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "ThayDoiMatKhau";
-            this.Size = new System.Drawing.Size(1441, 944);
+            this.Size = new System.Drawing.Size(1121, 795);
             this.ResumeLayout(false);
             this.PerformLayout();
 

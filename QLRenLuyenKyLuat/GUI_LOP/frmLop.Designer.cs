@@ -67,6 +67,14 @@
             // 
             // accordionControl1
             // 
+            this.accordionControl1.Appearance.Group.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.accordionControl1.Appearance.Group.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Normal.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.accordionControl1.Appearance.Group.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.accordionControl1.Appearance.Item.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.accordionControl1.Appearance.Item.Normal.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement5,
@@ -75,16 +83,17 @@
             this.accordionControlElement2,
             this.accordionControlElement3,
             this.accordionControlElement4});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 43);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(326, 890);
+            this.accordionControl1.Size = new System.Drawing.Size(326, 886);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // accordionControlElement5
             // 
+            this.accordionControlElement5.Expanded = true;
             this.accordionControlElement5.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -123,7 +132,7 @@
             this.itemMonth.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemMonth.ImageOptions.SvgImage")));
             this.itemMonth.Name = "itemMonth";
             this.itemMonth.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.itemMonth.Text = "THÁNG";
+            this.itemMonth.Text = "Tháng";
             this.itemMonth.Click += new System.EventHandler(this.itemMonth_Click);
             // 
             // itemHocky
@@ -135,7 +144,7 @@
             this.itemHocky.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemHocky.ImageOptions.SvgImage")));
             this.itemHocky.Name = "itemHocky";
             this.itemHocky.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.itemHocky.Text = "HỌC KỲ";
+            this.itemHocky.Text = "Học kỳ";
             this.itemHocky.Click += new System.EventHandler(this.itemHocky_Click);
             // 
             // itemNamhoc
@@ -147,7 +156,7 @@
             this.itemNamhoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemNamhoc.ImageOptions.SvgImage")));
             this.itemNamhoc.Name = "itemNamhoc";
             this.itemNamhoc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.itemNamhoc.Text = "NĂM HỌC";
+            this.itemNamhoc.Text = "Năm học";
             this.itemNamhoc.Click += new System.EventHandler(this.itemNamhoc_Click);
             // 
             // accordionControlElement2
@@ -171,7 +180,7 @@
             this.itemQuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemQuy.ImageOptions.SvgImage")));
             this.itemQuy.Name = "itemQuy";
             this.itemQuy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.itemQuy.Text = "THEO QUÝ";
+            this.itemQuy.Text = "Theo quý";
             this.itemQuy.Click += new System.EventHandler(this.itemQuy_Click);
             // 
             // itemNam
@@ -183,7 +192,7 @@
             this.itemNam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemNam.ImageOptions.SvgImage")));
             this.itemNam.Name = "itemNam";
             this.itemNam.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.itemNam.Text = "THEO NĂM";
+            this.itemNam.Text = "Theo năm";
             this.itemNam.Click += new System.EventHandler(this.itemNam_Click);
             // 
             // accordionControlElement3
@@ -204,6 +213,7 @@
             this.itemHDSDKL.Appearance.Hovered.Options.UseBackColor = true;
             this.itemHDSDKL.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemHDSDKL.Appearance.Pressed.Options.UseBackColor = true;
+            this.itemHDSDKL.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemHDSDKL.ImageOptions.Image")));
             this.itemHDSDKL.Name = "itemHDSDKL";
             this.itemHDSDKL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemHDSDKL.Text = "Chức năng quản lý kỷ luật";
@@ -215,6 +225,7 @@
             this.itemHDSDTL.Appearance.Hovered.Options.UseBackColor = true;
             this.itemHDSDTL.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemHDSDTL.Appearance.Pressed.Options.UseBackColor = true;
+            this.itemHDSDTL.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemHDSDTL.ImageOptions.Image")));
             this.itemHDSDTL.Name = "itemHDSDTL";
             this.itemHDSDTL.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemHDSDTL.Text = "Chức năng quản lý thể lực";
@@ -275,7 +286,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1853, 39);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1853, 43);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem6, true);
@@ -308,7 +319,6 @@
             // barStaticItem3
             // 
             this.barStaticItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem3.Caption = "name";
             this.barStaticItem3.Id = 4;
             this.barStaticItem3.ItemAppearance.Disabled.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barStaticItem3.ItemAppearance.Disabled.ForeColor = System.Drawing.Color.White;
