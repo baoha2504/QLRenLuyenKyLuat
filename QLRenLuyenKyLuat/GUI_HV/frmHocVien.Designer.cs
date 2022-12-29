@@ -68,7 +68,7 @@
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainContainer.Location = new System.Drawing.Point(445, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(15);
             this.mainContainer.Name = "mainContainer";
             this.mainContainer.Size = new System.Drawing.Size(833, 692);
             this.mainContainer.TabIndex = 0;
@@ -92,7 +92,7 @@
             this.ace_HDSD,
             this.ace_TK});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(15);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.Size = new System.Drawing.Size(445, 692);

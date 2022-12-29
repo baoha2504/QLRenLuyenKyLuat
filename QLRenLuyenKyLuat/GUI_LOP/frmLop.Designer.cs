@@ -84,7 +84,7 @@
             this.accordionControlElement3,
             this.accordionControlElement4});
             this.accordionControl1.Location = new System.Drawing.Point(0, 43);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(12);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.Size = new System.Drawing.Size(371, 886);
@@ -119,7 +119,6 @@
             this.itemMonth,
             this.itemHocky,
             this.itemNamhoc});
-            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Kết quả RLKL";
             // 
@@ -168,7 +167,6 @@
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemQuy,
             this.itemNam});
-            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Kết quả RLTL";
             // 
@@ -205,7 +203,6 @@
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemHDSDKL,
             this.itemHDSDTL});
-            this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Hướng dẫn sử dụng";
             // 
@@ -242,7 +239,6 @@
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemMK,
             this.itemOut});
-            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Tài khoản";
             // 
@@ -264,7 +260,7 @@
             this.itemOut.Appearance.Hovered.Options.UseBackColor = true;
             this.itemOut.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemOut.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemOut.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemOut.ImageOptions.SvgImage")));
+            this.itemOut.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemOut.ImageOptions.Image")));
             this.itemOut.Name = "itemOut";
             this.itemOut.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemOut.Text = "Đăng xuất";
@@ -426,7 +422,7 @@
             // 
             this.FormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FormContainer.Location = new System.Drawing.Point(371, 43);
-            this.FormContainer.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.FormContainer.Margin = new System.Windows.Forms.Padding(12);
             this.FormContainer.Name = "FormContainer";
             this.FormContainer.Size = new System.Drawing.Size(1482, 886);
             this.FormContainer.TabIndex = 0;
