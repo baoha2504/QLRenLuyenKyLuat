@@ -95,10 +95,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(346, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
+            this.mainContainer.Location = new System.Drawing.Point(432, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(75, 75, 75, 75);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(945, 690);
+            this.mainContainer.Size = new System.Drawing.Size(859, 690);
             this.mainContainer.TabIndex = 0;
             // 
             // fluentDesignFormControl1
@@ -614,10 +614,10 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(60, 60, 60, 60);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(75, 75, 75, 75);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(346, 690);
+            this.accordionControl1.Size = new System.Drawing.Size(432, 690);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -633,7 +633,7 @@
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Name = "frmDaiDoi";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "Chương trình quản lý rèn luyện cấp Đại đội";
+            this.Text = "Phần mềm quản lý rèn luyện cấp Đại đội";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDaiDoi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

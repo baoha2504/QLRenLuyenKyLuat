@@ -84,10 +84,10 @@
             this.accordionControlElement3,
             this.accordionControlElement4});
             this.accordionControl1.Location = new System.Drawing.Point(0, 43);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(368, 886);
+            this.accordionControl1.Size = new System.Drawing.Size(371, 886);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -119,6 +119,7 @@
             this.itemMonth,
             this.itemHocky,
             this.itemNamhoc});
+            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Kết quả RLKL";
             // 
@@ -128,7 +129,7 @@
             this.itemMonth.Appearance.Hovered.Options.UseBackColor = true;
             this.itemMonth.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemMonth.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemMonth.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemMonth.ImageOptions.SvgImage")));
+            this.itemMonth.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemMonth.ImageOptions.Image")));
             this.itemMonth.Name = "itemMonth";
             this.itemMonth.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemMonth.Text = "Tháng";
@@ -140,7 +141,7 @@
             this.itemHocky.Appearance.Hovered.Options.UseBackColor = true;
             this.itemHocky.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemHocky.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemHocky.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemHocky.ImageOptions.SvgImage")));
+            this.itemHocky.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemHocky.ImageOptions.Image")));
             this.itemHocky.Name = "itemHocky";
             this.itemHocky.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemHocky.Text = "Học kỳ";
@@ -152,7 +153,7 @@
             this.itemNamhoc.Appearance.Hovered.Options.UseBackColor = true;
             this.itemNamhoc.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemNamhoc.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemNamhoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemNamhoc.ImageOptions.SvgImage")));
+            this.itemNamhoc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemNamhoc.ImageOptions.Image")));
             this.itemNamhoc.Name = "itemNamhoc";
             this.itemNamhoc.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemNamhoc.Text = "Năm học";
@@ -167,6 +168,7 @@
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemQuy,
             this.itemNam});
+            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Kết quả RLTL";
             // 
@@ -176,7 +178,7 @@
             this.itemQuy.Appearance.Hovered.Options.UseBackColor = true;
             this.itemQuy.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemQuy.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemQuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemQuy.ImageOptions.SvgImage")));
+            this.itemQuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemQuy.ImageOptions.Image")));
             this.itemQuy.Name = "itemQuy";
             this.itemQuy.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemQuy.Text = "Theo quý";
@@ -188,7 +190,7 @@
             this.itemNam.Appearance.Hovered.Options.UseBackColor = true;
             this.itemNam.Appearance.Pressed.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemNam.Appearance.Pressed.Options.UseBackColor = true;
-            this.itemNam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("itemNam.ImageOptions.SvgImage")));
+            this.itemNam.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("itemNam.ImageOptions.Image")));
             this.itemNam.Name = "itemNam";
             this.itemNam.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.itemNam.Text = "Theo năm";
@@ -203,6 +205,7 @@
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemHDSDKL,
             this.itemHDSDTL});
+            this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Hướng dẫn sử dụng";
             // 
@@ -239,6 +242,7 @@
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.itemMK,
             this.itemOut});
+            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Tài khoản";
             // 
@@ -421,10 +425,10 @@
             // FormContainer
             // 
             this.FormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FormContainer.Location = new System.Drawing.Point(368, 43);
-            this.FormContainer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.FormContainer.Location = new System.Drawing.Point(371, 43);
+            this.FormContainer.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.FormContainer.Name = "FormContainer";
-            this.FormContainer.Size = new System.Drawing.Size(1485, 886);
+            this.FormContainer.Size = new System.Drawing.Size(1482, 886);
             this.FormContainer.TabIndex = 0;
             // 
             // frmLop
@@ -439,7 +443,7 @@
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Name = "frmLop";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "frmLop";
+            this.Text = "Phần mềm quản lý rèn luyện cấp Đại đội";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

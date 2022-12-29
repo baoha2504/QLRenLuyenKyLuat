@@ -67,10 +67,10 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(356, 46);
-            this.mainContainer.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.mainContainer.Location = new System.Drawing.Point(445, 46);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(922, 692);
+            this.mainContainer.Size = new System.Drawing.Size(833, 692);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
@@ -92,10 +92,10 @@
             this.ace_HDSD,
             this.ace_TK});
             this.accordionControl1.Location = new System.Drawing.Point(0, 46);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(356, 692);
+            this.accordionControl1.Size = new System.Drawing.Size(445, 692);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -360,7 +360,7 @@
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Name = "frmHocVien";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "frmHocVien";
+            this.Text = "Phần mềm quản lý rèn luyện cấp Đại đội";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHocVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
