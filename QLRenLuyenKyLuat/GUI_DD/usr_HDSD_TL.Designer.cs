@@ -39,7 +39,6 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1245, 747);
             this.guna2Panel1.TabIndex = 0;
             // 
@@ -50,23 +49,20 @@
             this.txtNoiDung.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtNoiDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtNoiDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNoiDung.DisabledState.Parent = this.txtNoiDung;
             this.txtNoiDung.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNoiDung.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoiDung.FocusedState.Parent = this.txtNoiDung;
             this.txtNoiDung.Font = new System.Drawing.Font("Times New Roman", 13.8F);
             this.txtNoiDung.ForeColor = System.Drawing.Color.Black;
             this.txtNoiDung.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoiDung.HoverState.Parent = this.txtNoiDung;
             this.txtNoiDung.Location = new System.Drawing.Point(0, 0);
-            this.txtNoiDung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNoiDung.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiDung.Multiline = true;
             this.txtNoiDung.Name = "txtNoiDung";
             this.txtNoiDung.PasswordChar = '\0';
             this.txtNoiDung.PlaceholderText = "";
+            this.txtNoiDung.ReadOnly = true;
             this.txtNoiDung.SelectedText = "";
-            this.txtNoiDung.ShadowDecoration.Parent = this.txtNoiDung;
             this.txtNoiDung.Size = new System.Drawing.Size(1245, 747);
             this.txtNoiDung.TabIndex = 0;
             // 

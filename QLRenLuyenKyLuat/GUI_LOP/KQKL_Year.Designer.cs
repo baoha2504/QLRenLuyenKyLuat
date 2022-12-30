@@ -204,6 +204,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             // 
             // KQKL_Year
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbBox_RLKL_Year);

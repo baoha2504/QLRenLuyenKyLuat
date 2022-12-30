@@ -183,6 +183,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDKL.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDKL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDKL.Location = new System.Drawing.Point(179, 53);
+            this.txtBoxDKL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDKL.Name = "txtBoxDKL";
             this.txtBoxDKL.PasswordChar = '\0';
             this.txtBoxDKL.PlaceholderText = "";
@@ -203,6 +204,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDLS.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDLS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDLS.Location = new System.Drawing.Point(179, 102);
+            this.txtBoxDLS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDLS.Name = "txtBoxDLS";
             this.txtBoxDLS.PasswordChar = '\0';
             this.txtBoxDLS.PlaceholderText = "";
@@ -223,6 +225,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDHT.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDHT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDHT.Location = new System.Drawing.Point(179, 152);
+            this.txtBoxDHT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDHT.Name = "txtBoxDHT";
             this.txtBoxDHT.PasswordChar = '\0';
             this.txtBoxDHT.PlaceholderText = "";
@@ -243,6 +246,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxNX.Location = new System.Drawing.Point(179, 204);
+            this.txtBoxNX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxNX.Name = "txtBoxNX";
             this.txtBoxNX.PasswordChar = '\0';
             this.txtBoxNX.PlaceholderText = "";
@@ -263,6 +267,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxPL.Location = new System.Drawing.Point(179, 328);
+            this.txtBoxPL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxPL.Name = "txtBoxPL";
             this.txtBoxPL.PasswordChar = '\0';
             this.txtBoxPL.PlaceholderText = "";
@@ -331,6 +336,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxPL1.Location = new System.Drawing.Point(187, 328);
+            this.txtBoxPL1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxPL1.Name = "txtBoxPL1";
             this.txtBoxPL1.PasswordChar = '\0';
             this.txtBoxPL1.PlaceholderText = "";
@@ -363,6 +369,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDHT1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDHT1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDHT1.Location = new System.Drawing.Point(179, 148);
+            this.txtBoxDHT1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDHT1.Name = "txtBoxDHT1";
             this.txtBoxDHT1.PasswordChar = '\0';
             this.txtBoxDHT1.PlaceholderText = "";
@@ -407,6 +414,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDLS1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDLS1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDLS1.Location = new System.Drawing.Point(179, 102);
+            this.txtBoxDLS1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDLS1.Name = "txtBoxDLS1";
             this.txtBoxDLS1.PasswordChar = '\0';
             this.txtBoxDLS1.PlaceholderText = "";
@@ -451,6 +459,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxDKL1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxDKL1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxDKL1.Location = new System.Drawing.Point(179, 53);
+            this.txtBoxDKL1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxDKL1.Name = "txtBoxDKL1";
             this.txtBoxDKL1.PasswordChar = '\0';
             this.txtBoxDKL1.PlaceholderText = "";
@@ -471,6 +480,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX1.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxNX1.Location = new System.Drawing.Point(179, 204);
+            this.txtBoxNX1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxNX1.Name = "txtBoxNX1";
             this.txtBoxNX1.PasswordChar = '\0';
             this.txtBoxNX1.PlaceholderText = "";
@@ -502,6 +512,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxNX_Cuoi.ForeColor = System.Drawing.Color.Black;
             this.txtBoxNX_Cuoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxNX_Cuoi.Location = new System.Drawing.Point(347, 705);
+            this.txtBoxNX_Cuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxNX_Cuoi.Name = "txtBoxNX_Cuoi";
             this.txtBoxNX_Cuoi.PasswordChar = '\0';
             this.txtBoxNX_Cuoi.PlaceholderText = "";
@@ -534,6 +545,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txtBoxPL_Cuoi.ForeColor = System.Drawing.Color.Black;
             this.txtBoxPL_Cuoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxPL_Cuoi.Location = new System.Drawing.Point(990, 711);
+            this.txtBoxPL_Cuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBoxPL_Cuoi.Name = "txtBoxPL_Cuoi";
             this.txtBoxPL_Cuoi.PasswordChar = '\0';
             this.txtBoxPL_Cuoi.PlaceholderText = "";
@@ -598,7 +610,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             // KQKL_Thang
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(241)))), ((int)(((byte)(254)))));
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

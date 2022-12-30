@@ -35,7 +35,6 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDeNghi = new System.Windows.Forms.Button();
             this.datagridDSHV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.txtBoxCurDay = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxNgDG = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,6 +57,7 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.datagridDSHV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -130,13 +130,6 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             this.datagridDSHV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
             this.datagridDSHV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datagridDSHV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridDSHV_CellContentClick);
-            // 
-            // colCheck
-            // 
-            this.colCheck.FillWeight = 32.24794F;
-            this.colCheck.HeaderText = "Check";
-            this.colCheck.MinimumWidth = 6;
-            this.colCheck.Name = "colCheck";
             // 
             // txtBoxCurDay
             // 
@@ -487,6 +480,14 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // colCheck
+            // 
+            this.colCheck.FillWeight = 32.24794F;
+            this.colCheck.HeaderText = "Check";
+            this.colCheck.MinimumWidth = 6;
+            this.colCheck.Name = "colCheck";
+            this.colCheck.ReadOnly = true;
+            // 
             // DSHocvien
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -550,8 +551,8 @@ namespace QLRenLuyenKyLuat.GUI_LOP
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
         // private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

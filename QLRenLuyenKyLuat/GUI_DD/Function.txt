@@ -98,3 +98,36 @@ add HoatDong int
 Go
 UPDATE HOCVIEN set HoatDong = 1
 Go
+/****** Object:  UserDefinedFunction [dbo].[auto_MaDiemPLKL]    Script Date: 12/26/2022 11:19:20 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create Function [dbo].[auto_MaDiemPLKL](@maHV as varchar(20))
+returns varchar(20)
+AS
+BEGIN                                 
+	Declare @id char(20)
+	set  @id = Concat( @maHV, N'DKL' , cast(REPLACE(STR(MONTH(GETDATE()),2),' ','0') as char(2))  ,right((YEAR(getDate()) ), 2)  ,  N'L')
+	return @id 
+END
+GO
+
+
+
+
+/****** Object:  UserDefinedFunction [dbo].[auto_MaHVPLRL]    Script Date: 12/26/2022 11:19:20 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create Function [dbo].[auto_MaHVPLRL](@maHV as varchar(20))
+returns varchar(20)
+AS
+BEGIN
+	Declare @id char(20)
+	set  @id = Concat( @maHV , cast(REPLACE(STR(MONTH(GETDATE()),2),' ','0') as char(2))  , right((YEAR(getDate()) ), 2) ,  N'L')
+	return @id 
+	return @id 
+END
+GO

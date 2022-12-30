@@ -95,6 +95,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_NX.ForeColor = System.Drawing.Color.Black;
             this.txt_NX.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_NX.Location = new System.Drawing.Point(491, 426);
+            this.txt_NX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_NX.Multiline = true;
             this.txt_NX.Name = "txt_NX";
             this.txt_NX.PasswordChar = '\0';
@@ -128,6 +129,7 @@ namespace QLRenLuyenKyLuat.GUI_HV
             this.txt_PL.ForeColor = System.Drawing.Color.Black;
             this.txt_PL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_PL.Location = new System.Drawing.Point(491, 356);
+            this.txt_PL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_PL.Name = "txt_PL";
             this.txt_PL.PasswordChar = '\0';
             this.txt_PL.PlaceholderText = "";
@@ -149,8 +151,10 @@ namespace QLRenLuyenKyLuat.GUI_HV
             // 
             // KQKL_Nam
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);

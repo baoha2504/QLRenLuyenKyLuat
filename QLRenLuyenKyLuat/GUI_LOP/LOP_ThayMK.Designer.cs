@@ -116,7 +116,9 @@ namespace QLRenLuyenKyLuat.GUI_LOP
             // 
             // LOP_ThayMK
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

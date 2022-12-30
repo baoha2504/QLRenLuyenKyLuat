@@ -105,6 +105,7 @@
             // 
             // NhapKL
             // 
+            this.NhapKL.Expanded = true;
             this.NhapKL.Name = "NhapKL";
             this.NhapKL.Text = "Nhập KQRL  tháng";
             this.NhapKL.Click += new System.EventHandler(this.NhapKL_Click);

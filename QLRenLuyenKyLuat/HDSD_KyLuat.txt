@@ -25,3 +25,5 @@ c. Đại đội
 	-Khi thay đổi quy chuẩn kỷ luật, kết quả kết luận của học viên ở thời gian trước không thay đổi
 	-Kết quả rèn luyện kỷ luật của học viên đánh giá sau thời gian thay đổi quy chuẩn sẽ đánh giá theo quy chuẩn mới
 	-Sự thay đổi quy chuẩn kỷ luật được sẽ được hệ thống lưu lại tên, thời gian thay đổi
+	-Học viên trong tháng bị kỷ luật ở hình thức Khiển trách thì kết quả xếp loại rèn luyện trong tháng không vượt quá loại trung bình
+	-Học viên bị kỷ luật từ hình thức Cảnh cáo trở lên thì kết quả xếp loại rèn luyện không vượt quá loại yếu
